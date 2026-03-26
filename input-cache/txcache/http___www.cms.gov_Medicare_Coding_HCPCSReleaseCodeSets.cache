@@ -1,0 +1,789 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+  "code" : "G0271",
+  "display" : "Medical nutrition therapy, reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition, or treatment regimen (including additional hours needed for renal disease), group (2 or more individuals), each 30 minutes"
+}, "valueSet" :null, "langs":"en", "useServer":"true", "useClient":"true", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "manifest",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueCanonical" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-executablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-json-library|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-xml-library|1.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/diagnosis-role|1.1.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/ex-diagnosistype|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/ex-procedure-type|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding|07/14/2020"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/v3-TimingEvent|3.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://hl7.org/fhir/event-timing|4.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode|3.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://hl7.org/fhir/request-intent|4.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category|1.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/condition-clinical|3.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/condition-ver-status|2.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/observation-category|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/condition-category|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://hl7.org/fhir/CodeSystem/task-code|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablemeasure|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/executable-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cql-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/elm-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/proportion-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS122FHIRDiabetesAssessGT9Pct|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS125FHIRBreastCancerScreen|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS130FHIRColorectalCancerScrn|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS165FHIRControllingHighBP|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS2FHIRPCSDepScreenAndFollowUp|1.0.000"
+  }]
+}}####
+v: {
+  "display" : "disease), group (2 or more individuals), each 30 minutes",
+  "code" : "G0271",
+  "system" : "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+  "version" : "2025-01",
+  "severity" : "error",
+  "error" : "Wrong Display Name 'Medical nutrition therapy, reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition, or treatment regimen (including additional hours needed for renal disease), group (2 or more individuals), each 30 minutes' for http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#G0271. Valid display is 'disease), group (2 or more individuals), each 30 minutes' (for the language(s) 'en')",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/vs|2025-01: Validate \"[http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#G0271 (\"Medical nutrition therapy, reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition, or treatment regimen (including additional hours needed for renal disease), group (2 or more individuals), each 30 minutes\")]\"\n0ms http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/vs|2025-01: Check \"http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#G0271\"\n0ms http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/vs|2025-01: CodeSystem found: http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets|2025-01 for http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets|2025-01\n0ms http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/vs|2025-01: check code in (http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets) at Coding\n0ms http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/vs|2025-01: Code \"G0271\" found in http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets|2025-01",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "Display_Name_for__should_be_one_of__instead_of"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-display"
+      }],
+      "text" : "Wrong Display Name 'Medical nutrition therapy, reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition, or treatment regimen (including additional hours needed for renal disease), group (2 or more individuals), each 30 minutes' for http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#G0271. Valid display is 'disease), group (2 or more individuals), each 30 minutes' (for the language(s) 'en')"
+    },
+    "expression" : ["Coding.display"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+  "code" : "G0270",
+  "display" : "Medical nutrition therapy; reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition or treatment regimen (including additional hours needed for renal disease), individual, face to face with the patient, each 15 minutes"
+}, "valueSet" :null, "langs":"en", "useServer":"true", "useClient":"true", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "manifest",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueCanonical" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-executablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-json-library|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-xml-library|1.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/diagnosis-role|1.1.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/ex-diagnosistype|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/ex-procedure-type|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding|07/14/2020"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/v3-TimingEvent|3.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://hl7.org/fhir/event-timing|4.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode|3.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://hl7.org/fhir/request-intent|4.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category|1.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/condition-clinical|3.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/condition-ver-status|2.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/observation-category|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/condition-category|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://hl7.org/fhir/CodeSystem/task-code|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablemeasure|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/executable-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cql-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/elm-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/proportion-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS122FHIRDiabetesAssessGT9Pct|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS125FHIRBreastCancerScreen|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS130FHIRColorectalCancerScrn|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS165FHIRControllingHighBP|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS2FHIRPCSDepScreenAndFollowUp|1.0.000"
+  }]
+}}####
+v: {
+  "display" : "disease), individual, face to face with the patient, each 15 minutes",
+  "code" : "G0270",
+  "system" : "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+  "version" : "2025-01",
+  "severity" : "error",
+  "error" : "Wrong Display Name 'Medical nutrition therapy; reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition or treatment regimen (including additional hours needed for renal disease), individual, face to face with the patient, each 15 minutes' for http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#G0270. Valid display is 'disease), individual, face to face with the patient, each 15 minutes' (for the language(s) 'en')",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/vs|2025-01: Validate \"[http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#G0270 (\"Medical nutrition therapy; reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition or treatment regimen (including additional hours needed for renal disease), individual, face to face with the patient, each 15 minutes\")]\"\n0ms http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/vs|2025-01: Check \"http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#G0270\"\n0ms http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/vs|2025-01: CodeSystem found: http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets|2025-01 for http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets|2025-01\n0ms http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/vs|2025-01: check code in (http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets) at Coding\n0ms http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/vs|2025-01: Code \"G0270\" found in http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets|2025-01",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "Display_Name_for__should_be_one_of__instead_of"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-display"
+      }],
+      "text" : "Wrong Display Name 'Medical nutrition therapy; reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition or treatment regimen (including additional hours needed for renal disease), individual, face to face with the patient, each 15 minutes' for http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#G0270. Valid display is 'disease), individual, face to face with the patient, each 15 minutes' (for the language(s) 'en')"
+    },
+    "expression" : ["Coding.display"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+  "code" : "G0270",
+  "display" : "Medical nutrition therapy; reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition or treatment regimen (including additional hours needed for renal disease), individual, face to face with the patient, each 15 minutes"
+}, "valueSet" :null, "langs":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "manifest",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueCanonical" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-executablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-json-library|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-xml-library|1.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/diagnosis-role|1.1.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/ex-diagnosistype|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/ex-procedure-type|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding|07/14/2020"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/v3-TimingEvent|3.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://hl7.org/fhir/event-timing|4.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode|3.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://hl7.org/fhir/request-intent|4.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category|1.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/condition-clinical|3.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/condition-ver-status|2.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/observation-category|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/condition-category|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://hl7.org/fhir/CodeSystem/task-code|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablemeasure|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/executable-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cql-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/elm-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/proportion-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS122FHIRDiabetesAssessGT9Pct|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS125FHIRBreastCancerScreen|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS130FHIRColorectalCancerScrn|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS165FHIRControllingHighBP|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS2FHIRPCSDepScreenAndFollowUp|1.0.000"
+  }]
+}}####
+v: {
+  "display" : "disease), individual, face to face with the patient, each 15 minutes",
+  "code" : "G0270",
+  "system" : "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+  "version" : "2025-01",
+  "severity" : "error",
+  "error" : "Wrong Display Name 'Medical nutrition therapy; reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition or treatment regimen (including additional hours needed for renal disease), individual, face to face with the patient, each 15 minutes' for http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#G0270. Valid display is 'disease), individual, face to face with the patient, each 15 minutes' (for the language(s) 'en-US')",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/vs|2025-01: Validate \"[http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#G0270 (\"Medical nutrition therapy; reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition or treatment regimen (including additional hours needed for renal disease), individual, face to face with the patient, each 15 minutes\")]\"\n0ms http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/vs|2025-01: Check \"http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#G0270\"\n0ms http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/vs|2025-01: CodeSystem found: http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets|2025-01 for http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets|2025-01\n0ms http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/vs|2025-01: check code in (http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets) at Coding\n0ms http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/vs|2025-01: Code \"G0270\" found in http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets|2025-01",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "Display_Name_for__should_be_one_of__instead_of"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-display"
+      }],
+      "text" : "Wrong Display Name 'Medical nutrition therapy; reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition or treatment regimen (including additional hours needed for renal disease), individual, face to face with the patient, each 15 minutes' for http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#G0270. Valid display is 'disease), individual, face to face with the patient, each 15 minutes' (for the language(s) 'en-US')"
+    },
+    "expression" : ["Coding.display"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+  "code" : "G0271",
+  "display" : "Medical nutrition therapy, reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition, or treatment regimen (including additional hours needed for renal disease), group (2 or more individuals), each 30 minutes"
+}, "valueSet" :null, "langs":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "noAbstract":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "manifest",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueCanonical" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-executablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-json-library|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-xml-library|1.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/diagnosis-role|1.1.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/ex-diagnosistype|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/ex-procedure-type|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding|07/14/2020"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/v3-TimingEvent|3.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://hl7.org/fhir/event-timing|4.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode|3.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://hl7.org/fhir/request-intent|4.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category|1.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/condition-clinical|3.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/condition-ver-status|2.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/observation-category|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/condition-category|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://hl7.org/fhir/CodeSystem/task-code|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablemeasure|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/executable-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cql-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/elm-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/proportion-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS122FHIRDiabetesAssessGT9Pct|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS125FHIRBreastCancerScreen|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS130FHIRColorectalCancerScrn|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS165FHIRControllingHighBP|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS2FHIRPCSDepScreenAndFollowUp|1.0.000"
+  }]
+}}####
+v: {
+  "display" : "disease), group (2 or more individuals), each 30 minutes",
+  "code" : "G0271",
+  "system" : "http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+  "version" : "2025-01",
+  "severity" : "error",
+  "error" : "Wrong Display Name 'Medical nutrition therapy, reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition, or treatment regimen (including additional hours needed for renal disease), group (2 or more individuals), each 30 minutes' for http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#G0271. Valid display is 'disease), group (2 or more individuals), each 30 minutes' (for the language(s) 'en-US')",
+  "class" : "UNKNOWN",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0ms tx-op\n0ms http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/vs|2025-01: Validate \"[http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#G0271 (\"Medical nutrition therapy, reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition, or treatment regimen (including additional hours needed for renal disease), group (2 or more individuals), each 30 minutes\")]\"\n0ms http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/vs|2025-01: Check \"http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#G0271\"\n0ms http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/vs|2025-01: CodeSystem found: http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets|2025-01 for http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets|2025-01\n0ms http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/vs|2025-01: check code in (http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets) at Coding\n0ms http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets/vs|2025-01: Code \"G0271\" found in http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets|2025-01",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "Display_Name_for__should_be_one_of__instead_of"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "https://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-display"
+      }],
+      "text" : "Wrong Display Name 'Medical nutrition therapy, reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition, or treatment regimen (including additional hours needed for renal disease), group (2 or more individuals), each 30 minutes' for http://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets#G0271. Valid display is 'disease), group (2 or more individuals), each 30 minutes' (for the language(s) 'en-US')"
+    },
+    "expression" : ["Coding.display"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
