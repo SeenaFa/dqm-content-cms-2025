@@ -2,7 +2,7 @@
   "resourceType": "Observation",
   "id": "f97811f4-50e2-4a12-936e-498edb14ae67",
   "meta": {
-    "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment" ]
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-screening-assessment" ]
   },
   "status": "final",
   "category": [ {

@@ -2,7 +2,7 @@
   "resourceType": "Patient",
   "id": "4a1f1d8c-0de8-4819-a0a3-28f6caaf6265",
   "meta": {
-    "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ]
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-patient" ]
   },
   "extension": [ {
     "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",

@@ -2,7 +2,7 @@
   "resourceType": "Observation",
   "id": "eb799385-7912-44a1-875f-6eadb890b348",
   "meta": {
-    "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition-qicore-observation-clinical-result" ]
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition-us-quality-core-observation-clinical-result" ]
   },
   "status": "corrected",
   "category": [ {

@@ -2,7 +2,7 @@
   "resourceType": "Condition",
   "id": "f8e48c07-6ada-45b5-8df1-ef52939437aa",
   "meta": {
-    "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis" ]
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-encounter-diagnosis" ]
   },
   "clinicalStatus": {
     "coding": [ {

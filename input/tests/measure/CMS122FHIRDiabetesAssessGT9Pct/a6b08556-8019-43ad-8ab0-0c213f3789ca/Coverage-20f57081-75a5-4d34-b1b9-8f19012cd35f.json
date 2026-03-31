@@ -2,7 +2,7 @@
   "resourceType": "Coverage",
   "id": "20f57081-75a5-4d34-b1b9-8f19012cd35f",
   "meta": {
-    "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage" ]
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-coverage" ]
   },
   "identifier": [ {
     "system": "http://benefitsinc.com/certificate",

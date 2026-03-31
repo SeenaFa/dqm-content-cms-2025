@@ -2,7 +2,7 @@
   "resourceType": "ServiceRequest",
   "id": "4ebe481c-00d7-4ab7-ad80-ee8db80ed236",
   "meta": {
-    "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-servicerequest" ]
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicerequest" ]
   },
   "status": "active",
   "intent": "order",

@@ -2,10 +2,10 @@
   "resourceType": "Observation",
   "id": "b4aa60b8-10e1-47db-9a45-d0a014536370",
   "meta": {
-    "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observationcancelled" ]
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observationcancelled" ]
   },
   "extension": [ {
-    "url": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-notDoneReason",
+    "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-notDoneReason",
     "valueCodeableConcept": {
       "coding": [ {
         "system": "http://snomed.info/sct",

@@ -2,7 +2,7 @@
   "resourceType": "Condition",
   "id": "7df0e1b9-7ba5-496c-971d-b962f58b745b",
   "meta": {
-    "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns" ]
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns" ]
   },
   "clinicalStatus": {
     "coding": [ {

@@ -2,7 +2,7 @@
   "resourceType": "MedicationRequest",
   "id": "d5bc4b11-5436-4035-a0f8-02e090801a36",
   "meta": {
-    "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-medicationrequest" ]
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-medicationrequest" ]
   },
   "status": "active",
   "intent": "order",

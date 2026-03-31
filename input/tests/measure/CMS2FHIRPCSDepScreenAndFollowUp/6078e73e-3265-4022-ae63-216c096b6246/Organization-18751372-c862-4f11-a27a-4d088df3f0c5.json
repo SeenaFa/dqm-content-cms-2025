@@ -2,7 +2,7 @@
   "resourceType": "Organization",
   "id": "18751372-c862-4f11-a27a-4d088df3f0c5",
   "meta": {
-    "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-organization" ]
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-organization" ]
   },
   "identifier": [ {
     "use": "temp",

@@ -2,10 +2,10 @@
   "resourceType": "Procedure",
   "id": "ebb8df37-5b59-4eb6-ab9a-e03b7492567f",
   "meta": {
-    "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure" ]
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedure" ]
   },
   "extension": [ {
-    "url": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-recorded",
+    "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded",
     "valueDateTime": "2025-01-01T00:00:00.000+00:00"
   } ],
   "status": "completed",

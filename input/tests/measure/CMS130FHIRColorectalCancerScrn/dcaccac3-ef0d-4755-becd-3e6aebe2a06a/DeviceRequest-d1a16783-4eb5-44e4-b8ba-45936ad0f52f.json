@@ -2,7 +2,7 @@
   "resourceType": "DeviceRequest",
   "id": "d1a16783-4eb5-44e4-b8ba-45936ad0f52f",
   "meta": {
-    "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-devicerequest" ]
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-devicerequest" ]
   },
   "modifierExtension": [ {
     "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.doNotPerform",

@@ -2,7 +2,7 @@
   "resourceType": "Condition",
   "id": "4bca5ad2-f3ba-4f14-bc81-8289d98b9b88",
   "meta": {
-    "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition" ]
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition" ]
   },
   "clinicalStatus": {
     "coding": [ {

@@ -2,7 +2,7 @@
   "resourceType": "Observation",
   "id": "56be1535-8a54-42e5-8118-4083e62ccbad",
   "meta": {
-    "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-lab" ]
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-lab" ]
   },
   "status": "corrected",
   "category": [ {

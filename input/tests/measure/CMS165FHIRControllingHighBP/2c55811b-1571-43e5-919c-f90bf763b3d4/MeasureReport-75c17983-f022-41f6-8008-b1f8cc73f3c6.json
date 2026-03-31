@@ -19,7 +19,7 @@
     }
   }, {
     "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-testCaseDescription",
-    "valueMarkdown": "Dementia medication request doNotPerform is set to false (also fixed in QICore STU6)."
+    "valueMarkdown": "Dementia medication request doNotPerform is set to false (also fixed in us-quality-core STU6)."
   } ],
   "modifierExtension": [ {
     "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-isTestCase",

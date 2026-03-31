@@ -2,7 +2,7 @@
   "resourceType": "Encounter",
   "id": "d24938c7-e7fd-4455-8427-ff3cf762493d",
   "meta": {
-    "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ]
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter" ]
   },
   "status": "finished",
   "class": {

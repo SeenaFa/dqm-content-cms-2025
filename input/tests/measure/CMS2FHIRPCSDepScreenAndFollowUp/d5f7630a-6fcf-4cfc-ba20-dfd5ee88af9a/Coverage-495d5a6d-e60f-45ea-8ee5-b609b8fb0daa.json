@@ -2,7 +2,7 @@
   "resourceType": "Coverage",
   "id": "495d5a6d-e60f-45ea-8ee5-b609b8fb0daa",
   "meta": {
-    "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage" ]
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-coverage" ]
   },
   "status": "active",
   "type": {
