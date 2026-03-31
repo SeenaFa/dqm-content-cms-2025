@@ -10,6 +10,7 @@ For the purposes of this discussion, we will be focusing on the following 5 meas
 | Measure | QI Core | US Quality Core |
 |----|----|----|
 | CMS2: Preventive Care and Screening: Depression Screening and Followup | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/CMS2FHIRPCSDepScreenAndFollowUp.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/CMS2FHIRPCSDepScreenAndFollowUp.cql) |
+| CMS108: VTE Prophylaxis | | |
 | CMS122: Diabetes: Glycemic Status Assessment | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/CMS122FHIRDiabetesAssessGT9Pct.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/CMS122FHIRDiabetesAssessGT9Pct.cql)* |
 | CMS125: Breast Cancer Screening | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/CMS125FHIRBreastCancerScreen.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/CMS125FHIRBreastCancerScreen.cql) |
 | CMS130: Colon Cancer Screening | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/CMS130FHIRColorectalCancerScrn.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/CMS130FHIRColorectalCancerScrn.cql)* |
@@ -29,6 +30,8 @@ These are all EC measures that make use of the following shared libraries:
 | QICoreCommon | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/QICoreCommon.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/QICoreCommon.cql) |
 | Status | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/Status.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/Status.cql) |
 | SupplementalDataElements | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/SupplementalDataElements.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/SupplementalDataElements.cql) |
+| TJCOverall | | |
+| VTE | | |
 
 These shared libraries had already been updated to use the QICore 7.0.0 (a derived model info) so these were just brought in and updated to use the USQualityCore model instead, no other changes were required to the shared libraries.
 
@@ -80,6 +83,7 @@ Once the models have been updated, we need to update the shared library referenc
 |----|----|----|
 | AdultOutpatientEncounters | 4.19.000 | 5.1.000 |
 | AdvancedIllnessandFrailty | 1.27.000 | 2.1.000 |
+| CQMCommon | 4.1.000 | 5.1.000 |
 | CumulativeMedicationDuration | 6.0.000 | hl7.fhir.us.cql.CumulativeMedicationDuration version 2.0.0-ballot |
 | FHIRHelpers | 4.4.000 | hl7.fhir.uv.cql.FHIRHelpers version 4.0.1 |
 | FHIRCommon | - | hl7.fhir.uv.cql.FHIRCommon version 2.0.0 |
@@ -88,6 +92,8 @@ Once the models have been updated, we need to update the shared library referenc
 | QICoreCommon | 4.0.000 | (refactored into FHIRCommon, USCoreCommon, and USQualityCoreCommon) |
 | Status | 1.15.000 | 2.1.000 |
 | SupplementalDataElements | 5.1.000 | 6.1.000 |
+| TJCOverall | 8.25.000 | 9.1.000 |
+| VTE | 8.18.000 | 9.1.000 |
 | USCoreCommon | - | hl7.fhir.us.cql.USCoreCommon version 2.0.0-ballot |
 | USCoreElements | - | hl7.fhir.us.cql.USCoreElements version 2.0.0-ballot |
 | USQualityCoreCommon | - | USQualityCoreCommon version 0.1.0-cibuild |

@@ -21,6 +21,24 @@ code "Fulfill": 'fulfill' from "TaskCodeSystem" display 'Fulfill'
 context Patient
 
 /*
+@description: Returns the value of the recorded extension for a Medication Administration Not Done
+*/
+define fluent function recorded(medicationAdministrationNotDone MedicationAdministrationNotDone):
+  medicationAdministrationNotDone.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded').value as FHIR.dateTime
+
+/*
+@description: Returns the value of the recorded extension for a Medication Administration Not Done
+*/
+define fluent function recorded(procedureNotDone ProcedureNotDone):
+  procedureNotDone.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded').value as FHIR.dateTime
+
+/*
+@description: Returns the value of the recorded extension for a Medication Administration Not Done
+*/
+define fluent function reasonRefused(serviceNotRequested ServiceNotRequested):
+  serviceNotRequested.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason').value as FHIR.CodeableConcept
+
+/*
 @description: Creates a list of integers from 1 to how many days are in the interval. Note, this wont create an index for
 the final day if it is less than 24 hours. This also includes the first 24 hour period.
 */

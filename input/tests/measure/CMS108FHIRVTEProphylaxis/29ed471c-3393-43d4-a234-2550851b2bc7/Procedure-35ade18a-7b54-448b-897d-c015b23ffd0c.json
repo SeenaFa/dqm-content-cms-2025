@@ -1,0 +1,23 @@
+{
+  "resourceType": "Procedure",
+  "id": "35ade18a-7b54-448b-897d-c015b23ffd0c",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedure" ]
+  },
+  "extension": [ {
+    "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded",
+    "valueDateTime": "2013-11-02T13:35:00.000+00:00"
+  } ],
+  "status": "completed",
+  "code": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "443448006",
+      "display": "Application of intermittent pneumatic compression device (procedure)"
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/29ed471c-3393-43d4-a234-2550851b2bc7"
+  },
+  "performedDateTime": "2026-11-01T09:00:00.000+00:00"
+}
