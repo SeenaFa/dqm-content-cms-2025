@@ -6,15 +6,13 @@ this library will be the MADiE environment once it fully supports use of QICore 
 */
 library SupplementalDataElements version '6.1.000'
 
-using QICore version '6.0.0-derived'
+using USQualityCore version '0.1.0-cibuild'
 using USCore version '6.1.0-derived'
 using FHIR version '4.0.1'
 
 include hl7.fhir.uv.cql.FHIRHelpers version '4.0.1' called FHIRHelpers
 include hl7.fhir.uv.cql.FHIRCommon version '2.0.0' called FHIRCommon
 include hl7.fhir.us.cql.USCoreCommon version '2.0.0-ballot' called USCommon
-
-include QICoreCommon version '5.1.000'
 
 codesystem "SNOMEDCT": 'http://snomed.info/sct'
 
@@ -36,7 +34,7 @@ define "SDE Ethnicity":
     }
 
 define "SDE Payer":
-  [QICore.Coverage: type in "Payer Type"] Payer
+  [USQualityCore.Coverage: type in "Payer Type"] Payer
     return {
       code: Payer.type,
       period: Payer.period

@@ -3,7 +3,7 @@ NOTE: For use by March 2026 US Realm Connectathon participants for internal use 
 */
 library AdvancedIllnessandFrailty version '2.1.000'
 
-using QICore version '6.0.0-derived'
+using USQualityCore version '0.1.0-cibuild'
 using USCore version '6.1.0-derived'
 using FHIR version '4.0.1'
 
@@ -32,14 +32,14 @@ parameter "Measurement Period" Interval<DateTime>
 context Patient
 
 define "Is Age 66 or Older with Advanced Illness and Frailty":
-   AgeInYearsAt(date from end of "Measurement Period")>= 66
+   AgeInYearsAt(date from end of "Measurement Period") >= 66
     and "Has Criteria Indicating Frailty"
     and ( "Has Advanced Illness in Year Before or During Measurement Period"
         or "Has Dementia Medications in Year Before or During Measurement Period"
     )
 
 define "Is Age 66 to 80 with Advanced Illness and Frailty or Is Age 81 or Older with Frailty":
-  ( AgeInYearsAt(date from end of "Measurement Period")in Interval[66, 80]
+  ( AgeInYearsAt(date from end of "Measurement Period") in Interval[66, 80]
       and "Has Criteria Indicating Frailty"
       and ( "Has Advanced Illness in Year Before or During Measurement Period"
           or "Has Dementia Medications in Year Before or During Measurement Period"
@@ -50,23 +50,21 @@ define "Is Age 66 to 80 with Advanced Illness and Frailty or Is Age 81 or Older 
     )
 
 define "Has Criteria Indicating Frailty":
-  exists ( (([QICore.DeviceRequest: "Frailty Device"]).isDeviceOrderPersonalUseDevices()) FrailtyDeviceOrder
+  exists ( (([USQualityCore.DeviceRequest: "Frailty Device"]).isDeviceOrderPersonalUseDevices()) FrailtyDeviceOrder
       where FrailtyDeviceOrder.authoredOn.toInterval() during day of "Measurement Period"
   )
-    // TODO: Shouldn't need to specify a code path here (see https://jira.hl7.org/browse/FHIR-53941)
-    or exists ( (([ObservationScreeningAssessment: code ~ "Medical equipment used"]).isAssessmentPerformed()) EquipmentUsed
+    or exists ( (([ObservationScreeningAssessment: "Medical equipment used"]).isAssessmentPerformed()) EquipmentUsed
         where EquipmentUsed.value as CodeableConcept in "Frailty Device" 
         and EquipmentUsed.effective.toInterval() ends during day of "Measurement Period"
     )
     // TODO: Consider whether to keep this as the union of problems and encounter diagnoses
-    or exists ( (([Condition: "Frailty Diagnosis"]).verified()) FrailtyDiagnosis
+    or exists ( (([FHIR.Condition: "Frailty Diagnosis"]).verified()) FrailtyDiagnosis
         where FrailtyDiagnosis.prevalenceInterval() overlaps day of "Measurement Period"
     )
-    or exists ( (([QICore.Encounter: "Frailty Encounter"]).isEncounterPerformed()) FrailtyEncounter
+    or exists ( (([USQualityCore.Encounter: "Frailty Encounter"]).isEncounterPerformed()) FrailtyEncounter
         where FrailtyEncounter.period overlaps day of "Measurement Period"
     )
-    // TODO: Shouldn't need to specify a code path here (see https://jira.hl7.org/browse/FHIR-53941)
-    or exists ( (([SimpleObservation: code in "Frailty Symptom"]).isSymptom()) FrailtySymptom
+    or exists ( (([USQualityCore.SimpleObservation: "Frailty Symptom"]).isSymptom()) FrailtySymptom
         where FrailtySymptom.effective.toInterval() overlaps day of "Measurement Period"
     )
 
@@ -82,11 +80,8 @@ define "Has Dementia Medications in Year Before or During Measurement Period":
   )
 
 define "Is Age 66 or Older Living Long Term in a Nursing Home":
-  AgeInYearsAt(date from 
-     end of "Measurement Period"
-  )>= 66
-    // TODO: Shouldn't need to specify a code path here (see https://jira.hl7.org/browse/FHIR-53941)
-    and ( ( Last( (([ObservationScreeningAssessment: code ~ "Housing status"]).isAssessmentPerformed()) HousingStatus    
+  AgeInYearsAt(date from end of "Measurement Period") >= 66
+    and ( ( Last( (([ObservationScreeningAssessment: "Housing status"]).isAssessmentPerformed()) HousingStatus    
           where HousingStatus.effective.toInterval() ends on or before 
           day of end of "Measurement Period"
           sort by 
@@ -94,9 +89,4 @@ define "Is Age 66 or Older Living Long Term in a Nursing Home":
       )) LastHousingStatus
         where LastHousingStatus.value ~ "Lives in nursing home (finding)"
     ) is not null
-
-/*
-TODO: This is moving to the US Common library (see https://jira.hl7.org/browse/FHIR-53940)
-*/
-define fluent function medicationRequestPeriod(medicationRequest FHIR.MedicationRequest):
-  CMD.MedicationRequestPeriod(medicationRequest)
+  

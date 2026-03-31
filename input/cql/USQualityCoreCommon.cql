@@ -1,18 +1,14 @@
 /*
-@description: Common terminologies and functions used in QICore-based CQL artifacts
-@comment: Beginning with QICore STU7, the modelinfo included with the published IG 
-is using [derived modelinfo](https://hl7.org/fhir/uv/cql/using-modelinfo.html#derived-modelinfo)
+@description: Common terminologies and functions used in USQualityCore-based CQL artifacts
+@comment: The modelinfo included with the published IG is using [derived modelinfo](https://hl7.org/fhir/uv/cql/using-modelinfo.html#derived-modelinfo)
 to enable reuse of data elements and libraries defined in the [US Core](https://hl7.org/fhir/us/core) 
-and [US CQL](https://hl7.org/fhir/us/cql) Common IGs. Most of the functionality defined in
-previous versions of this library are now either in [FHIRCommon](https://hl7.org/fhir/uv/cql/Library-FHIRCommon.html)
+and [US CQL](https://hl7.org/fhir/us/cql) Common IGs. This library is derived from the QICoreCommon shared library used in FHIR-based 
+quality measure specifications. However, most of the functionality that was defined in QICoreCommon is now either in [FHIRCommon](https://hl7.org/fhir/uv/cql/Library-FHIRCommon.html)
 or [USCoreCommon](https://hl7.org/fhir/us/cql/Library-USCoreCommon.html).
-
-NOTE: This library is not published in this IG, it is included here for convenience. The source of truth for
-this library will be the MADiE environment once it fully supports use of QICore STU6-derived.
 */
-library QICoreCommon version '5.1.000'
+library USQualityCoreCommon version '0.1.0-cibuild'
 
-using QICore version '6.0.0-derived'
+using USQualityCore version '0.1.0-cibuild'
 
 include hl7.fhir.uv.cql.FHIRHelpers version '4.0.1'
 include hl7.fhir.uv.cql.FHIRCommon version '2.0.0'
@@ -45,10 +41,4 @@ define fluent function daysInPeriod(Period Interval<DateTime>):
       dayIndex: DayIndex,
       dayPeriod: Interval[startPeriod, endPeriod)
     }
-
-/*
-@description: Returns the sex element as defined for the USCore patient profile
-@comment: This should be in USCoreCommon (see https://jira.hl7.org/browse/FHIR-53939)
-*/
-define fluent function sex(patient Patient):
-  patient.ext('http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex').value as FHIR.code
+  

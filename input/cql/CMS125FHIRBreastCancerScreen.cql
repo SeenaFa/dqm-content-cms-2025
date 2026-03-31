@@ -3,7 +3,7 @@ NOTE: For use by March 2026 US Realm Connectathon participants for internal use 
 */
 library CMS125FHIRBreastCancerScreen version '1.1.000'
 
-using QICore version '6.0.0-derived'
+using USQualityCore version '0.1.0-cibuild'
 using USCore version '6.1.0-derived'
 using FHIR version '4.0.1'
 
@@ -12,7 +12,7 @@ include hl7.fhir.uv.cql.FHIRCommon version '2.0.0' called FHIRCommon
 include hl7.fhir.us.cql.USCoreCommon version '2.0.0-ballot' called USCoreCommon
 include hl7.fhir.us.cql.USCoreElements version '2.0.0-ballot' called USCoreElements
 
-include QICoreCommon version '5.1.000' called QICoreCommon
+include USQualityCoreCommon version '0.1.0-cibuild' called USQualityCoreCommon
 include SupplementalDataElements version '6.1.000' called SDE
 include Status version '2.1.000' called Status
 include AdultOutpatientEncounters version '5.1.000' called AdultOutpatientEncounters
@@ -63,8 +63,8 @@ define "Denominator Exclusions":
     or PalliativeCare."Has Palliative Care in the Measurement Period"
 
 define "Right Mastectomy Diagnosis":
-  ( ( ( [Condition: "Status Post Right Mastectomy"] ) RightMastectomyCondition
-      union ( ( [Condition: "Unilateral Mastectomy, Unspecified Laterality"] ) UnilateralMastectomyDiagnosis
+  ( ( ( [FHIR.Condition: "Status Post Right Mastectomy"] ) RightMastectomyCondition
+      union ( ( [FHIR.Condition: "Unilateral Mastectomy, Unspecified Laterality"] ) UnilateralMastectomyDiagnosis
           where exists UnilateralMastectomyDiagnosis.bodySite S
             where S ~ "Right (qualifier value)"
       )
@@ -72,11 +72,11 @@ define "Right Mastectomy Diagnosis":
     where RightMastectomy.prevalenceInterval ( ) starts on or before end of "Measurement Period"
 
 define "Right Mastectomy Procedure":
-  ( ( [QICore.Procedure: "Unilateral Mastectomy Right"] ).isProcedurePerformed ( ) ) UnilateralMastectomyRightPerformed
+  ( ( [USQualityCore.Procedure: "Unilateral Mastectomy Right"] ).isProcedurePerformed ( ) ) UnilateralMastectomyRightPerformed
     where UnilateralMastectomyRightPerformed.performed.toInterval ( ) ends on or before end of "Measurement Period"
 
 define "Left Mastectomy Diagnosis":
-  ( ( ( [Condition: "Status Post Left Mastectomy"] )
+  ( ( ( [FHIR.Condition: "Status Post Left Mastectomy"] )
       union ( ( [Condition: "Unilateral Mastectomy, Unspecified Laterality"] ) UnilateralMastectomyDiagnosis
           where exists UnilateralMastectomyDiagnosis.bodySite S
             where S ~ "Left (qualifier value)"
@@ -85,23 +85,23 @@ define "Left Mastectomy Diagnosis":
     where LeftMastectomy.prevalenceInterval ( ) starts on or before end of "Measurement Period"
 
 define "Left Mastectomy Procedure":
-  ( ( [QICore.Procedure: "Unilateral Mastectomy Left"] ).isProcedurePerformed ( ) ) UnilateralMastectomyLeftPerformed
+  ( ( [USQualityCore.Procedure: "Unilateral Mastectomy Left"] ).isProcedurePerformed ( ) ) UnilateralMastectomyLeftPerformed
     where UnilateralMastectomyLeftPerformed.performed.toInterval ( ) ends on or before end of "Measurement Period"
 
 define "Bilateral Mastectomy Diagnosis":
-  ( ( [Condition: "History of bilateral mastectomy"] ).verified ( ) ) BilateralMastectomyHistory
+  ( ( [FHIR.Condition: "History of bilateral mastectomy"] ).verified ( ) ) BilateralMastectomyHistory
     where BilateralMastectomyHistory.prevalenceInterval ( ) starts on or before end of "Measurement Period"
 
 define "Bilateral Mastectomy Procedure":
-  ( ( [QICore.Procedure: "Bilateral Mastectomy"] ).isProcedurePerformed ( ) ) BilateralMastectomyPerformed
+  ( ( [USQualityCore.Procedure: "Bilateral Mastectomy"] ).isProcedurePerformed ( ) ) BilateralMastectomyPerformed
     where BilateralMastectomyPerformed.performed.toInterval ( ) ends on or before end of "Measurement Period"
 
 define "Numerator":
   exists ( 
-    ( ( [ObservationClinicalResult: "Mammography"] ).isDiagnosticStudyPerformed ( ) ) Mammogram
+    ( ( [USQualityCore.ObservationClinicalResult: "Mammography"] ).isDiagnosticStudyPerformed ( ) ) Mammogram
       where Mammogram.effective.toInterval ( ) ends during day of Interval["October 1 Two Years Prior to the Measurement Period", end of "Measurement Period"]
   ) or exists (
-    ( ( [DiagnosticReportNote: "Mammography"] ).complete ( ) ) Mammogram
+    ( ( [USQualityCore.DiagnosticReportNote: "Mammography"] ).complete ( ) ) Mammogram
       where Mammogram.effective.toInterval ( ) ends during day of Interval["October 1 Two Years Prior to the Measurement Period", end of "Measurement Period"]
   )
 

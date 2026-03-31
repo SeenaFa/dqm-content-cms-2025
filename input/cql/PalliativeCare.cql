@@ -3,7 +3,7 @@ NOTE: For use by March 2026 US Realm Connectathon participants for internal use 
 */
 library PalliativeCare version '2.1.000'
 
-using QICore version '6.0.0-derived'
+using USQualityCore version '0.1.0-cibuild'
 using USCore version '6.1.0-derived'
 using FHIR version '4.0.1'
 
@@ -26,16 +26,16 @@ context Patient
 
 define "Has Palliative Care in the Measurement Period":
   // TODO: Shouldn't need to specify a code path here (see https://jira.hl7.org/browse/FHIR-53941)
-  exists ((([ObservationScreeningAssessment: code ~ "Functional Assessment of Chronic Illness Therapy - Palliative Care Questionnaire (FACIT-Pal)"]).isAssessmentPerformed()) PalliativeAssessment
+  exists ((([USQualityCore.ObservationScreeningAssessment: code ~ "Functional Assessment of Chronic Illness Therapy - Palliative Care Questionnaire (FACIT-Pal)"]).isAssessmentPerformed()) PalliativeAssessment
       where PalliativeAssessment.effective.toInterval() overlaps day of "Measurement Period"
   )
     // TODO: Consider whether to keep this as the union of the problems and encounter diagnosis list? Anything enforced by the profiles that is expected but isn't stated here?
-    or exists ((([Condition: "Palliative Care Diagnosis"]).verified()) PalliativeDiagnosis
+    or exists ((([FHIR.Condition: "Palliative Care Diagnosis"]).verified()) PalliativeDiagnosis
         where PalliativeDiagnosis.prevalenceInterval() overlaps day of "Measurement Period"
     )
-    or exists ((([QICore.Encounter: "Palliative Care Encounter"]).isEncounterPerformed()) PalliativeEncounter
+    or exists ((([USQualityCore.Encounter: "Palliative Care Encounter"]).isEncounterPerformed()) PalliativeEncounter
         where PalliativeEncounter.period overlaps day of "Measurement Period"
     )
-    or exists ((([QICore.Procedure: "Palliative Care Intervention"]).isInterventionPerformed()) PalliativeIntervention
+    or exists ((([USQualityCore.Procedure: "Palliative Care Intervention"]).isInterventionPerformed()) PalliativeIntervention
         where PalliativeIntervention.performed.toInterval() overlaps day of "Measurement Period"
     )

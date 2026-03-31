@@ -1,13 +1,13 @@
 {
   "resourceType": "Library",
-  "id": "QICoreCommon",
+  "id": "USQualityCoreCommon",
   "meta": {
     "profile": [ "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary", "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablelibrary", "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary", "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-executablelibrary", "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library", "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-json-library", "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-xml-library" ]
   },
-  "url": "https://madie.cms.gov/Library/QICoreCommon",
-  "version": "5.1.000",
-  "name": "QICoreCommon",
-  "title": "QICoreCommon",
+  "url": "https://madie.cms.gov/Library/USQualityCoreCommon",
+  "version": "0.1.0-cibuild",
+  "name": "USQualityCoreCommon",
+  "title": "US Quality Core Common",
   "status": "active",
   "experimental": false,
   "type": {
@@ -18,13 +18,13 @@
   },
   "date": "2025-10-02T13:51:38+00:00",
   "publisher": "ICF",
-  "description": "Common terminologies and functions used in QI-Core-based CQL artifacts",
+  "description": "Common terminologies and functions used in US Quality Core-based CQL artifacts",
   "topic": [ {
     "text": "FHIR"
   }, {
     "text": "CQL"
   } ],
   "content": [ {
-    "id": "ig-loader-QICoreCommon.cql"
+    "id": "ig-loader-USQualityCoreCommon.cql"
   } ]
 }

@@ -3,7 +3,7 @@ NOTE: For use by March 2026 US Realm Connectathon participants for internal use 
 */
 library AdultOutpatientEncounters version '5.1.000'
 
-using QICore version '6.0.0-derived'
+using USQualityCore version '0.1.0-cibuild'
 using USCore version '6.1.0-derived'
 using FHIR version '4.0.1'
 
@@ -25,13 +25,16 @@ parameter "Measurement Period" Interval<DateTime>
 
 context Patient
 
-// NOTE: The QICore encounter here is not introducing any constraints, and so could be expressed directly using US Core
+// NOTE: The USQualityCore encounter here is not introducing any constraints, and so could be expressed directly using US Core
 define "Qualifying Encounters":
-  ( ( [QICore.Encounter: "Office Visit"]
-    union [QICore.Encounter: "Annual Wellness Visit"]
-    union [QICore.Encounter: "Preventive Care Services Established Office Visit, 18 and Up"]
-    union [QICore.Encounter: "Preventive Care Services Initial Office Visit, 18 and Up"]
-    union [QICore.Encounter: "Home Healthcare Services"]
-    union [QICore.Encounter: "Virtual Encounter"]
-    union [QICore.Encounter: "Telephone Visits"] ).isEncounterPerformed() ) ValidEncounter
+  ( ( 
+    [USQualityCore.Encounter: "Office Visit"]
+      union [USQualityCore.Encounter: "Annual Wellness Visit"]
+      union [USQualityCore.Encounter: "Preventive Care Services Established Office Visit, 18 and Up"]
+      union [USQualityCore.Encounter: "Preventive Care Services Initial Office Visit, 18 and Up"]
+      union [USQualityCore.Encounter: "Home Healthcare Services"]
+      union [USQualityCore.Encounter: "Virtual Encounter"]
+      union [USQualityCore.Encounter: "Telephone Visits"] 
+    ).isEncounterPerformed() 
+  ) ValidEncounter
     where ValidEncounter.period during day of "Measurement Period"
