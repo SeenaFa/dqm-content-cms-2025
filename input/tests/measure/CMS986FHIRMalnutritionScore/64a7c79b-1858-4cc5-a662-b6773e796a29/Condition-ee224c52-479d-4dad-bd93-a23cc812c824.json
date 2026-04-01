@@ -1,0 +1,44 @@
+{
+  "resourceType": "Condition",
+  "id": "ee224c52-479d-4dad-bd93-a23cc812c824",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns" ]
+  },
+  "clinicalStatus": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code": "remission",
+      "display": "Remission",
+      "userSelected": true
+    } ]
+  },
+  "verificationStatus": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code": "confirmed",
+      "display": "Confirmed",
+      "userSelected": true
+    } ]
+  },
+  "category": [ {
+    "coding": [ {
+      "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
+      "code": "health-concern",
+      "display": "Health Concern",
+      "userSelected": true
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "code": "E64.0",
+      "display": "Sequelae of protein-calorie malnutrition",
+      "userSelected": true
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/64a7c79b-1858-4cc5-a662-b6773e796a29"
+  },
+  "onsetDateTime": "2026-02-08T07:01:00.000Z",
+  "abatementDateTime": "2026-02-10T08:00:00.000Z"
+}

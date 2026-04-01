@@ -1,0 +1,28 @@
+{
+  "resourceType": "Encounter",
+  "id": "c4f84df3-e8be-461e-8d09-c19a10afd0fe",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter" ]
+  },
+  "status": "finished",
+  "class": {
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code": "OBSENC",
+    "display": "observation encounter",
+    "userSelected": true
+  },
+  "type": [ {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "448951000124107",
+      "display": "Admission to observation unit (procedure)"
+    } ]
+  } ],
+  "subject": {
+    "reference": "Patient/78a3078e-68a7-4715-9490-60eaf10111a4"
+  },
+  "period": {
+    "start": "2026-01-30T08:00:00.000+00:00",
+    "end": "2026-02-01T08:00:00.000+00:00"
+  }
+}

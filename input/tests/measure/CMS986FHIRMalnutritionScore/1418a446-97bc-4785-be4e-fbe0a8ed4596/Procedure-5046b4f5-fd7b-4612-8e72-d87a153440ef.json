@@ -1,0 +1,26 @@
+{
+  "resourceType": "Procedure",
+  "id": "5046b4f5-fd7b-4612-8e72-d87a153440ef",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedure" ]
+  },
+  "extension": [ {
+    "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded",
+    "valueDateTime": "2012-12-04T13:35:00.000Z"
+  } ],
+  "status": "completed",
+  "code": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "385763009",
+      "display": "Hospice care (regime/therapy)"
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/1418a446-97bc-4785-be4e-fbe0a8ed4596"
+  },
+  "performedPeriod": {
+    "start": "2026-02-05T08:00:00.000Z",
+    "end": "2026-02-05T08:15:00.000Z"
+  }
+}

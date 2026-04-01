@@ -1,0 +1,399 @@
+{
+  "resourceType": "MeasureReport",
+  "id": "b565490e-a150-40b4-9815-70fa8f2b3133",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/test-case-cqfm" ]
+  },
+  "contained": [ {
+    "resourceType": "Parameters",
+    "id": "d9e1ed25-44b5-4d2c-bc9e-4db720ff49e7-parameters",
+    "parameter": [ {
+      "name": "subject",
+      "valueString": "47643903-6f24-428e-a354-f4a59d006ddf"
+    } ]
+  } ],
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/cqf-inputParameters",
+    "valueReference": {
+      "reference": "#d9e1ed25-44b5-4d2c-bc9e-4db720ff49e7-parameters"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-testCaseDescription",
+    "valueMarkdown": "2 Encounters: 1-Referral, assessment (mod), dx, care plan (4/4, 100%)\n2-Referral, assessment (mod), no dx, no care plan (2/4, 50%)"
+  } ],
+  "modifierExtension": [ {
+    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-isTestCase",
+    "valueBoolean": true
+  } ],
+  "status": "complete",
+  "type": "individual",
+  "measure": "https://madie.cms.gov/Measure/CMS986FHIRMalnutritionScore",
+  "period": {
+    "start": "2026-01-01",
+    "end": "2026-12-31"
+  },
+  "group": [ {
+    "id": "Group_1",
+    "population": [ {
+      "id": "InitialPopulation_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "initial-population",
+          "display": "Initial Population"
+        } ]
+      },
+      "count": 2
+    }, {
+      "id": "MeasurePopulation_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population",
+          "display": "Measure Population"
+        } ]
+      },
+      "count": 2
+    }, {
+      "id": "MeasurePopulationExclusion_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population-exclusion",
+          "display": "Measure Population Exclusion"
+        } ]
+      },
+      "count": 0
+    }, {
+      "id": "MeasureObservation_1_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population-observation",
+          "display": "Measure Population Observation"
+        } ]
+      },
+      "count": 1
+    }, {
+      "id": "MeasureObservation_1_2",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population-observation",
+          "display": "Measure Population Observation"
+        } ]
+      },
+      "count": 1
+    } ],
+    "measureScore": {
+      "value": 0.0
+    }
+  }, {
+    "id": "Group_2",
+    "population": [ {
+      "id": "InitialPopulation_2",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "initial-population",
+          "display": "Initial Population"
+        } ]
+      },
+      "count": 2
+    }, {
+      "id": "MeasurePopulation_2",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population",
+          "display": "Measure Population"
+        } ]
+      },
+      "count": 2
+    }, {
+      "id": "MeasurePopulationExclusion_2",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population-exclusion",
+          "display": "Measure Population Exclusion"
+        } ]
+      },
+      "count": 0
+    }, {
+      "id": "MeasureObservation_2_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population-observation",
+          "display": "Measure Population Observation"
+        } ]
+      },
+      "count": 1
+    }, {
+      "id": "MeasureObservation_2_2",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population-observation",
+          "display": "Measure Population Observation"
+        } ]
+      },
+      "count": 1
+    } ],
+    "measureScore": {
+      "value": 0.0
+    }
+  }, {
+    "id": "Group_3",
+    "population": [ {
+      "id": "InitialPopulation_3",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "initial-population",
+          "display": "Initial Population"
+        } ]
+      },
+      "count": 2
+    }, {
+      "id": "MeasurePopulation_3",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population",
+          "display": "Measure Population"
+        } ]
+      },
+      "count": 2
+    }, {
+      "id": "MeasurePopulationExclusion_3",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population-exclusion",
+          "display": "Measure Population Exclusion"
+        } ]
+      },
+      "count": 0
+    }, {
+      "id": "MeasureObservation_3_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population-observation",
+          "display": "Measure Population Observation"
+        } ]
+      },
+      "count": 0
+    }, {
+      "id": "MeasureObservation_3_2",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population-observation",
+          "display": "Measure Population Observation"
+        } ]
+      },
+      "count": 0
+    } ],
+    "measureScore": {
+      "value": 0.0
+    }
+  }, {
+    "id": "Group_4",
+    "population": [ {
+      "id": "InitialPopulation_4",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "initial-population",
+          "display": "Initial Population"
+        } ]
+      },
+      "count": 2
+    }, {
+      "id": "MeasurePopulation_4",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population",
+          "display": "Measure Population"
+        } ]
+      },
+      "count": 2
+    }, {
+      "id": "MeasurePopulationExclusion_4",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population-exclusion",
+          "display": "Measure Population Exclusion"
+        } ]
+      },
+      "count": 0
+    }, {
+      "id": "MeasureObservation_4_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population-observation",
+          "display": "Measure Population Observation"
+        } ]
+      },
+      "count": 1
+    }, {
+      "id": "MeasureObservation_4_2",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population-observation",
+          "display": "Measure Population Observation"
+        } ]
+      },
+      "count": 0
+    } ],
+    "measureScore": {
+      "value": 0.0
+    }
+  }, {
+    "id": "Group_5",
+    "population": [ {
+      "id": "InitialPopulation_5",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "initial-population",
+          "display": "Initial Population"
+        } ]
+      },
+      "count": 2
+    }, {
+      "id": "MeasurePopulation_5",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population",
+          "display": "Measure Population"
+        } ]
+      },
+      "count": 2
+    }, {
+      "id": "MeasurePopulationExclusion_5",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population-exclusion",
+          "display": "Measure Population Exclusion"
+        } ]
+      },
+      "count": 0
+    }, {
+      "id": "MeasureObservation_5_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population-observation",
+          "display": "Measure Population Observation"
+        } ]
+      },
+      "count": 3
+    }, {
+      "id": "MeasureObservation_5_2",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population-observation",
+          "display": "Measure Population Observation"
+        } ]
+      },
+      "count": 2
+    } ],
+    "measureScore": {
+      "value": 0.0
+    }
+  }, {
+    "id": "Group_6",
+    "population": [ {
+      "id": "InitialPopulation_6",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "initial-population",
+          "display": "Initial Population"
+        } ]
+      },
+      "count": 2
+    }, {
+      "id": "MeasurePopulation_6",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population",
+          "display": "Measure Population"
+        } ]
+      },
+      "count": 2
+    }, {
+      "id": "MeasurePopulationExclusion_6",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population-exclusion",
+          "display": "Measure Population Exclusion"
+        } ]
+      },
+      "count": 0
+    }, {
+      "id": "MeasureObservation_6_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population-observation",
+          "display": "Measure Population Observation"
+        } ]
+      },
+      "count": 75
+    }, {
+      "id": "MeasureObservation_6_2",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "measure-population-observation",
+          "display": "Measure Population Observation"
+        } ]
+      },
+      "count": 50
+    } ],
+    "measureScore": {
+      "value": 0.0
+    }
+  } ],
+  "evaluatedResource": [ {
+    "reference": "Patient/47643903-6f24-428e-a354-f4a59d006ddf"
+  }, {
+    "reference": "Encounter/75d9bd9e-979f-4bcb-9e57-2b6ab0c993e3"
+  }, {
+    "reference": "Condition/755b8f07-e315-4102-a5fb-f78d164d59f1"
+  }, {
+    "reference": "Observation/7ebd00f7-6cd0-46d3-b6b2-69ee2ca75820"
+  }, {
+    "reference": "Procedure/7976d55b-81f5-4c4c-b25e-262082175586"
+  }, {
+    "reference": "Procedure/0f1e3511-ed14-4585-8358-9414ed2ac8f7"
+  }, {
+    "reference": "Coverage/3cb67cec-8ff6-47f3-b67d-7a5a38a837eb"
+  }, {
+    "reference": "Encounter/4e19f10c-7996-4e73-9738-260d6bee2128"
+  }, {
+    "reference": "Condition/a3a09430-0c13-4c08-8541-9df403d42a02"
+  }, {
+    "reference": "Observation/ca587579-be4d-497e-b9ab-6ce4354364e2"
+  }, {
+    "reference": "Procedure/049d4905-cbb1-446f-93b1-ec6d5adece41"
+  }, {
+    "reference": "Coverage/5d840c5b-3f75-4b10-9ebe-431919be0789"
+  }, {
+    "reference": "Organization/c039906e-c906-4ce7-966f-8b7be2b78f7b"
+  } ]
+}

@@ -1,0 +1,30 @@
+{
+  "resourceType": "Procedure",
+  "id": "8a0c4a31-8987-4f3f-bb82-70ef3a06d8bd",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedure" ]
+  },
+  "extension": [ {
+    "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded",
+    "valueDateTime": "2026-02-02T11:30:00.000Z"
+  } ],
+  "status": "completed",
+  "code": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "1279742004",
+      "display": "Development of nutrition care plan (procedure)"
+    } ],
+    "text": "Development of nutrition care plan (procedure)"
+  },
+  "subject": {
+    "reference": "Patient/179ed91e-44b7-4be7-a720-b7b09fcbb4d3"
+  },
+  "encounter": {
+    "reference": "Encounter/Not182IPPFAIL"
+  },
+  "performedPeriod": {
+    "start": "2026-02-01T11:30:00.000Z",
+    "end": "2026-02-07T08:15:00.000Z"
+  }
+}

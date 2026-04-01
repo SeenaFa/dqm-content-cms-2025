@@ -1,0 +1,35 @@
+{
+  "resourceType": "Observation",
+  "id": "efc0dd01-b970-495c-989b-4db7a6d09e0b",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-screening-assessment" ]
+  },
+  "status": "final",
+  "category": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code": "survey",
+      "display": "Survey"
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "75304-6",
+      "display": "Nutrition status observation panel",
+      "userSelected": true
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/b06b5114-a397-433a-9b32-b9b91f54d08c"
+  },
+  "effectiveDateTime": "2026-10-01T10:00:00.000+00:00",
+  "valueCodeableConcept": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "371597004",
+      "display": "Emaciated (finding)",
+      "userSelected": true
+    } ]
+  }
+}

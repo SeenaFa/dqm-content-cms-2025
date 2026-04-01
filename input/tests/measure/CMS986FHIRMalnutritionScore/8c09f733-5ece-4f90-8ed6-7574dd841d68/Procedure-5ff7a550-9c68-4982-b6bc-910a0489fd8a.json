@@ -1,0 +1,30 @@
+{
+  "resourceType": "Procedure",
+  "id": "5ff7a550-9c68-4982-b6bc-910a0489fd8a",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedure" ]
+  },
+  "extension": [ {
+    "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded",
+    "valueDateTime": "2026-07-02T11:30:00.000Z"
+  } ],
+  "status": "completed",
+  "code": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "413315001",
+      "display": "Nutrition / feeding management (regime/therapy)"
+    } ],
+    "text": "Nutrition/feeding management (regime/therapy)"
+  },
+  "subject": {
+    "reference": "Patient/8c09f733-5ece-4f90-8ed6-7574dd841d68"
+  },
+  "encounter": {
+    "reference": "Encounter/ScreAtriRefAsseNotmDxCp2MSROBSPass2"
+  },
+  "performedPeriod": {
+    "start": "2026-02-01T11:30:00.000Z",
+    "end": "2026-02-07T08:15:00.000Z"
+  }
+}

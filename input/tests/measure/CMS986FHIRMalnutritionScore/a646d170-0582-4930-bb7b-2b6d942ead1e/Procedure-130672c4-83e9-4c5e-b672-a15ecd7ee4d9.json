@@ -1,0 +1,30 @@
+{
+  "resourceType": "Procedure",
+  "id": "130672c4-83e9-4c5e-b672-a15ecd7ee4d9",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedure" ]
+  },
+  "extension": [ {
+    "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded",
+    "valueDateTime": "2026-02-02T11:30:00.000Z"
+  } ],
+  "status": "completed",
+  "code": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "386373004",
+      "display": "Nutrition therapy (regime/therapy)"
+    } ],
+    "text": "Nutrition therapy (regime/therapy)"
+  },
+  "subject": {
+    "reference": "Patient/a646d170-0582-4930-bb7b-2b6d942ead1e"
+  },
+  "encounter": {
+    "reference": "Encounter/DxBetwEncountersMSROBSPass4"
+  },
+  "performedPeriod": {
+    "start": "2026-02-01T11:30:00.000Z",
+    "end": "2026-02-07T08:15:00.000Z"
+  }
+}

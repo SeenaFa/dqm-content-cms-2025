@@ -1,0 +1,30 @@
+{
+  "resourceType": "Procedure",
+  "id": "3e35731e-294b-4d11-9f49-dacc637d3d3c",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedure" ]
+  },
+  "extension": [ {
+    "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded",
+    "valueDateTime": "2025-02-02T11:30:00.000+00:00"
+  } ],
+  "status": "completed",
+  "code": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "445101000124100",
+      "display": "Collaborating in nutrition therapy (procedure)"
+    } ],
+    "text": "Collaborating in nutrition therapy (procedure)"
+  },
+  "subject": {
+    "reference": "Patient/f1d12297-45c4-4984-8e28-02bf21d84efd"
+  },
+  "encounter": {
+    "reference": "Encounter/ScreAtriRefAsseModNodxCp2MSROBSPass2"
+  },
+  "performedPeriod": {
+    "start": "2026-07-15T08:00:00.000+00:00",
+    "end": "2026-07-15T08:15:00.000+00:00"
+  }
+}

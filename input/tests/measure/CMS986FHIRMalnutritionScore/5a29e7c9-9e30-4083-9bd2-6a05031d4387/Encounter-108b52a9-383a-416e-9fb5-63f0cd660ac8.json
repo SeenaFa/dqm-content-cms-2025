@@ -1,0 +1,26 @@
+{
+  "resourceType": "Encounter",
+  "id": "108b52a9-383a-416e-9fb5-63f0cd660ac8",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-encounter" ]
+  },
+  "status": "finished",
+  "class": {
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code": "IMP",
+    "display": "inpatient encounter"
+  },
+  "type": [ {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "183452005"
+    } ]
+  } ],
+  "subject": {
+    "reference": "Patient/5a29e7c9-9e30-4083-9bd2-6a05031d4387"
+  },
+  "period": {
+    "start": "2026-08-21T08:00:00.000+00:00",
+    "end": "2026-08-28T08:15:00.000+00:00"
+  }
+}

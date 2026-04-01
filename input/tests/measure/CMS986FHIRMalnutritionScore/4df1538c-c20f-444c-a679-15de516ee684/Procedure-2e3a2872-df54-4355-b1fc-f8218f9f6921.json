@@ -1,0 +1,30 @@
+{
+  "resourceType": "Procedure",
+  "id": "2e3a2872-df54-4355-b1fc-f8218f9f6921",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedure" ]
+  },
+  "extension": [ {
+    "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded",
+    "valueDateTime": "2026-02-02T11:30:00.000+00:00"
+  } ],
+  "status": "completed",
+  "code": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "410172000",
+      "display": "Nutrition care management (procedure)"
+    } ],
+    "text": "Nutrition care management (procedure)"
+  },
+  "subject": {
+    "reference": "Patient/4df1538c-c20f-444c-a679-15de516ee684"
+  },
+  "encounter": {
+    "reference": "Encounter/NoscreRefNoasseNodxCpMSROBSPass2"
+  },
+  "performedPeriod": {
+    "start": "2026-03-01T11:30:00.000+00:00",
+    "end": "2026-03-05T08:15:00.000+00:00"
+  }
+}

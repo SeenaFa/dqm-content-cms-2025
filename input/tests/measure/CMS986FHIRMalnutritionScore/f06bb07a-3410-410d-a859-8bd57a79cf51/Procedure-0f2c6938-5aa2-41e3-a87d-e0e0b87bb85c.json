@@ -1,0 +1,30 @@
+{
+  "resourceType": "Procedure",
+  "id": "0f2c6938-5aa2-41e3-a87d-e0e0b87bb85c",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedure" ]
+  },
+  "extension": [ {
+    "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded",
+    "valueDateTime": "2026-02-23T11:30:00.000+00:00"
+  } ],
+  "status": "completed",
+  "code": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "410175003",
+      "display": "Dietary regime management (procedure)"
+    } ],
+    "text": "Dietary regime management (procedure)"
+  },
+  "subject": {
+    "reference": "Patient/f06bb07a-3410-410d-a859-8bd57a79cf51"
+  },
+  "encounter": {
+    "reference": "Encounter/NoscreRefAsseModDxCp2MSROBSPass4"
+  },
+  "performedPeriod": {
+    "start": "2026-02-23T11:30:00.000+00:00",
+    "end": "2026-02-25T08:15:00.000+00:00"
+  }
+}

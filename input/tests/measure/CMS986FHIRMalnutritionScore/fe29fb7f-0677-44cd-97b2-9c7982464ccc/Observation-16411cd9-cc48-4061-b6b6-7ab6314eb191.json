@@ -1,0 +1,35 @@
+{
+  "resourceType": "Observation",
+  "id": "16411cd9-cc48-4061-b6b6-7ab6314eb191",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-screening-assessment" ]
+  },
+  "status": "final",
+  "category": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code": "survey",
+      "display": "Survey"
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "75285-7",
+      "display": "Comparative nutrition assessment standards panel",
+      "userSelected": true
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/fe29fb7f-0677-44cd-97b2-9c7982464ccc"
+  },
+  "effectiveDateTime": "2026-03-01T10:00:00.000Z",
+  "valueCodeableConcept": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "LA33702-4",
+      "display": "Not malnourished",
+      "userSelected": true
+    } ]
+  }
+}

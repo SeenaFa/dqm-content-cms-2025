@@ -1,0 +1,35 @@
+{
+  "resourceType": "Observation",
+  "id": "4699b8f4-ffdb-4617-a319-fd98772d21a9",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-screening-assessment" ]
+  },
+  "status": "final",
+  "category": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code": "survey",
+      "display": "Survey"
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "101807-6",
+      "display": "Malnutrition risk screen results indicator",
+      "userSelected": true
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/cf475a5c-e979-46c8-a596-8671d8a7acc5"
+  },
+  "effectiveDateTime": "2026-07-02T09:00:00.000+00:00",
+  "valueCodeableConcept": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "LA27538-0",
+      "display": "At risk for malnutrition",
+      "userSelected": true
+    } ]
+  }
+}

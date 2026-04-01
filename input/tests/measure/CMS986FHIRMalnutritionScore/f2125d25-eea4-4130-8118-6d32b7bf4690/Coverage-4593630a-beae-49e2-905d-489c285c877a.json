@@ -1,0 +1,33 @@
+{
+  "resourceType": "Coverage",
+  "id": "4593630a-beae-49e2-905d-489c285c877a",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-coverage" ]
+  },
+  "status": "active",
+  "type": {
+    "coding": [ {
+      "system": "https://nahdo.org/sopt",
+      "version": "9.2",
+      "code": "11",
+      "display": "Medicare Managed Care (Includes Medicare Advantage Plans)"
+    } ]
+  },
+  "subscriberId": "97531",
+  "beneficiary": {
+    "reference": "Patient/f2125d25-eea4-4130-8118-6d32b7bf4690"
+  },
+  "dependent": "0",
+  "relationship": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship",
+      "code": "self"
+    } ]
+  },
+  "period": {
+    "start": "2025-10-01T00:00:00.000Z"
+  },
+  "payor": [ {
+    "reference": "Organization/754ee4ac-75a8-4d25-bc4e-c01076d5cb0e"
+  } ]
+}

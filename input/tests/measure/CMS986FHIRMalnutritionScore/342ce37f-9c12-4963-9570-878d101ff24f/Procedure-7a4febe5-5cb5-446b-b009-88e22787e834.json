@@ -1,0 +1,30 @@
+{
+  "resourceType": "Procedure",
+  "id": "7a4febe5-5cb5-446b-b009-88e22787e834",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-procedure" ]
+  },
+  "extension": [ {
+    "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded",
+    "valueDateTime": "2026-02-01T11:30:00.000+00:00"
+  } ],
+  "status": "completed",
+  "code": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "306165000",
+      "display": "Referral to hospital-based dietetics service (procedure)"
+    } ],
+    "text": "Referral to hospital-based dietetics service (procedure)"
+  },
+  "subject": {
+    "reference": "Patient/342ce37f-9c12-4963-9570-878d101ff24f"
+  },
+  "encounter": {
+    "reference": "Encounter/ScreAtriRefNoasseNodxNocpMSROBSPass2"
+  },
+  "performedPeriod": {
+    "start": "2026-07-02T11:30:00.000+00:00",
+    "end": "2026-07-07T08:15:00.000+00:00"
+  }
+}

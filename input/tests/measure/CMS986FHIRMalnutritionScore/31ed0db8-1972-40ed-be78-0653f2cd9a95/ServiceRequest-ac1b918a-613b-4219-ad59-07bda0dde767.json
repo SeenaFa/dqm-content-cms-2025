@@ -1,0 +1,20 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "ac1b918a-613b-4219-ad59-07bda0dde767",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicerequest" ]
+  },
+  "status": "completed",
+  "intent": "order",
+  "code": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "306354000",
+      "display": "Referral to hospital-based dietitian (procedure)"
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/31ed0db8-1972-40ed-be78-0653f2cd9a95"
+  },
+  "authoredOn": "2026-05-02T00:00:00.000Z"
+}

@@ -16,6 +16,7 @@ For the purposes of this discussion, we will be focusing on the following 5 meas
 | CMS130: Colon Cancer Screening | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/CMS130FHIRColorectalCancerScrn.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/CMS130FHIRColorectalCancerScrn.cql)* |
 | CMS135: CMS135FHIRACEIorARBorARNIforHF | | |
 | CMS165: Controlling High Blood Pressure | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/CMS165FHIRControllingHighBP.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/CMS165FHIRControllingHighBP.cql)* |
+| CMS986: Global Malnutrition Score | | |
 
 Note: Measures marked with an asterisk are still in progress
 

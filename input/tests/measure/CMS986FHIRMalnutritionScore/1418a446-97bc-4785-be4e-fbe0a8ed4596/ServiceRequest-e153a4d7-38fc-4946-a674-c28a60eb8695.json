@@ -1,0 +1,31 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "e153a4d7-38fc-4946-a674-c28a60eb8695",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicenotrequested" ]
+  },
+  "extension": [ {
+    "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason",
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://snomed.info/sct",
+        "code": "183945002",
+        "display": "Procedure declined for religious reason (situation)"
+      } ]
+    }
+  } ],
+  "status": "unknown",
+  "intent": "order",
+  "doNotPerform": true,
+  "code": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "385763009",
+      "display": "Hospice care (regime/therapy)"
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/1418a446-97bc-4785-be4e-fbe0a8ed4596"
+  },
+  "authoredOn": "2026-02-05T08:00:00.000Z"
+}

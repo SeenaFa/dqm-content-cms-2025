@@ -1,0 +1,35 @@
+{
+  "resourceType": "Observation",
+  "id": "f648d259-333a-4ba1-9117-fc5d1d611ee5",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-observation-screening-assessment" ]
+  },
+  "status": "final",
+  "category": [ {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code": "survey",
+      "display": "Survey"
+    } ]
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://loinc.org",
+      "code": "75304-6",
+      "display": "Nutrition status observation panel",
+      "userSelected": true
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/c3cf98f8-3edb-4f43-806d-5fc031a7e476"
+  },
+  "effectiveDateTime": "2026-02-23T10:00:00.000+00:00",
+  "valueCodeableConcept": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "190606006",
+      "display": "Moderate protein energy malnutrition (disorder)",
+      "userSelected": true
+    } ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "4adbe6d7-99d1-437b-bb9e-a1ec44617eb7",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-servicenotrequested" ]
+  },
+  "extension": [ {
+    "url": "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-doNotPerformReason",
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://snomed.info/sct",
+        "code": "183945002",
+        "display": "Procedure declined for religious reason (situation)"
+      } ]
+    }
+  } ],
+  "status": "unknown",
+  "intent": "order",
+  "doNotPerform": true,
+  "code": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "306354000",
+      "display": "Referral to hospital-based dietitian (procedure)"
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/64aff06b-abb4-4ff1-8254-071ba36225df"
+  },
+  "authoredOn": "2026-02-02T08:00:00.000Z"
+}
