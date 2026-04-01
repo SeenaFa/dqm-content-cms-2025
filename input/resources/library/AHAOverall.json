@@ -1,0 +1,31 @@
+{
+  "resourceType": "Library",
+  "id": "AHAOverall",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary", "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablelibrary", "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary", "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-executablelibrary", "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library", "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-json-library", "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-xml-library" ]
+  },
+  "language": "en",
+  "url": "https://madie.cms.gov/Library/AHAOverall",
+  "version": "5.1.000",
+  "name": "AHAOverall",
+  "title": "AHAOverall",
+  "status": "active",
+  "experimental": false,
+  "type": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/library-type",
+      "code": "logic-library"
+    } ]
+  },
+  "date": "2025-08-22T19:19:03+00:00",
+  "publisher": "Telligen",
+  "description": "This version of the AHAOverall library is patterned after HFCommonDefinitionsQDM library version '3.0.000'",
+  "topic": [ {
+    "text": "FHIR"
+  }, {
+    "text": "CQL"
+  } ],
+  "content": [ {
+    "id": "ig-loader-AHAOverall.cql"
+  } ]
+}
