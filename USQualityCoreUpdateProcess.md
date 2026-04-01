@@ -16,6 +16,7 @@ For the purposes of this discussion, we will be focusing on the following 5 meas
 | CMS130: Colon Cancer Screening | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/CMS130FHIRColorectalCancerScrn.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/CMS130FHIRColorectalCancerScrn.cql)* |
 | CMS135: CMS135FHIRACEIorARBorARNIforHF | | |
 | CMS165: Controlling High Blood Pressure | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/CMS165FHIRControllingHighBP.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/CMS165FHIRControllingHighBP.cql)* |
+| CMS334: Cesarean Birth | | |
 | CMS986: Global Malnutrition Score | | |
 | CMS1206: Excessive Radiation: Outpatient Quality Reporting | | |
 | CMS1264: ECATREHQR | | |
@@ -34,6 +35,7 @@ These are all EC measures that make use of the following shared libraries:
 | CumulativeMedicationDuration | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/CumulativeMedicationDuration.cql) | [USQualityCore](https://build.fhir.org/ig/HL7/us-cql-ig/en/Library-CumulativeMedicationDuration.html) |
 | Hospice | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/Hospice.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/Hospice.cql) |
 | PalliativeCare | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/PalliativeCare.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/PalliativeCare.cql) |
+| PCMaternal | | |
 | QICoreCommon | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/QICoreCommon.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/QICoreCommon.cql) |
 | Status | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/Status.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/Status.cql) |
 | SupplementalDataElements | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/SupplementalDataElements.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/SupplementalDataElements.cql) |
@@ -99,6 +101,7 @@ Once the models have been updated, we need to update the shared library referenc
 | Hospice | 6.18.000 | 7.1.000 |
 | NHSNHelpers | 0.1.000 | 1.1.000 |
 | PalliativeCare | 1.18.000 | 2.1.000 |
+| PCMaternal | 5.25.000 | 6.1.000 |
 | QICoreCommon | 4.0.000 | (refactored into FHIRCommon, USCoreCommon, and USQualityCoreCommon) |
 | Status | 1.15.000 | 2.1.000 |
 | SupplementalDataElements | 5.1.000 | 6.1.000 |

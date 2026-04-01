@@ -1,0 +1,36 @@
+{
+  "resourceType": "Library",
+  "id": "PCMaternal",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary", "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablelibrary", "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary", "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-executablelibrary", "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library", "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-json-library", "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-xml-library" ]
+  },
+  "language": "en",
+  "url": "https://madie.cms.gov/Library/PCMaternal",
+  "identifier": [ {
+    "use": "official",
+    "system": "https://madie.cms.gov/login",
+    "value": "68560e060d70b65363c69eea"
+  } ],
+  "version": "6.1.000",
+  "name": "PCMaternal",
+  "title": "PCMaternal",
+  "status": "active",
+  "experimental": false,
+  "type": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/library-type",
+      "code": "logic-library"
+    } ]
+  },
+  "date": "2025-08-25T14:51:15+00:00",
+  "publisher": "The Joint Commission",
+  "description": "This library specifies common data elements used by PC01, PC02, PC07.",
+  "topic": [ {
+    "text": "FHIR"
+  }, {
+    "text": "CQL"
+  } ],
+  "content": [ {
+    "id": "ig-loader-PCMaternal.cql"
+  } ]
+}

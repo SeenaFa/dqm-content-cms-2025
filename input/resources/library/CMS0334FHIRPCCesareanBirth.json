@@ -1,0 +1,36 @@
+{
+  "resourceType": "Library",
+  "id": "CMS0334FHIRPCCesareanBirth",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary", "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablelibrary", "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary", "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-executablelibrary", "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library", "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-json-library", "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-xml-library" ]
+  },
+  "language": "en",
+  "url": "https://madie.cms.gov/Library/CMS0334FHIRPCCesareanBirth",
+  "identifier": [ {
+    "use": "official",
+    "system": "https://madie.cms.gov/login",
+    "value": "CMS0334FHIRPCCesareanBirth"
+  } ],
+  "version": "1.1.000",
+  "name": "CMS0334FHIRPCCesareanBirth",
+  "title": "CMS0334FHIRPCCesareanBirth",
+  "status": "active",
+  "experimental": false,
+  "type": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/library-type",
+      "code": "logic-library"
+    } ]
+  },
+  "date": "2025-08-25T14:51:14+00:00",
+  "publisher": "The Joint Commission",
+  "description": "CMS0334FHIRPCCesareanBirth",
+  "topic": [ {
+    "text": "FHIR"
+  }, {
+    "text": "CQL"
+  } ],
+  "content": [ {
+    "id": "ig-loader-CMS0334FHIRPCCesareanBirth.cql"
+  } ]
+}
