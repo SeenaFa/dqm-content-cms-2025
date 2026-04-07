@@ -2,7 +2,7 @@
   "resourceType": "Condition",
   "id": "dc87fe57-f673-4cb6-9470-47b581683368",
   "meta": {
-    "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-enounter-diagnosis" ]
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-enounter-diagnosis" ]
   },
   "clinicalStatus": {
     "coding": [ {
