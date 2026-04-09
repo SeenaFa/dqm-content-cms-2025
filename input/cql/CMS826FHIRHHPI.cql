@@ -142,10 +142,10 @@ define "Skin Exams With Pressure Injury":
 
 
 
-define fluent function isIn(observation Choice<"SimpleObservation", "ObservationClinicalResult">, vset ValueSet):
+define fluent function isIn(observation Choice<"SimpleObservation", "ObservationClinicalResult">, vset System.ValueSet):
   observation.status in { 'final', 'amended', 'corrected' }
     and observation.effective.toInterval ( ) during "Measurement Period"
     and case
-      when observation is SimpleObservation then ( observation as SimpleObservation ).value as CodeableConceptin vset
-      when observation is ObservationClinicalResult then ( observation as ObservationClinicalResult ).value as CodeableConcept in vset 
+      when observation is SimpleObservation then ( observation as SimpleObservation ).value as FHIR.CodeableConcept in vset
+      when observation is ObservationClinicalResult then ( observation as ObservationClinicalResult ).value as FHIR.CodeableConcept in vset 
       else null end

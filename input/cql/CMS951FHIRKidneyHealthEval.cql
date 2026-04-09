@@ -120,7 +120,7 @@ define "Has Urine Albumin Creatinine Ratio Test Performed During Measurement Per
       where uACRTest.effective.toInterval ( ) during day of "Measurement Period"
         and uACRTest.status in { 'final', 'amended', 'corrected' }
         and ( ( uACRTest.value is Quantity )
-            or ( uACRTest.value as CodeableConcept in "Undetectable Lab Result Value" )
+            or ( uACRTest.value as FHIR.CodeableConcept in "Undetectable Lab Result Value" )
         )
   )
 

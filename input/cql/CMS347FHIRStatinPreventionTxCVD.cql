@@ -123,7 +123,7 @@ define "ASCVD Diagnosis or Procedure before End of Measurement Period":
       union [ConditionProblemsHealthConcerns: "Atherosclerosis and Peripheral Arterial Disease"]
       union [ConditionProblemsHealthConcerns: "Ischemic Heart Disease or Other Related Diagnoses"]
       union [ConditionProblemsHealthConcerns: "Stable and Unstable Angina"] ) ASCVDDiagnosis
-      where ASCVDDiagnosis.prevalenceInterval ( ) starts on or before day of end of "Measurement Period"
+      where ASCVDDiagnosis.onset.toInterval ( ) starts on or before day of end of "Measurement Period"
         and ASCVDDiagnosis.isVerified ( )
   )
     union ( ( [Procedure: "PCI"]
@@ -147,13 +147,13 @@ define "Has Allergy to Statin":
 
 define "Has Diabetes Diagnosis":
   exists ( [ConditionProblemsHealthConcerns: "Diabetes"] DiabetesDiagnosis
-      where DiabetesDiagnosis.prevalenceInterval ( ) overlaps day of "Measurement Period"
+      where DiabetesDiagnosis.onset.toInterval ( ) overlaps day of "Measurement Period"
         and DiabetesDiagnosis.isVerified ( )
   )
 
 define "Has ESRD Diagnosis":
   exists ( [ConditionProblemsHealthConcerns: "End Stage Renal Disease"] ESRD
-      where ESRD.prevalenceInterval ( ) overlaps day of "Measurement Period"
+      where ESRD.onset.toInterval ( ) overlaps day of "Measurement Period"
         and ESRD.isVerified ( )
   )
 
@@ -161,7 +161,7 @@ define "Has Hepatitis or Liver Disease Diagnosis":
   exists ( ( [ConditionProblemsHealthConcerns: "Hepatitis A"]
       union [ConditionProblemsHealthConcerns: "Hepatitis B"]
       union [ConditionProblemsHealthConcerns: "Liver Disease"] ) HepatitisLiverDisease
-      where HepatitisLiverDisease.prevalenceInterval ( ) overlaps day of "Measurement Period"
+      where HepatitisLiverDisease.onset.toInterval ( ) overlaps day of "Measurement Period"
         and HepatitisLiverDisease.isVerified ( )
   )
 
@@ -177,13 +177,13 @@ define "Has Medical Reason for Not Ordering Statin Therapy":
 
 define "Has Statin Associated Muscle Symptoms":
   exists ( [ConditionProblemsHealthConcerns: "Statin Associated Muscle Symptoms"] StatinMuscleSymptom
-      where StatinMuscleSymptom.prevalenceInterval ( ) overlaps day of "Measurement Period"
+      where StatinMuscleSymptom.onset.toInterval ( ) overlaps day of "Measurement Period"
         and StatinMuscleSymptom.isVerified ( )
   )
 
 define "Hypercholesterolemia Diagnosis":
   ( [ConditionProblemsHealthConcerns: "Familial Hypercholesterolemia"] Hypercholesterolemia
-      where Hypercholesterolemia.prevalenceInterval ( ) starts on or before day of end of "Measurement Period"
+      where Hypercholesterolemia.onset.toInterval ( ) starts on or before day of end of "Measurement Period"
         and Hypercholesterolemia.isVerified ( )
   )
 

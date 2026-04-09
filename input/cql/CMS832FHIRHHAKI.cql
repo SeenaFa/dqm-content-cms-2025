@@ -296,11 +296,11 @@ define fluent function "creatinineLabTestwithResultwithinFirst48Hours"(Qualifyin
     return CreatinineTest
 
 define fluent function "femaleeGFR"(QualifyingEncounter Encounter):
-  if Patient.sex () = "Female (finding)".code then ( 142 * Min({("QualifyingEncounter".indexCreatinine().value / 0.7), 1 }) ^ ( - 0.241 ) * Max({("QualifyingEncounter".indexCreatinine().value / 0.7), 1 }) ^ ( - 1.200 ) * 0.9938 ^ ( AgeInYearsAt(start of QualifyingEncounter.hospitalizationWithObservation()) ) * 1.012 ) 
+  if Patient.sex () = "Female (finding)".code then ( 142 * Min({("QualifyingEncounter".indexCreatinine().value / 0.7), 1 }) ^ ( - 0.241 ) * Max({("QualifyingEncounter".indexCreatinine().value / 0.7), 1 }) ^ ( - 1.200 ) * 0.9938 ^ ( AgeInYearsAt(date from start of QualifyingEncounter.hospitalizationWithObservation()) ) * 1.012 ) 
     else null
 
 define fluent function "maleeGFR"(QualifyingEncounter Encounter):
-  if Patient.sex () = "Male (finding)".code then ( 142 * Min({("QualifyingEncounter".indexCreatinine().value / 0.9), 1 }) ^ ( - 0.302 ) * Max({("QualifyingEncounter".indexCreatinine().value / 0.9), 1 }) ^ ( - 1.200 ) * 0.9938 ^ ( AgeInYearsAt(start of QualifyingEncounter.hospitalizationWithObservation()) ) ) 
+  if Patient.sex () = "Male (finding)".code then ( 142 * Min({("QualifyingEncounter".indexCreatinine().value / 0.9), 1 }) ^ ( - 0.302 ) * Max({("QualifyingEncounter".indexCreatinine().value / 0.9), 1 }) ^ ( - 1.200 ) * 0.9938 ^ ( AgeInYearsAt(date from start of QualifyingEncounter.hospitalizationWithObservation()) ) ) 
     else null
 
 define fluent function "indexCreatinine"(QualifyingEncounter Encounter):

@@ -305,7 +305,7 @@ define function "Numerator Observation"(QualifyingEncounter Encounter):
       where FallsEncounter.period ends during QualifyingEncounter.hospitalizationWithObservation()
   )
 
-define fluent function hasDiagnosisNotPresentOnAdmissionOrNull(encounter Encounter, diagnosisValueSet ValueSet):
+define fluent function hasDiagnosisNotPresentOnAdmissionOrNull(encounter Encounter, diagnosisValueSet System.ValueSet):
   exists ( [Claim] C
       where C.status = 'active'
         and C.use = 'claim'
@@ -320,7 +320,7 @@ define fluent function hasDiagnosisNotPresentOnAdmissionOrNull(encounter Encount
           and ( D.onAdmission is null
               or D.onAdmission in "Not Present On Admission or Documentation Insufficient to Determine"
           )
-          and D.diagnosis as CodeableConcept in diagnosisValueSet
+          and D.diagnosis as FHIR.CodeableConcept in diagnosisValueSet
   )
 
 define fluent function encountersDiagnosis(Encounter Encounter):

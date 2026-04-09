@@ -52,7 +52,7 @@ define "Initial Population":
   ) in Interval[18, 75]
     and exists ( "Qualifying Encounters" )
     and exists ( ( ( [ConditionEncounterDiagnosis: "Diabetes"] ).verified ( ) ) DiabetesDx
-        where DiabetesDx.prevalenceInterval ( ) overlaps day of "Measurement Period"
+        where DiabetesDx.onset.toInterval ( ) overlaps day of "Measurement Period"
     )
 
 define "Qualifying Encounters":

@@ -50,7 +50,7 @@ parameter "Measurement Period" Interval<DateTime>
 context Patient
 
 define "Initial Population":
-  AgeInYearsAt(start of("Index Depression Assessment".effective.toInterval())) >= 12
+  AgeInYearsAt(date from start of("Index Depression Assessment".effective.toInterval())) >= 12
 
 define "Denominator":
   "Initial Population"

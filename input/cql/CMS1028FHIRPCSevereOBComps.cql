@@ -428,10 +428,10 @@ define "Delivery Encounters With Blood Transfusion":
 define "Risk Variable First Hematocrit Lab Test":
   "Delivery Encounters At Greater Than Or Equal To 20 Weeks Gestation" TwentyWeeksPlusEncounter
     let FirstHematocrit: First(["LaboratoryResultObservation": "Hematocrit Lab Test"] Hematocrit
-        where Hematocrit.issued during Interval[start of TwentyWeeksPlusEncounter.hospitalizationWithEDOBTriageObservation() - 1440 minutes, TwentyWeeksPlusEncounter.lastTimeOfDelivery()]
+        where Hematocrit.effective during Interval[start of TwentyWeeksPlusEncounter.hospitalizationWithEDOBTriageObservation() - 1440 minutes, TwentyWeeksPlusEncounter.lastTimeOfDelivery()]
           and Hematocrit.status in { 'final', 'amended', 'corrected' }
           and Hematocrit.value is not null
-        sort by issued.earliest()
+        sort by effective.earliest()
     )
     return {
       EncounterId: TwentyWeeksPlusEncounter.id,
@@ -448,10 +448,10 @@ define "Risk Variable First Hematocrit Lab Test":
 define "Risk Variable First White Blood Cell Count Lab Test":
   "Delivery Encounters At Greater Than Or Equal To 20 Weeks Gestation" TwentyWeeksPlusEncounter
     let FirstWBC: First(["LaboratoryResultObservation": "White Blood Cells Count Lab Test"] WBC
-        where WBC.issued during Interval[start of TwentyWeeksPlusEncounter.hospitalizationWithEDOBTriageObservation() - 1440 minutes, TwentyWeeksPlusEncounter.lastTimeOfDelivery()]
+        where WBC.effective during Interval[start of TwentyWeeksPlusEncounter.hospitalizationWithEDOBTriageObservation() - 1440 minutes, TwentyWeeksPlusEncounter.lastTimeOfDelivery()]
           and WBC.status in { 'final', 'amended', 'corrected' }
           and WBC.value is not null
-        sort by issued.earliest()
+        sort by effective.earliest()
     )
     return {
       EncounterId: TwentyWeeksPlusEncounter.id,
