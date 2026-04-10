@@ -2,7 +2,7 @@
   "resourceType": "Observation",
   "id": "edca1264-a220-4cd3-a90a-92d091f2fd0f",
   "meta": {
-    "profile": [ "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-observation-screening-assessment" ]
+    "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure" ]
   },
   "status": "amended",
   "category": [ {
