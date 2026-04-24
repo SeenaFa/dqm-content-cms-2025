@@ -52,7 +52,7 @@ define "Encounter With A History Of Atrial Ablation":
   )
     union ( TJC."Ischemic Stroke Encounter" IschemicStrokeEncounter
         with ["ConditionProblemsHealthConcerns": "History of Atrial Ablation"] AtrialAblationDiagnosis
-          such that AtrialAblationDiagnosis.verificationStatus is not null implies ( AtrialAblationDiagnosis.verificationStatus !~ QICoreCommon."refuted"
+          such that AtrialAblationDiagnosis.verificationStatus is not null implies ( AtrialAblationDiagnosis.verificationStatus !~ Status."refuted"
               and AtrialAblationDiagnosis.verificationStatus !~ Status."entered-in-error"
           )
             and AtrialAblationDiagnosis.onset.toInterval ( ) starts before start of IschemicStrokeEncounter.period
@@ -64,7 +64,7 @@ define "Encounter With A History Of Atrial Ablation":
     )
     union ( TJC."Ischemic Stroke Encounter" IschemicStrokeEncounter
         with ["ConditionEncounterDiagnosis": "History of Atrial Ablation"] AtrialAblationEncDiagnosis
-          such that AtrialAblationEncDiagnosis.verificationStatus is not null implies ( AtrialAblationEncDiagnosis.verificationStatus !~ QICoreCommon."refuted"
+          such that AtrialAblationEncDiagnosis.verificationStatus is not null implies ( AtrialAblationEncDiagnosis.verificationStatus !~ Status."refuted"
               and AtrialAblationEncDiagnosis.verificationStatus !~ Status."entered-in-error"
           )
             and AtrialAblationEncDiagnosis.onset.toInterval ( ) starts before start of IschemicStrokeEncounter.period
@@ -73,7 +73,7 @@ define "Encounter With A History Of Atrial Ablation":
 define "Encounter With Prior Or Present Diagnosis Of Atrial Fibrillation Or Flutter":
   ( TJC."Ischemic Stroke Encounter" IschemicStrokeEncounter
       with ["ConditionProblemsHealthConcerns": "Atrial Fibrillation or Flutter"] AtrialFibrillationFlutter
-        such that AtrialFibrillationFlutter.verificationStatus is not null implies ( AtrialFibrillationFlutter.verificationStatus !~ QICoreCommon."refuted"
+        such that AtrialFibrillationFlutter.verificationStatus is not null implies ( AtrialFibrillationFlutter.verificationStatus !~ Status."refuted"
             and AtrialFibrillationFlutter.verificationStatus !~ Status."entered-in-error"
         )
           and AtrialFibrillationFlutter.onset.toInterval ( ) starts on or before end of IschemicStrokeEncounter.period

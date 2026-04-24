@@ -320,5 +320,5 @@ define fluent function averageDailyDose(MedicationRequest MedicationRequest):
           or ( MedicationStrength.unit = 'mg/mL'
               and Order.dispenseRequest.quantity.unit = 'mL'
           )
-      ) then ( ( Order.dispenseRequest.quantity * MedicationStrength ) / Quantity { value: DaysSupplied, unit: 'd' } )
+      ) then ( ( Order.dispenseRequest.quantity * MedicationStrength ) / System.Quantity { value: DaysSupplied, unit: 'd' } )
       else null

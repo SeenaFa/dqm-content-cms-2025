@@ -88,8 +88,8 @@ define "First Referral during First 10 Months of Measurement Period":
   First([ServiceRequest: "Referral"] ReferralOrder
       where ReferralOrder.status in { 'active', 'completed' }
         and ReferralOrder.intent = 'order'
-        and ReferralOrder.authoredOn during day of Interval[start of "Measurement Period", Date(year from start of "Measurement Period", 10, 31)]
-      sort by authoredOn ascending
+        and date from ReferralOrder.authoredOn during day of Interval[date from start of "Measurement Period", Date(year from start of "Measurement Period", 10, 31)]
+      sort by date from authoredOn ascending
   )
 
 define "Numerator":

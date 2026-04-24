@@ -406,7 +406,7 @@ define "No Mechanical VTE Prophylaxis Performed Or Ordered":
         return {
           id: DeviceNotApplied.id,
           requestStatusReason: DeviceNotApplied.statusReason,
-          authoredOn: DeviceNotApplied.recorded()
+          authoredOn: DeviceNotApplied.performed
         }
     )
 

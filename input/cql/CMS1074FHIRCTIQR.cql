@@ -61,7 +61,7 @@ define "Denominator":
 
 define "Denominator Exclusion":
   "Qualifying Scan With Values" CTScanWithValues
-    where ( CTScanWithValues.value as Concept ).codes contains "Full Body"
+    where ( CTScanWithValues.value as FHIR.CodeableConcept ) ~ "Full Body"
 
 define "Qualifying Scan With Values":
   "Qualifying Scan During Inpatient Encounter" CTScan
