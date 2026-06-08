@@ -10,18 +10,10 @@ For the purposes of this discussion, we will be focusing on the following 5 meas
 | Measure | QI Core | US Quality Core |
 |----|----|----|
 | CMS2: Preventive Care and Screening: Depression Screening and Followup | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/CMS2FHIRPCSDepScreenAndFollowUp.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/CMS2FHIRPCSDepScreenAndFollowUp.cql) |
-| CMS108: VTE Prophylaxis | | |
 | CMS122: Diabetes: Glycemic Status Assessment | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/CMS122FHIRDiabetesAssessGT9Pct.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/CMS122FHIRDiabetesAssessGT9Pct.cql)* |
 | CMS125: Breast Cancer Screening | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/CMS125FHIRBreastCancerScreen.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/CMS125FHIRBreastCancerScreen.cql) |
 | CMS130: Colon Cancer Screening | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/CMS130FHIRColorectalCancerScrn.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/CMS130FHIRColorectalCancerScrn.cql)* |
-| CMS135: CMS135FHIRACEIorARBorARNIforHF | | |
-| CMS146: Appropriate Testing for Pharyngitis | | |
 | CMS165: Controlling High Blood Pressure | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/CMS165FHIRControllingHighBP.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/CMS165FHIRControllingHighBP.cql)* |
-| CMS334: Cesarean Birth | | |
-| CMS986: Global Malnutrition Score | | |
-| CMS1206: Excessive Radiation: Outpatient Quality Reporting | | |
-| CMS1264: ECATREHQR | | |
-| NHSN Glycemic Control | | |
 
 Note: Measures marked with an asterisk are still in progress
 
@@ -31,18 +23,20 @@ These are all EC measures that make use of the following shared libraries:
 |----|----|----|
 | AdultOutpatientEncounters | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/AdultOutpatientEncounters.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/AdultOutpatientEncounters.cql) |
 | AdvancedIllnessandFrailty | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/AdvancedIllnessandFrailty.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/AdvancedIllnessandFrailty.cql) |
-| AHAOverall | | |
-| AlaraCommonFunctions | | |
-| Antibiotic | | |
+| AHAOverall | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/AHAOverall.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/AHAOverall.cql) |
+| AlaraCommonFunctions | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/AlaraCommonFunctions.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/AlaraCommonFunctions.cql) |
+| Antibiotic | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/Antibiotic.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/Antibiotic.cql) |
+| CQMCommon | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/CQMCommon.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/CQMCommon.cql) |
 | CumulativeMedicationDuration | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/CumulativeMedicationDuration.cql) | [USQualityCore](https://build.fhir.org/ig/HL7/us-cql-ig/en/Library-CumulativeMedicationDuration.html) |
 | Hospice | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/Hospice.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/Hospice.cql) |
+| NHSNHelpers | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/NHSNHelpers.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/NHSNHelpers.cql) |
 | PalliativeCare | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/PalliativeCare.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/PalliativeCare.cql) |
-| PCMaternal | | |
-| QICoreCommon | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/QICoreCommon.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/QICoreCommon.cql) |
+| PCMaternal | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/PCMaternal.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/PCMaternal.cql) |
+| QICoreCommon -> USQualityCoreCommon | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/QICoreCommon.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/USQualityCoreCommon.cql) |
 | Status | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/Status.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/Status.cql) |
 | SupplementalDataElements | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/SupplementalDataElements.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/SupplementalDataElements.cql) |
-| TJCOverall | | |
-| VTE | | |
+| TJCOverall | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/TJCOverall.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/TJCOverall.cql) |
+| VTE | [QICore](https://github.com/cqframework/dqm-content-qicore-2025/blob/master/input/cql/VTE.cql) | [USQualityCore](https://github.com/cqframework/dqm-content-cms-2025/blob/main/input/cql/VTE.cql) |
 
 These shared libraries had already been updated to use the QICore 7.0.0 (a derived model info) so these were just brought in and updated to use the USQualityCore model instead, no other changes were required to the shared libraries.
 
