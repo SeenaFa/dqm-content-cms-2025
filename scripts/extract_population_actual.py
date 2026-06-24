@@ -244,7 +244,7 @@ def save_results(output_file: str, rows: List[List[str]]):
 if __name__ == '__main__':
     VERBOSE=True
     measure_resource_dir = "./input/resources/measure"
-    output_file = "./scripts/comparison/actual_results.csv"
+    output_file = "./scripts/comparison/quality_actual_results.csv"
     results_dir = "./input/tests/results"
 
     log("Loading Measure Criteria")
