@@ -1,19 +1,19 @@
 # Discrepancy Report
 | Details | Value |
 | --- | --- |
-| Generated | 2026-06-30 12:44:31.890583 |
+| Generated | 2026-06-30 13:21:28.116856 |
 | Total Measures | 74 |
 | Total Test Cases | 3772 |
 | Measures with Discrepancies | 44 |
-| Pass Count | 19096 (89.59%) |
-| Fail Count | 2219 (10.41%) |
+| Pass Count | 19261 (90.36%) |
+| Fail Count | 2054 (9.64%) |
 
 
 | Discrepancy Summary | Measure Count | Test Case Count |
 |---|:---:|:---:|
-| Missing Results | 7 | 285 |
+| Missing Results | 6 | 249 |
 | Missing Populations | 0 | 0 |
-| Mismatched Test Cases | 39 | 644 |
+| Mismatched Test Cases | 40 | 659 |
 
 
 
@@ -52,7 +52,7 @@ _Note: Measures can have multiple discrepancies, so the Measures with Discrepanc
 ## Measures with Discrepancies (44)
 | Measure | Total Test Cases | Missing Results | Missing Populations | Mismatched Test Cases |
 |---|:---:|:---:|:---:|:---:|
-| [CMS2FHIRPCSDepScreenAndFollowUp](#cms2fhirpcsdepscreenandfollowup) | 36 | 36 | 0 | 0.00%   (0) |
+| [CMS2FHIRPCSDepScreenAndFollowUp](#cms2fhirpcsdepscreenandfollowup) | 36 | 0 | 0 | 41.67%   (15) |
 | [CMS22FHIRPCSBPScreeningFollowUp](#cms22fhirpcsbpscreeningfollowup) | 44 | 0 | 0 | 27.27%   (12) |
 | [CMS56FHIRFuncStatHipReplacement](#cms56fhirfuncstathipreplacement) | 58 | 0 | 0 | 41.38%   (24) |
 | [CMS68FHIRDocumentationCurrentMeds](#cms68fhirdocumentationcurrentmeds) | 19 | 0 | 0 | 5.26%   (1) |
@@ -102,45 +102,24 @@ _Note: Measures can have multiple discrepancies, so the Measures with Discrepanc
 #### CMS2FHIRPCSDepScreenAndFollowUp
 [ [cql] ](../../input/cql/CMS2FHIRPCSDepScreenAndFollowUp.cql) [ [test results] ](../../input/tests/results/CMS2FHIRPCSDepScreenAndFollowUp.txt)
 
-Missing Results (36 of 36 test cases)
-| Test Case | Group |
-| --- | --- |
-| [ 0e463fc3-d1bf-4e19-882b-fad6342aa668 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/0e463fc3-d1bf-4e19-882b-fad6342aa668/MeasureReport-38443362-8261-414c-80b3-1f719f4ba56e.json) | Group_1 |
-| [ 12786a64-c20e-4542-a4c0-bf3129d6a9e0 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/12786a64-c20e-4542-a4c0-bf3129d6a9e0/MeasureReport-d404e2d0-2ded-4329-b254-482be8b54a7c.json) | Group_1 |
-| [ 15ad723f-b561-4cdd-9a11-7e6619780459 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/15ad723f-b561-4cdd-9a11-7e6619780459/MeasureReport-638aff8f-bd3d-48de-955c-ebf5a40c07b3.json) | Group_1 |
-| [ 1eaf0b86-afe8-488c-8f32-6321ecfe0fca ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/1eaf0b86-afe8-488c-8f32-6321ecfe0fca/MeasureReport-edf031e4-737c-469f-85b4-b9f7ceee8edc.json) | Group_1 |
-| [ 28bf1260-965f-4682-b427-2c2a2084312a ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/28bf1260-965f-4682-b427-2c2a2084312a/MeasureReport-e6b53ee4-83bf-4511-b924-ead91fde2550.json) | Group_1 |
-| [ 2ee18ee0-f67a-4694-8411-fda20e6d108d ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/2ee18ee0-f67a-4694-8411-fda20e6d108d/MeasureReport-2f7963f7-1b49-4a33-b0df-8d159ae5441d.json) | Group_1 |
-| [ 328248a7-33d6-4923-a99a-a56ec88c515e ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/328248a7-33d6-4923-a99a-a56ec88c515e/MeasureReport-bdaacb3a-ce88-42b6-972c-32682b427822.json) | Group_1 |
-| [ 39c99530-08b9-4ed2-bac7-6a59c1e1ad71 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/39c99530-08b9-4ed2-bac7-6a59c1e1ad71/MeasureReport-ffd5819f-6c98-4ee9-9390-f62d229a173e.json) | Group_1 |
-| [ 3ce2c72d-d347-4fde-82cf-dc9992c73aad ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/3ce2c72d-d347-4fde-82cf-dc9992c73aad/MeasureReport-e676d98d-00b0-477e-bd76-b8eed29011af.json) | Group_1 |
-| [ 4149c02e-ee5c-4b8d-a4ee-425dfa2460e7 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/4149c02e-ee5c-4b8d-a4ee-425dfa2460e7/MeasureReport-982820bc-1ced-40bb-8c89-e07f4685001d.json) | Group_1 |
-| [ 41664f5f-5280-4b5b-a9f1-289a412dbc18 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/41664f5f-5280-4b5b-a9f1-289a412dbc18/MeasureReport-c5be1b06-9890-4429-bf47-9e6300c040d7.json) | Group_1 |
-| [ 41df0dbe-ae84-4496-b355-320ff8707a85 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/41df0dbe-ae84-4496-b355-320ff8707a85/MeasureReport-922ffb7d-2d13-47b8-ad5d-4f42ff55f77d.json) | Group_1 |
-| [ 4a1f1d8c-0de8-4819-a0a3-28f6caaf6265 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/4a1f1d8c-0de8-4819-a0a3-28f6caaf6265/MeasureReport-d247410b-3db9-4adb-b36b-f6965347c71f.json) | Group_1 |
-| [ 6078e73e-3265-4022-ae63-216c096b6246 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/6078e73e-3265-4022-ae63-216c096b6246/MeasureReport-dfcfbb31-9da9-4947-8444-53a25c8b8121.json) | Group_1 |
-| [ 6aaff09e-4a7b-4efa-93f8-13033e95c230 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/6aaff09e-4a7b-4efa-93f8-13033e95c230/MeasureReport-5981d1e2-7d0b-4887-aed2-884d0e7df4fe.json) | Group_1 |
-| [ 6f17c306-5df4-431a-8364-d44ab5bad34a ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/6f17c306-5df4-431a-8364-d44ab5bad34a/MeasureReport-4d573421-a154-4534-beda-b21e58f1560e.json) | Group_1 |
-| [ 6f3808b3-69a2-4080-9529-8582b4d5c5d5 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/6f3808b3-69a2-4080-9529-8582b4d5c5d5/MeasureReport-95125f86-eed9-4348-a74d-e988d239583c.json) | Group_1 |
-| [ 7009a1c3-93a8-4028-b42a-0bd9953f6ebb ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/7009a1c3-93a8-4028-b42a-0bd9953f6ebb/MeasureReport-9bde3909-8819-4b4c-a8f8-ea2826c22990.json) | Group_1 |
-| [ 75a5223a-3a62-418a-bcc6-4522cfe71726 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/75a5223a-3a62-418a-bcc6-4522cfe71726/MeasureReport-6b56dd25-533d-4702-8fa9-cdd3e870d07b.json) | Group_1 |
-| [ 82134291-214a-4e6e-9969-9ccb6df412f0 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/82134291-214a-4e6e-9969-9ccb6df412f0/MeasureReport-74941887-d90e-4a1e-8c01-896d64c50df0.json) | Group_1 |
-| [ 86761769-1b1b-44c1-81cb-3f034a6a0bc2 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/86761769-1b1b-44c1-81cb-3f034a6a0bc2/MeasureReport-966603f0-716e-46c4-b3f1-6e154aed0ff6.json) | Group_1 |
-| [ 86ca7528-efcb-44ed-9203-6f21f37f4332 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/86ca7528-efcb-44ed-9203-6f21f37f4332/MeasureReport-51f60250-c8a8-49d8-81c1-56b58ad0125f.json) | Group_1 |
-| [ a09d5edf-2c0a-4b39-86bf-312109f357c0 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/a09d5edf-2c0a-4b39-86bf-312109f357c0/MeasureReport-a16ab9f2-0d95-4c0c-a468-b3a7d599e46a.json) | Group_1 |
-| [ a7ad97c4-9769-4630-8ad7-8cf354384aa1 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/a7ad97c4-9769-4630-8ad7-8cf354384aa1/MeasureReport-e873df3e-5740-4bc8-92de-e713cb273184.json) | Group_1 |
-| [ bc433eb4-fba6-45e0-a24b-de907e551556 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/bc433eb4-fba6-45e0-a24b-de907e551556/MeasureReport-41305353-f684-4d32-b1a5-2e9bece47889.json) | Group_1 |
-| [ be498e62-5ef2-47fa-8127-dfc5a7eb6ac9 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/be498e62-5ef2-47fa-8127-dfc5a7eb6ac9/MeasureReport-e635b1a3-f61c-40ad-80a3-139cec669283.json) | Group_1 |
-| [ cf76e904-95bd-445d-8384-62be012b76f6 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/cf76e904-95bd-445d-8384-62be012b76f6/MeasureReport-0167b60a-8e6c-439e-afc4-1b7771cadbb5.json) | Group_1 |
-| [ d0ba1182-26fa-4cfa-9f91-960503b7fe53 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/d0ba1182-26fa-4cfa-9f91-960503b7fe53/MeasureReport-277359bb-b41c-4dd4-b1af-b3afdb6ee15d.json) | Group_1 |
-| [ d1fc6b6d-025e-446b-a941-e62a76217e28 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/d1fc6b6d-025e-446b-a941-e62a76217e28/MeasureReport-7936d780-85c3-47d9-9167-25bb6e51ab47.json) | Group_1 |
-| [ d2cde80b-5a6c-48e9-b38a-de938f019096 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/d2cde80b-5a6c-48e9-b38a-de938f019096/MeasureReport-a1a497b3-5fec-4d30-91c7-70949cf2174a.json) | Group_1 |
-| [ d5f7630a-6fcf-4cfc-ba20-dfd5ee88af9a ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/d5f7630a-6fcf-4cfc-ba20-dfd5ee88af9a/MeasureReport-9ace9bd2-31c3-4e2f-87c9-e5900fa8bc4e.json) | Group_1 |
-| [ e1b6a53f-c856-41c2-b1fe-ec50d3f23333 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/e1b6a53f-c856-41c2-b1fe-ec50d3f23333/MeasureReport-93988ccc-e93b-4aea-85e9-8b074c28777b.json) | Group_1 |
-| [ f256f4bb-e5ad-4e93-bee7-7237b1fa275a ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/f256f4bb-e5ad-4e93-bee7-7237b1fa275a/MeasureReport-f86accb9-3c2b-4b92-99f4-dcbf1c570c58.json) | Group_1 |
-| [ f29e2786-fade-4dca-b14d-7037a34ef498 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/f29e2786-fade-4dca-b14d-7037a34ef498/MeasureReport-32baa107-7be1-4a64-a10d-1f25307962e6.json) | Group_1 |
-| [ fa943373-f62b-4494-8c9a-fb17e9b9a2bd ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/fa943373-f62b-4494-8c9a-fb17e9b9a2bd/MeasureReport-bf73c25c-a0f9-437f-9320-dbd9668da2d1.json) | Group_1 |
-| [ ff6f7416-7e1d-4712-b4f5-aab79b2a7c01 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/ff6f7416-7e1d-4712-b4f5-aab79b2a7c01/MeasureReport-ff5cd138-335a-4186-a4bc-25cc1e6b91aa.json) | Group_1 |
+Mismatched Test Cases (15 of  of 36)
+| Test Case | Group | Population | Expected | Actual |
+|---|---|---|:---:|:---:|
+| [ 0e463fc3-d1bf-4e19-882b-fad6342aa668 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/0e463fc3-d1bf-4e19-882b-fad6342aa668/MeasureReport-38443362-8261-414c-80b3-1f719f4ba56e.json) | Group_1 | Denominator Exception | 1 | 0 |
+| [ 12786a64-c20e-4542-a4c0-bf3129d6a9e0 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/12786a64-c20e-4542-a4c0-bf3129d6a9e0/MeasureReport-d404e2d0-2ded-4329-b254-482be8b54a7c.json) | Group_1 | Denominator Exception | 1 | 0 |
+| [ 28bf1260-965f-4682-b427-2c2a2084312a ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/28bf1260-965f-4682-b427-2c2a2084312a/MeasureReport-e6b53ee4-83bf-4511-b924-ead91fde2550.json) | Group_1 | Numerator | 0 | 1 |
+| [ 328248a7-33d6-4923-a99a-a56ec88c515e ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/328248a7-33d6-4923-a99a-a56ec88c515e/MeasureReport-bdaacb3a-ce88-42b6-972c-32682b427822.json) | Group_1 | Numerator | 0 | 1 |
+| [ 4149c02e-ee5c-4b8d-a4ee-425dfa2460e7 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/4149c02e-ee5c-4b8d-a4ee-425dfa2460e7/MeasureReport-982820bc-1ced-40bb-8c89-e07f4685001d.json) | Group_1 | Numerator | 0 | 1 |
+| [ 41df0dbe-ae84-4496-b355-320ff8707a85 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/41df0dbe-ae84-4496-b355-320ff8707a85/MeasureReport-922ffb7d-2d13-47b8-ad5d-4f42ff55f77d.json) | Group_1 | Denominator Exception | 1 | 0 |
+| [ 6078e73e-3265-4022-ae63-216c096b6246 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/6078e73e-3265-4022-ae63-216c096b6246/MeasureReport-dfcfbb31-9da9-4947-8444-53a25c8b8121.json) | Group_1 | Denominator Exception | 1 | 0 |
+| [ 6aaff09e-4a7b-4efa-93f8-13033e95c230 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/6aaff09e-4a7b-4efa-93f8-13033e95c230/MeasureReport-5981d1e2-7d0b-4887-aed2-884d0e7df4fe.json) | Group_1 | Denominator Exception | 1 | 0 |
+| [ 75a5223a-3a62-418a-bcc6-4522cfe71726 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/75a5223a-3a62-418a-bcc6-4522cfe71726/MeasureReport-6b56dd25-533d-4702-8fa9-cdd3e870d07b.json) | Group_1 | Numerator | 0 | 1 |
+| [ 86ca7528-efcb-44ed-9203-6f21f37f4332 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/86ca7528-efcb-44ed-9203-6f21f37f4332/MeasureReport-51f60250-c8a8-49d8-81c1-56b58ad0125f.json) | Group_1 | Denominator Exception | 1 | 0 |
+| [ d0ba1182-26fa-4cfa-9f91-960503b7fe53 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/d0ba1182-26fa-4cfa-9f91-960503b7fe53/MeasureReport-277359bb-b41c-4dd4-b1af-b3afdb6ee15d.json) | Group_1 | Denominator Exception | 1 | 0 |
+| [ d2cde80b-5a6c-48e9-b38a-de938f019096 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/d2cde80b-5a6c-48e9-b38a-de938f019096/MeasureReport-a1a497b3-5fec-4d30-91c7-70949cf2174a.json) | Group_1 | Numerator | 0 | 1 |
+| [ d5f7630a-6fcf-4cfc-ba20-dfd5ee88af9a ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/d5f7630a-6fcf-4cfc-ba20-dfd5ee88af9a/MeasureReport-9ace9bd2-31c3-4e2f-87c9-e5900fa8bc4e.json) | Group_1 | Numerator | 0 | 1 |
+| [ f29e2786-fade-4dca-b14d-7037a34ef498 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/f29e2786-fade-4dca-b14d-7037a34ef498/MeasureReport-32baa107-7be1-4a64-a10d-1f25307962e6.json) | Group_1 | Denominator Exception | 1 | 0 |
+| [ ff6f7416-7e1d-4712-b4f5-aab79b2a7c01 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/ff6f7416-7e1d-4712-b4f5-aab79b2a7c01/MeasureReport-ff5cd138-335a-4186-a4bc-25cc1e6b91aa.json) | Group_1 | Numerator | 0 | 1 |
 
 
 #### CMS22FHIRPCSBPScreeningFollowUp
