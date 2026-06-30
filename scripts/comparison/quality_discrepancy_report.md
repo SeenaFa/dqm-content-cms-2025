@@ -1,28 +1,34 @@
 # Discrepancy Report
 | Details | Value |
 | --- | --- |
-| Generated | 2026-06-24 15:49:10.969278 |
+| Generated | 2026-06-30 12:44:31.890583 |
 | Total Measures | 74 |
 | Total Test Cases | 3772 |
-| Measures with Discrepancies | 50 |
-| Pass Count | 18951 (88.91%) |
-| Fail Count | 2364 (11.09%) |
+| Measures with Discrepancies | 44 |
+| Pass Count | 19096 (89.59%) |
+| Fail Count | 2219 (10.41%) |
 
 
 | Discrepancy Summary | Measure Count | Test Case Count |
 |---|:---:|:---:|
-| Missing Results | 6 | 249 |
+| Missing Results | 7 | 285 |
 | Missing Populations | 0 | 0 |
-| Mismatched Test Cases | 47 | 924 |
+| Mismatched Test Cases | 39 | 644 |
 
 
 
 _Note: Measures can have multiple discrepancies, so the Measures with Discrepancies count may not match the summary counts._
-## Measures with No Discrepancies (24)
+## Measures with No Discrepancies (30)
 - CMS50FHIRReceiptofSpecialistReport [ [cql] ](../../input/cql/CMS50FHIRReceiptofSpecialistReport.cql) [ [test results] ](../../input/tests/results/CMS50FHIRReceiptofSpecialistReport.txt)
 - CMS72FHIRSTKAntithromboticDay2 [ [cql] ](../../input/cql/CMS72FHIRSTKAntithromboticDay2.cql) [ [test results] ](../../input/tests/results/CMS72FHIRSTKAntithromboticDay2.txt)
 - CMS104FHIRSTKDCAntithrombotic [ [cql] ](../../input/cql/CMS104FHIRSTKDCAntithrombotic.cql) [ [test results] ](../../input/tests/results/CMS104FHIRSTKDCAntithrombotic.txt)
+- CMS117FHIRChildImmunStatus [ [cql] ](../../input/cql/CMS117FHIRChildImmunStatus.cql) [ [test results] ](../../input/tests/results/CMS117FHIRChildImmunStatus.txt)
+- CMS124FHIRCervicalCancerScreen [ [cql] ](../../input/cql/CMS124FHIRCervicalCancerScreen.cql) [ [test results] ](../../input/tests/results/CMS124FHIRCervicalCancerScreen.txt)
 - CMS128FHIRAntidepressantMgmt [ [cql] ](../../input/cql/CMS128FHIRAntidepressantMgmt.cql) [ [test results] ](../../input/tests/results/CMS128FHIRAntidepressantMgmt.txt)
+- CMS137FHIRSUDTxInitEngagement [ [cql] ](../../input/cql/CMS137FHIRSUDTxInitEngagement.cql) [ [test results] ](../../input/tests/results/CMS137FHIRSUDTxInitEngagement.txt)
+- CMS138FHIRTobaccoScrnCessation [ [cql] ](../../input/cql/CMS138FHIRTobaccoScrnCessation.cql) [ [test results] ](../../input/tests/results/CMS138FHIRTobaccoScrnCessation.txt)
+- CMS139FHIRFallRiskScreening [ [cql] ](../../input/cql/CMS139FHIRFallRiskScreening.cql) [ [test results] ](../../input/tests/results/CMS139FHIRFallRiskScreening.txt)
+- CMS146FHIRApproTestPharyngitis [ [cql] ](../../input/cql/CMS146FHIRApproTestPharyngitis.cql) [ [test results] ](../../input/tests/results/CMS146FHIRApproTestPharyngitis.txt)
 - CMS314FHIRHIVViralSuppression [ [cql] ](../../input/cql/CMS314FHIRHIVViralSuppression.cql) [ [test results] ](../../input/tests/results/CMS314FHIRHIVViralSuppression.txt)
 - CMS0334FHIRPCCesareanBirth [ [cql] ](../../input/cql/CMS0334FHIRPCCesareanBirth.cql) [ [test results] ](../../input/tests/results/CMS0334FHIRPCCesareanBirth.txt)
 - CMS349FHIRHIVScreening [ [cql] ](../../input/cql/CMS349FHIRHIVScreening.cql) [ [test results] ](../../input/tests/results/CMS349FHIRHIVScreening.txt)
@@ -43,48 +49,42 @@ _Note: Measures can have multiple discrepancies, so the Measures with Discrepanc
 - CMS1264FHIRECATREHQR [ [cql] ](../../input/cql/CMS1264FHIRECATREHQR.cql) [ [test results] ](../../input/tests/results/CMS1264FHIRECATREHQR.txt)
 - NHSNAcuteCareHospitalMonthlyInitialPopulation1 [ [cql] ](../../input/cql/NHSNAcuteCareHospitalMonthlyInitialPopulation1.cql) [ [test results] ](../../input/tests/results/NHSNAcuteCareHospitalMonthlyInitialPopulation1.txt)
 - NHSNGlycemicControlHypoglycemiaInitialPopulation [ [cql] ](../../input/cql/NHSNGlycemicControlHypoglycemiaInitialPopulation.cql) [ [test results] ](../../input/tests/results/NHSNGlycemicControlHypoglycemiaInitialPopulation.txt)
-## Measures with Discrepancies (50)
+## Measures with Discrepancies (44)
 | Measure | Total Test Cases | Missing Results | Missing Populations | Mismatched Test Cases |
 |---|:---:|:---:|:---:|:---:|
-| [CMS2FHIRPCSDepScreenAndFollowUp](#cms2fhirpcsdepscreenandfollowup) | 36 | 0 | 0 | 41.67%   (15) |
+| [CMS2FHIRPCSDepScreenAndFollowUp](#cms2fhirpcsdepscreenandfollowup) | 36 | 36 | 0 | 0.00%   (0) |
 | [CMS22FHIRPCSBPScreeningFollowUp](#cms22fhirpcsbpscreeningfollowup) | 44 | 0 | 0 | 27.27%   (12) |
-| [CMS56FHIRFuncStatHipReplacement](#cms56fhirfuncstathipreplacement) | 58 | 0 | 0 | 44.83%   (26) |
+| [CMS56FHIRFuncStatHipReplacement](#cms56fhirfuncstathipreplacement) | 58 | 0 | 0 | 41.38%   (24) |
 | [CMS68FHIRDocumentationCurrentMeds](#cms68fhirdocumentationcurrentmeds) | 19 | 0 | 0 | 5.26%   (1) |
-| [CMS69FHIRPCSBMIScreenAndFollowUp](#cms69fhirpcsbmiscreenandfollowup) | 63 | 0 | 0 | 76.19%   (48) |
+| [CMS69FHIRPCSBMIScreenAndFollowUp](#cms69fhirpcsbmiscreenandfollowup) | 63 | 0 | 0 | 69.84%   (44) |
 | [CMS71FHIRSTKAnticoagAFFlutter](#cms71fhirstkanticoagafflutter) | 83 | 0 | 0 | 4.82%   (4) |
-| [CMS74FHIRDentalCariesPrevention](#cms74fhirdentalcariesprevention) | 20 | 0 | 0 | 35.00%   (7) |
-| [CMS75FHIRChildrenDentalDecay](#cms75fhirchildrendentaldecay) | 20 | 0 | 0 | 45.00%   (9) |
+| [CMS74FHIRDentalCariesPrevention](#cms74fhirdentalcariesprevention) | 20 | 0 | 0 | 30.00%   (6) |
+| [CMS75FHIRChildrenDentalDecay](#cms75fhirchildrendentaldecay) | 20 | 0 | 0 | 40.00%   (8) |
 | [CMS90FHIRFSAforHeartFailure](#cms90fhirfsaforheartfailure) | 37 | 0 | 0 | 91.89%   (34) |
 | [CMS108FHIRVTEProphylaxis](#cms108fhirvteprophylaxis) | 140 | 0 | 0 | 5.71%   (8) |
-| [CMS117FHIRChildImmunStatus](#cms117fhirchildimmunstatus) | 45 | 0 | 0 | 17.78%   (8) |
-| [CMS122FHIRDiabetesAssessGT9Pct](#cms122fhirdiabetesassessgt9pct) | 55 | 0 | 0 | 34.55%   (19) |
-| [CMS124FHIRCervicalCancerScreen](#cms124fhircervicalcancerscreen) | 34 | 0 | 0 | 38.24%   (13) |
-| [CMS125FHIRBreastCancerScreen](#cms125fhirbreastcancerscreen) | 66 | 0 | 0 | 27.27%   (18) |
+| [CMS122FHIRDiabetesAssessGT9Pct](#cms122fhirdiabetesassessgt9pct) | 55 | 0 | 0 | 10.91%   (6) |
+| [CMS125FHIRBreastCancerScreen](#cms125fhirbreastcancerscreen) | 66 | 0 | 0 | 12.12%   (8) |
 | [CMS129FHIRProstCaBoneScanUse](#cms129fhirprostcabonescanuse) | 51 | 0 | 0 | 96.08%   (49) |
-| [CMS130FHIRColorectalCancerScrn](#cms130fhircolorectalcancerscrn) | 64 | 0 | 0 | 25.00%   (16) |
-| [CMS131FHIRDiabetesEyeExam](#cms131fhirdiabeteseyeexam) | 63 | 0 | 0 | 30.16%   (19) |
+| [CMS130FHIRColorectalCancerScrn](#cms130fhircolorectalcancerscrn) | 64 | 0 | 0 | 1.56%   (1) |
+| [CMS131FHIRDiabetesEyeExam](#cms131fhirdiabeteseyeexam) | 63 | 0 | 0 | 11.11%   (7) |
 | [CMS133FHIRCataracts2040BCVA90Days](#cms133fhircataracts2040bcva90days) | 73 | 0 | 0 | 80.82%   (59) |
 | [CMS135FHIRACEIorARBorARNIforHF](#cms135fhiraceiorarborarniforhf) | 26 | 0 | 0 | 26.92%   (7) |
-| [CMS136FHIRChildADHDMedFollowUp](#cms136fhirchildadhdmedfollowup) | 128 | 0 | 0 | 19.53%   (25) |
-| [CMS137FHIRSUDTxInitEngagement](#cms137fhirsudtxinitengagement) | 90 | 0 | 0 | 20.00%   (18) |
-| [CMS138FHIRTobaccoScrnCessation](#cms138fhirtobaccoscrncessation) | 141 | 0 | 0 | 28.37%   (40) |
-| [CMS139FHIRFallRiskScreening](#cms139fhirfallriskscreening) | 29 | 0 | 0 | 27.59%   (8) |
+| [CMS136FHIRChildADHDMedFollowUp](#cms136fhirchildadhdmedfollowup) | 128 | 0 | 0 | 1.56%   (2) |
 | [CMS142FHIRCommWithDrManagingDiab](#cms142fhircommwithdrmanagingdiab) | 32 | 0 | 0 | 59.38%   (19) |
 | [CMS143FHIRPOAGOpticNerveEval](#cms143fhirpoagopticnerveeval) | 32 | 0 | 0 | 59.38%   (19) |
 | [CMS144FHIRHFBetaBlockerForLVSD](#cms144fhirhfbetablockerforlvsd) | 48 | 0 | 0 | 8.33%   (4) |
 | [CMS145FHIRCADBBlockerTPMIorLVSD](#cms145fhircadbblockertpmiorlvsd) | 106 | 106 | 0 | 0.00%   (0) |
-| [CMS146FHIRApproTestPharyngitis](#cms146fhirapprotestpharyngitis) | 38 | 0 | 0 | 26.32%   (10) |
 | [CMS149FHIRDementiaCognitiveAssess](#cms149fhirdementiacognitiveassess) | 33 | 33 | 0 | 0.00%   (0) |
-| [CMS153FHIRChlamydiaScreening](#cms153fhirchlamydiascreening) | 32 | 0 | 0 | 31.25%   (10) |
-| [CMS154FHIRAppropriateTxforURI](#cms154fhirappropriatetxforuri) | 33 | 0 | 0 | 27.27%   (9) |
-| [CMS155FHIRWgtAssessCounseling](#cms155fhirwgtassesscounseling) | 102 | 0 | 0 | 32.35%   (33) |
-| [CMS156FHIRHighRiskMedsElderly](#cms156fhirhighriskmedselderly) | 177 | 45 | 0 | 22.03%   (39) |
+| [CMS153FHIRChlamydiaScreening](#cms153fhirchlamydiascreening) | 32 | 0 | 0 | 6.25%   (2) |
+| [CMS154FHIRAppropriateTxforURI](#cms154fhirappropriatetxforuri) | 33 | 0 | 0 | 3.03%   (1) |
+| [CMS155FHIRWgtAssessCounseling](#cms155fhirwgtassesscounseling) | 102 | 0 | 0 | 5.88%   (6) |
+| [CMS156FHIRHighRiskMedsElderly](#cms156fhirhighriskmedselderly) | 177 | 45 | 0 | 0.00%   (0) |
 | [CMS157FHIRPainIntensityQuantified](#cms157fhirpainintensityquantified) | 126 | 0 | 0 | 16.67%   (21) |
 | [CMS159FHIRDepRemissionat12Months](#cms159fhirdepremissionat12months) | 67 | 0 | 0 | 8.96%   (6) |
-| [CMS165FHIRControllingHighBP](#cms165fhircontrollinghighbp) | 15 | 0 | 0 | 26.67%   (4) |
+| [CMS165FHIRControllingHighBP](#cms165fhircontrollinghighbp) | 15 | 0 | 0 | 13.33%   (2) |
 | [CMS177FHIRChildMDDSuicideAssmt](#cms177fhirchildmddsuicideassmt) | 41 | 0 | 0 | 2.44%   (1) |
 | [CMS190FHIRVTEProphylaxisICU](#cms190fhirvteprophylaxisicu) | 125 | 0 | 0 | 12.00%   (15) |
-| [CMS347FHIRStatinPreventionTxCVD](#cms347fhirstatinpreventiontxcvd) | 352 | 0 | 0 | 50.85%   (179) |
+| [CMS347FHIRStatinPreventionTxCVD](#cms347fhirstatinpreventiontxcvd) | 352 | 0 | 0 | 50.00%   (176) |
 | [CMS645FHIRBoneDensityPCADTherapy](#cms645fhirbonedensitypcadtherapy) | 51 | 2 | 0 | 9.80%   (5) |
 | [CMS646FHIRIntravesicalBCGTherapy](#cms646fhirintravesicalbcgtherapy) | 38 | 1 | 0 | 5.26%   (2) |
 | [CMS771FHIRUrinarySymptomScoreBPH](#cms771fhirurinarysymptomscorebph) | 31 | 0 | 0 | 19.35%   (6) |
@@ -102,24 +102,45 @@ _Note: Measures can have multiple discrepancies, so the Measures with Discrepanc
 #### CMS2FHIRPCSDepScreenAndFollowUp
 [ [cql] ](../../input/cql/CMS2FHIRPCSDepScreenAndFollowUp.cql) [ [test results] ](../../input/tests/results/CMS2FHIRPCSDepScreenAndFollowUp.txt)
 
-Mismatched Test Cases (15 of  of 36)
-| Test Case | Group | Population | Expected | Actual |
-|---|---|---|:---:|:---:|
-| [ 0e463fc3-d1bf-4e19-882b-fad6342aa668 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/0e463fc3-d1bf-4e19-882b-fad6342aa668/MeasureReport-38443362-8261-414c-80b3-1f719f4ba56e.json) | Group_1 | Denominator Exception | 1 | 0 |
-| [ 12786a64-c20e-4542-a4c0-bf3129d6a9e0 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/12786a64-c20e-4542-a4c0-bf3129d6a9e0/MeasureReport-d404e2d0-2ded-4329-b254-482be8b54a7c.json) | Group_1 | Denominator Exception | 1 | 0 |
-| [ 28bf1260-965f-4682-b427-2c2a2084312a ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/28bf1260-965f-4682-b427-2c2a2084312a/MeasureReport-e6b53ee4-83bf-4511-b924-ead91fde2550.json) | Group_1 | Numerator | 0 | 1 |
-| [ 328248a7-33d6-4923-a99a-a56ec88c515e ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/328248a7-33d6-4923-a99a-a56ec88c515e/MeasureReport-bdaacb3a-ce88-42b6-972c-32682b427822.json) | Group_1 | Numerator | 0 | 1 |
-| [ 4149c02e-ee5c-4b8d-a4ee-425dfa2460e7 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/4149c02e-ee5c-4b8d-a4ee-425dfa2460e7/MeasureReport-982820bc-1ced-40bb-8c89-e07f4685001d.json) | Group_1 | Numerator | 0 | 1 |
-| [ 41df0dbe-ae84-4496-b355-320ff8707a85 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/41df0dbe-ae84-4496-b355-320ff8707a85/MeasureReport-922ffb7d-2d13-47b8-ad5d-4f42ff55f77d.json) | Group_1 | Denominator Exception | 1 | 0 |
-| [ 6078e73e-3265-4022-ae63-216c096b6246 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/6078e73e-3265-4022-ae63-216c096b6246/MeasureReport-dfcfbb31-9da9-4947-8444-53a25c8b8121.json) | Group_1 | Denominator Exception | 1 | 0 |
-| [ 6aaff09e-4a7b-4efa-93f8-13033e95c230 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/6aaff09e-4a7b-4efa-93f8-13033e95c230/MeasureReport-5981d1e2-7d0b-4887-aed2-884d0e7df4fe.json) | Group_1 | Denominator Exception | 1 | 0 |
-| [ 75a5223a-3a62-418a-bcc6-4522cfe71726 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/75a5223a-3a62-418a-bcc6-4522cfe71726/MeasureReport-6b56dd25-533d-4702-8fa9-cdd3e870d07b.json) | Group_1 | Numerator | 0 | 1 |
-| [ 86ca7528-efcb-44ed-9203-6f21f37f4332 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/86ca7528-efcb-44ed-9203-6f21f37f4332/MeasureReport-51f60250-c8a8-49d8-81c1-56b58ad0125f.json) | Group_1 | Denominator Exception | 1 | 0 |
-| [ d0ba1182-26fa-4cfa-9f91-960503b7fe53 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/d0ba1182-26fa-4cfa-9f91-960503b7fe53/MeasureReport-277359bb-b41c-4dd4-b1af-b3afdb6ee15d.json) | Group_1 | Denominator Exception | 1 | 0 |
-| [ d2cde80b-5a6c-48e9-b38a-de938f019096 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/d2cde80b-5a6c-48e9-b38a-de938f019096/MeasureReport-a1a497b3-5fec-4d30-91c7-70949cf2174a.json) | Group_1 | Numerator | 0 | 1 |
-| [ d5f7630a-6fcf-4cfc-ba20-dfd5ee88af9a ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/d5f7630a-6fcf-4cfc-ba20-dfd5ee88af9a/MeasureReport-9ace9bd2-31c3-4e2f-87c9-e5900fa8bc4e.json) | Group_1 | Numerator | 0 | 1 |
-| [ f29e2786-fade-4dca-b14d-7037a34ef498 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/f29e2786-fade-4dca-b14d-7037a34ef498/MeasureReport-32baa107-7be1-4a64-a10d-1f25307962e6.json) | Group_1 | Denominator Exception | 1 | 0 |
-| [ ff6f7416-7e1d-4712-b4f5-aab79b2a7c01 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/ff6f7416-7e1d-4712-b4f5-aab79b2a7c01/MeasureReport-ff5cd138-335a-4186-a4bc-25cc1e6b91aa.json) | Group_1 | Numerator | 0 | 1 |
+Missing Results (36 of 36 test cases)
+| Test Case | Group |
+| --- | --- |
+| [ 0e463fc3-d1bf-4e19-882b-fad6342aa668 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/0e463fc3-d1bf-4e19-882b-fad6342aa668/MeasureReport-38443362-8261-414c-80b3-1f719f4ba56e.json) | Group_1 |
+| [ 12786a64-c20e-4542-a4c0-bf3129d6a9e0 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/12786a64-c20e-4542-a4c0-bf3129d6a9e0/MeasureReport-d404e2d0-2ded-4329-b254-482be8b54a7c.json) | Group_1 |
+| [ 15ad723f-b561-4cdd-9a11-7e6619780459 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/15ad723f-b561-4cdd-9a11-7e6619780459/MeasureReport-638aff8f-bd3d-48de-955c-ebf5a40c07b3.json) | Group_1 |
+| [ 1eaf0b86-afe8-488c-8f32-6321ecfe0fca ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/1eaf0b86-afe8-488c-8f32-6321ecfe0fca/MeasureReport-edf031e4-737c-469f-85b4-b9f7ceee8edc.json) | Group_1 |
+| [ 28bf1260-965f-4682-b427-2c2a2084312a ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/28bf1260-965f-4682-b427-2c2a2084312a/MeasureReport-e6b53ee4-83bf-4511-b924-ead91fde2550.json) | Group_1 |
+| [ 2ee18ee0-f67a-4694-8411-fda20e6d108d ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/2ee18ee0-f67a-4694-8411-fda20e6d108d/MeasureReport-2f7963f7-1b49-4a33-b0df-8d159ae5441d.json) | Group_1 |
+| [ 328248a7-33d6-4923-a99a-a56ec88c515e ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/328248a7-33d6-4923-a99a-a56ec88c515e/MeasureReport-bdaacb3a-ce88-42b6-972c-32682b427822.json) | Group_1 |
+| [ 39c99530-08b9-4ed2-bac7-6a59c1e1ad71 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/39c99530-08b9-4ed2-bac7-6a59c1e1ad71/MeasureReport-ffd5819f-6c98-4ee9-9390-f62d229a173e.json) | Group_1 |
+| [ 3ce2c72d-d347-4fde-82cf-dc9992c73aad ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/3ce2c72d-d347-4fde-82cf-dc9992c73aad/MeasureReport-e676d98d-00b0-477e-bd76-b8eed29011af.json) | Group_1 |
+| [ 4149c02e-ee5c-4b8d-a4ee-425dfa2460e7 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/4149c02e-ee5c-4b8d-a4ee-425dfa2460e7/MeasureReport-982820bc-1ced-40bb-8c89-e07f4685001d.json) | Group_1 |
+| [ 41664f5f-5280-4b5b-a9f1-289a412dbc18 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/41664f5f-5280-4b5b-a9f1-289a412dbc18/MeasureReport-c5be1b06-9890-4429-bf47-9e6300c040d7.json) | Group_1 |
+| [ 41df0dbe-ae84-4496-b355-320ff8707a85 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/41df0dbe-ae84-4496-b355-320ff8707a85/MeasureReport-922ffb7d-2d13-47b8-ad5d-4f42ff55f77d.json) | Group_1 |
+| [ 4a1f1d8c-0de8-4819-a0a3-28f6caaf6265 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/4a1f1d8c-0de8-4819-a0a3-28f6caaf6265/MeasureReport-d247410b-3db9-4adb-b36b-f6965347c71f.json) | Group_1 |
+| [ 6078e73e-3265-4022-ae63-216c096b6246 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/6078e73e-3265-4022-ae63-216c096b6246/MeasureReport-dfcfbb31-9da9-4947-8444-53a25c8b8121.json) | Group_1 |
+| [ 6aaff09e-4a7b-4efa-93f8-13033e95c230 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/6aaff09e-4a7b-4efa-93f8-13033e95c230/MeasureReport-5981d1e2-7d0b-4887-aed2-884d0e7df4fe.json) | Group_1 |
+| [ 6f17c306-5df4-431a-8364-d44ab5bad34a ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/6f17c306-5df4-431a-8364-d44ab5bad34a/MeasureReport-4d573421-a154-4534-beda-b21e58f1560e.json) | Group_1 |
+| [ 6f3808b3-69a2-4080-9529-8582b4d5c5d5 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/6f3808b3-69a2-4080-9529-8582b4d5c5d5/MeasureReport-95125f86-eed9-4348-a74d-e988d239583c.json) | Group_1 |
+| [ 7009a1c3-93a8-4028-b42a-0bd9953f6ebb ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/7009a1c3-93a8-4028-b42a-0bd9953f6ebb/MeasureReport-9bde3909-8819-4b4c-a8f8-ea2826c22990.json) | Group_1 |
+| [ 75a5223a-3a62-418a-bcc6-4522cfe71726 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/75a5223a-3a62-418a-bcc6-4522cfe71726/MeasureReport-6b56dd25-533d-4702-8fa9-cdd3e870d07b.json) | Group_1 |
+| [ 82134291-214a-4e6e-9969-9ccb6df412f0 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/82134291-214a-4e6e-9969-9ccb6df412f0/MeasureReport-74941887-d90e-4a1e-8c01-896d64c50df0.json) | Group_1 |
+| [ 86761769-1b1b-44c1-81cb-3f034a6a0bc2 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/86761769-1b1b-44c1-81cb-3f034a6a0bc2/MeasureReport-966603f0-716e-46c4-b3f1-6e154aed0ff6.json) | Group_1 |
+| [ 86ca7528-efcb-44ed-9203-6f21f37f4332 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/86ca7528-efcb-44ed-9203-6f21f37f4332/MeasureReport-51f60250-c8a8-49d8-81c1-56b58ad0125f.json) | Group_1 |
+| [ a09d5edf-2c0a-4b39-86bf-312109f357c0 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/a09d5edf-2c0a-4b39-86bf-312109f357c0/MeasureReport-a16ab9f2-0d95-4c0c-a468-b3a7d599e46a.json) | Group_1 |
+| [ a7ad97c4-9769-4630-8ad7-8cf354384aa1 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/a7ad97c4-9769-4630-8ad7-8cf354384aa1/MeasureReport-e873df3e-5740-4bc8-92de-e713cb273184.json) | Group_1 |
+| [ bc433eb4-fba6-45e0-a24b-de907e551556 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/bc433eb4-fba6-45e0-a24b-de907e551556/MeasureReport-41305353-f684-4d32-b1a5-2e9bece47889.json) | Group_1 |
+| [ be498e62-5ef2-47fa-8127-dfc5a7eb6ac9 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/be498e62-5ef2-47fa-8127-dfc5a7eb6ac9/MeasureReport-e635b1a3-f61c-40ad-80a3-139cec669283.json) | Group_1 |
+| [ cf76e904-95bd-445d-8384-62be012b76f6 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/cf76e904-95bd-445d-8384-62be012b76f6/MeasureReport-0167b60a-8e6c-439e-afc4-1b7771cadbb5.json) | Group_1 |
+| [ d0ba1182-26fa-4cfa-9f91-960503b7fe53 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/d0ba1182-26fa-4cfa-9f91-960503b7fe53/MeasureReport-277359bb-b41c-4dd4-b1af-b3afdb6ee15d.json) | Group_1 |
+| [ d1fc6b6d-025e-446b-a941-e62a76217e28 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/d1fc6b6d-025e-446b-a941-e62a76217e28/MeasureReport-7936d780-85c3-47d9-9167-25bb6e51ab47.json) | Group_1 |
+| [ d2cde80b-5a6c-48e9-b38a-de938f019096 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/d2cde80b-5a6c-48e9-b38a-de938f019096/MeasureReport-a1a497b3-5fec-4d30-91c7-70949cf2174a.json) | Group_1 |
+| [ d5f7630a-6fcf-4cfc-ba20-dfd5ee88af9a ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/d5f7630a-6fcf-4cfc-ba20-dfd5ee88af9a/MeasureReport-9ace9bd2-31c3-4e2f-87c9-e5900fa8bc4e.json) | Group_1 |
+| [ e1b6a53f-c856-41c2-b1fe-ec50d3f23333 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/e1b6a53f-c856-41c2-b1fe-ec50d3f23333/MeasureReport-93988ccc-e93b-4aea-85e9-8b074c28777b.json) | Group_1 |
+| [ f256f4bb-e5ad-4e93-bee7-7237b1fa275a ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/f256f4bb-e5ad-4e93-bee7-7237b1fa275a/MeasureReport-f86accb9-3c2b-4b92-99f4-dcbf1c570c58.json) | Group_1 |
+| [ f29e2786-fade-4dca-b14d-7037a34ef498 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/f29e2786-fade-4dca-b14d-7037a34ef498/MeasureReport-32baa107-7be1-4a64-a10d-1f25307962e6.json) | Group_1 |
+| [ fa943373-f62b-4494-8c9a-fb17e9b9a2bd ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/fa943373-f62b-4494-8c9a-fb17e9b9a2bd/MeasureReport-bf73c25c-a0f9-437f-9320-dbd9668da2d1.json) | Group_1 |
+| [ ff6f7416-7e1d-4712-b4f5-aab79b2a7c01 ](../.././input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/ff6f7416-7e1d-4712-b4f5-aab79b2a7c01/MeasureReport-ff5cd138-335a-4186-a4bc-25cc1e6b91aa.json) | Group_1 |
 
 
 #### CMS22FHIRPCSBPScreeningFollowUp
@@ -145,13 +166,11 @@ Mismatched Test Cases (12 of  of 44)
 #### CMS56FHIRFuncStatHipReplacement
 [ [cql] ](../../input/cql/CMS56FHIRFuncStatHipReplacement.cql) [ [test results] ](../../input/tests/results/CMS56FHIRFuncStatHipReplacement.txt)
 
-Mismatched Test Cases (26 of  of 58)
+Mismatched Test Cases (24 of  of 58)
 | Test Case | Group | Population | Expected | Actual |
 |---|---|---|:---:|:---:|
-| [ 10e6851a-0db4-4706-8a6e-7fbbb27c588e ](../.././input/tests/measure/CMS56FHIRFuncStatHipReplacement/10e6851a-0db4-4706-8a6e-7fbbb27c588e/MeasureReport-51a08c7d-df82-4af1-9b3a-30a16405fe0a.json) | Group_1 | Denominator Exclusion | 1 | 0 |
 | [ 11c8c8ff-97d1-4b46-8297-0a85d5caa1f3 ](../.././input/tests/measure/CMS56FHIRFuncStatHipReplacement/11c8c8ff-97d1-4b46-8297-0a85d5caa1f3/MeasureReport-44d17e38-08a5-4470-8861-1975cd02644f.json) | Group_1 | Numerator | 1 | 0 |
 | [ 289b7214-0496-425b-8ffa-14b2aaa9f771 ](../.././input/tests/measure/CMS56FHIRFuncStatHipReplacement/289b7214-0496-425b-8ffa-14b2aaa9f771/MeasureReport-fcb7591b-7fe2-4a0c-b626-68caba5b6568.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 34fa486b-b691-4760-9acc-1e5c0fc8a4dc ](../.././input/tests/measure/CMS56FHIRFuncStatHipReplacement/34fa486b-b691-4760-9acc-1e5c0fc8a4dc/MeasureReport-20f3f4ae-7b38-4a41-8e8c-4982ee82f6e2.json) | Group_1 | Denominator Exclusion | 1 | 0 |
 | [ 3574f4b8-cbdc-410b-8b6a-7f0737546e56 ](../.././input/tests/measure/CMS56FHIRFuncStatHipReplacement/3574f4b8-cbdc-410b-8b6a-7f0737546e56/MeasureReport-ac3dfe55-8975-49b5-9fd4-8db0c01ae667.json) | Group_1 | Denominator Exclusion | 1 | 0 |
 | [ 3eecaeb3-c916-490f-8ff9-9da910bff2a9 ](../.././input/tests/measure/CMS56FHIRFuncStatHipReplacement/3eecaeb3-c916-490f-8ff9-9da910bff2a9/MeasureReport-a3bbae4f-feb0-4455-95d2-5d422fcaa8a7.json) | Group_1 | Numerator | 1 | 0 |
 | [ 4029b23c-b8b3-43aa-a1c5-049b046646bf ](../.././input/tests/measure/CMS56FHIRFuncStatHipReplacement/4029b23c-b8b3-43aa-a1c5-049b046646bf/MeasureReport-b5bf3d7e-6765-434c-9c61-9f1d71f183dd.json) | Group_1 | Denominator Exclusion | 1 | 0 |
@@ -188,7 +207,7 @@ Mismatched Test Cases (1 of  of 19)
 #### CMS69FHIRPCSBMIScreenAndFollowUp
 [ [cql] ](../../input/cql/CMS69FHIRPCSBMIScreenAndFollowUp.cql) [ [test results] ](../../input/tests/results/CMS69FHIRPCSBMIScreenAndFollowUp.txt)
 
-Mismatched Test Cases (48 of  of 63)
+Mismatched Test Cases (44 of  of 63)
 | Test Case | Group | Population | Expected | Actual |
 |---|---|---|:---:|:---:|
 | [ 0278fdf0-f067-46e8-aeb1-fb96dff3c947 ](../.././input/tests/measure/CMS69FHIRPCSBMIScreenAndFollowUp/0278fdf0-f067-46e8-aeb1-fb96dff3c947/MeasureReport-d4375950-775b-4267-a1b7-287b130ddba5.json) | Group_1 | Denominator Exception | 1 | 0 |
@@ -208,9 +227,6 @@ Mismatched Test Cases (48 of  of 63)
 | [ 461fdfab-fcc1-4630-9dae-2ba3a6ab0c25 ](../.././input/tests/measure/CMS69FHIRPCSBMIScreenAndFollowUp/461fdfab-fcc1-4630-9dae-2ba3a6ab0c25/MeasureReport-ef49c8ea-63d2-4cea-abb9-964d856db616.json) | Group_1 | Numerator | 1 | 0 |
 | [ 463dd868-997d-472f-962c-96383fd2a5c4 ](../.././input/tests/measure/CMS69FHIRPCSBMIScreenAndFollowUp/463dd868-997d-472f-962c-96383fd2a5c4/MeasureReport-0023b9fa-401a-4e0b-9298-b345b544d9a3.json) | Group_1 | Numerator | 1 | 0 |
 | [ 57858042-c2aa-49f4-b401-1f1fd9ab289a ](../.././input/tests/measure/CMS69FHIRPCSBMIScreenAndFollowUp/57858042-c2aa-49f4-b401-1f1fd9ab289a/MeasureReport-f2536a94-89c0-4b41-9366-1851f9e5244f.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 5d34e56e-f4f1-4817-b7e4-e4c57f811300 ](../.././input/tests/measure/CMS69FHIRPCSBMIScreenAndFollowUp/5d34e56e-f4f1-4817-b7e4-e4c57f811300/MeasureReport-005250b3-0d49-48cf-ae6f-17c039265358.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 5d48c3b8-93e9-4e29-8c20-a002761d9e24 ](../.././input/tests/measure/CMS69FHIRPCSBMIScreenAndFollowUp/5d48c3b8-93e9-4e29-8c20-a002761d9e24/MeasureReport-59169730-a1eb-40d1-9b71-d84981ad8e3e.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 5ef4acf3-4b42-41fd-8793-7d1a9342865a ](../.././input/tests/measure/CMS69FHIRPCSBMIScreenAndFollowUp/5ef4acf3-4b42-41fd-8793-7d1a9342865a/MeasureReport-b251f176-9318-47a3-87f2-fea12f92e3c4.json) | Group_1 | Denominator Exclusion | 1 | 0 |
 | [ 6092a810-f9e0-4975-9582-37bbb06e8e56 ](../.././input/tests/measure/CMS69FHIRPCSBMIScreenAndFollowUp/6092a810-f9e0-4975-9582-37bbb06e8e56/MeasureReport-44c748c1-2037-4d8a-a875-2736c4a18d16.json) | Group_1 | Denominator Exclusion | 1 | 0 |
 | [ 6553adbf-2a30-4861-97e6-cca7d2274f01 ](../.././input/tests/measure/CMS69FHIRPCSBMIScreenAndFollowUp/6553adbf-2a30-4861-97e6-cca7d2274f01/MeasureReport-65aeab54-df7f-4629-b35e-df187176b665.json) | Group_1 | Denominator Exception | 1 | 0 |
 | [ 659f9c7b-5c1c-475f-bfcb-77c246fa7a28 ](../.././input/tests/measure/CMS69FHIRPCSBMIScreenAndFollowUp/659f9c7b-5c1c-475f-bfcb-77c246fa7a28/MeasureReport-3de4937e-ab6f-4569-9e1a-7e08a3cbb3d8.json) | Group_1 | Denominator Exception | 1 | 0 |
@@ -232,7 +248,6 @@ Mismatched Test Cases (48 of  of 63)
 | [ c1df0273-aad8-41a8-859c-edd204bb4f16 ](../.././input/tests/measure/CMS69FHIRPCSBMIScreenAndFollowUp/c1df0273-aad8-41a8-859c-edd204bb4f16/MeasureReport-abbbe154-ab3b-49d5-ad19-34e9c6cec72d.json) | Group_1 | Denominator Exception | 1 | 0 |
 | [ c3caf126-12a2-473f-8f51-1c7828d63d16 ](../.././input/tests/measure/CMS69FHIRPCSBMIScreenAndFollowUp/c3caf126-12a2-473f-8f51-1c7828d63d16/MeasureReport-efbab239-c362-4ef2-b91b-49e234e8c5c4.json) | Group_1 | Numerator | 1 | 0 |
 | [ c84bf29f-80ac-4bf0-beeb-404ba96a3fa8 ](../.././input/tests/measure/CMS69FHIRPCSBMIScreenAndFollowUp/c84bf29f-80ac-4bf0-beeb-404ba96a3fa8/MeasureReport-62e3506b-3f36-48ef-8a9a-69b9b6401c45.json) | Group_1 | Numerator | 1 | 0 |
-| [ ca6deaeb-459d-4d1a-9daf-e454ff76a6f0 ](../.././input/tests/measure/CMS69FHIRPCSBMIScreenAndFollowUp/ca6deaeb-459d-4d1a-9daf-e454ff76a6f0/MeasureReport-728faa06-3efd-4d80-bcbe-f4c7217e36fb.json) | Group_1 | Denominator Exclusion | 1 | 0 |
 | [ d318f512-656e-43bf-a409-16b6e24462a9 ](../.././input/tests/measure/CMS69FHIRPCSBMIScreenAndFollowUp/d318f512-656e-43bf-a409-16b6e24462a9/MeasureReport-0b34eb02-dd98-4ed2-a7b2-e621e228d63c.json) | Group_1 | Denominator Exclusion | 1 | 0 |
 | [ d4d064be-d55a-47b5-9bfd-993afebd95a5 ](../.././input/tests/measure/CMS69FHIRPCSBMIScreenAndFollowUp/d4d064be-d55a-47b5-9bfd-993afebd95a5/MeasureReport-3cba3e58-4c3f-4f39-b0af-b52d69bda4b9.json) | Group_1 | Numerator | 1 | 0 |
 | [ e0821eec-ff83-49e9-950d-9219dd3612b9 ](../.././input/tests/measure/CMS69FHIRPCSBMIScreenAndFollowUp/e0821eec-ff83-49e9-950d-9219dd3612b9/MeasureReport-712f56a5-5f65-428c-a73a-cf0d453d1302.json) | Group_1 | Numerator | 1 | 0 |
@@ -256,7 +271,7 @@ Mismatched Test Cases (4 of  of 83)
 #### CMS74FHIRDentalCariesPrevention
 [ [cql] ](../../input/cql/CMS74FHIRDentalCariesPrevention.cql) [ [test results] ](../../input/tests/results/CMS74FHIRDentalCariesPrevention.txt)
 
-Mismatched Test Cases (7 of  of 20)
+Mismatched Test Cases (6 of  of 20)
 | Test Case | Group | Population | Expected | Actual |
 |---|---|---|:---:|:---:|
 | [ 31bee4bc-9ca4-4d84-9f1a-a6a6d2d3fac0 ](../.././input/tests/measure/CMS74FHIRDentalCariesPrevention/31bee4bc-9ca4-4d84-9f1a-a6a6d2d3fac0/MeasureReport-527e90a7-da52-4aeb-bde0-0bab30030567.json) | Group_1 | Denominator Exclusion | 1 | 0 |
@@ -265,17 +280,15 @@ Mismatched Test Cases (7 of  of 20)
 | [ 70208367-16df-46d6-b49c-c1e31b7e1d5f ](../.././input/tests/measure/CMS74FHIRDentalCariesPrevention/70208367-16df-46d6-b49c-c1e31b7e1d5f/MeasureReport-1afefa48-4ea8-462c-9d65-e113dbafea42.json) | Group_1 | Denominator Exclusion | 1 | 0 |
 | [ 890dbdad-7466-494d-966b-a20515508db5 ](../.././input/tests/measure/CMS74FHIRDentalCariesPrevention/890dbdad-7466-494d-966b-a20515508db5/MeasureReport-d3aa9228-b953-4f41-9715-9a4e2bdab41b.json) | Group_1 | Denominator Exclusion | 1 | 0 |
 | [ 96c38952-91cc-468c-b16b-32386bb312ec ](../.././input/tests/measure/CMS74FHIRDentalCariesPrevention/96c38952-91cc-468c-b16b-32386bb312ec/MeasureReport-a63cb2f7-9022-41e0-968b-a8d1393dbf8b.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ fe5f3172-5263-4498-b1ba-0d62de7455ef ](../.././input/tests/measure/CMS74FHIRDentalCariesPrevention/fe5f3172-5263-4498-b1ba-0d62de7455ef/MeasureReport-7a43460d-c5e6-4cb1-8aa0-aee2a031c30a.json) | Group_1 | Denominator Exclusion | 1 | 0 |
 
 
 #### CMS75FHIRChildrenDentalDecay
 [ [cql] ](../../input/cql/CMS75FHIRChildrenDentalDecay.cql) [ [test results] ](../../input/tests/results/CMS75FHIRChildrenDentalDecay.txt)
 
-Mismatched Test Cases (9 of  of 20)
+Mismatched Test Cases (8 of  of 20)
 | Test Case | Group | Population | Expected | Actual |
 |---|---|---|:---:|:---:|
 | [ 043f64b7-dd25-42ea-9785-0bdcbe64b27a ](../.././input/tests/measure/CMS75FHIRChildrenDentalDecay/043f64b7-dd25-42ea-9785-0bdcbe64b27a/MeasureReport-38477bd2-2869-40cc-b9bf-87411de40c43.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 26549e84-fbf3-43dc-8971-2f3baaf508d7 ](../.././input/tests/measure/CMS75FHIRChildrenDentalDecay/26549e84-fbf3-43dc-8971-2f3baaf508d7/MeasureReport-0ec4b930-0257-4c61-8caf-1889192f85ce.json) | Group_1 | Denominator Exclusion | 1 | 0 |
 | [ 303676f7-30b4-4324-8ab3-8d5ab7e92102 ](../.././input/tests/measure/CMS75FHIRChildrenDentalDecay/303676f7-30b4-4324-8ab3-8d5ab7e92102/MeasureReport-0ad65771-f602-4a8c-b994-a6a9c2eed62d.json) | Group_1 | Denominator Exclusion | 1 | 0 |
 | [ 326c7237-c7a4-4e1b-bd1d-ba518dc942dd ](../.././input/tests/measure/CMS75FHIRChildrenDentalDecay/326c7237-c7a4-4e1b-bd1d-ba518dc942dd/MeasureReport-0154c762-1783-46f1-a594-89b73d9b6d56.json) | Group_1 | Denominator Exclusion | 1 | 0 |
 | [ 8b91c8d5-4fed-4be7-b930-ba922a502c05 ](../.././input/tests/measure/CMS75FHIRChildrenDentalDecay/8b91c8d5-4fed-4be7-b930-ba922a502c05/MeasureReport-7223a169-a7a2-462c-8923-ad3a2be26ee4.json) | Group_1 | Numerator | 1 | 0 |
@@ -343,94 +356,34 @@ Mismatched Test Cases (8 of  of 140)
 | [ dba7c9af-eb6f-4836-ba24-650a5acc87e7 ](../.././input/tests/measure/CMS108FHIRVTEProphylaxis/dba7c9af-eb6f-4836-ba24-650a5acc87e7/MeasureReport-7c3e8a2e-61ff-4a73-b3e6-d6b168cb4cc6.json) | Group_1 | Numerator | 1 | 0 |
 
 
-#### CMS117FHIRChildImmunStatus
-[ [cql] ](../../input/cql/CMS117FHIRChildImmunStatus.cql) [ [test results] ](../../input/tests/results/CMS117FHIRChildImmunStatus.txt)
-
-Mismatched Test Cases (8 of  of 45)
-| Test Case | Group | Population | Expected | Actual |
-|---|---|---|:---:|:---:|
-| [ 104ee6b1-c36f-420c-bedd-0a2064f748d8 ](../.././input/tests/measure/CMS117FHIRChildImmunStatus/104ee6b1-c36f-420c-bedd-0a2064f748d8/MeasureReport-52c8995d-58f1-413a-b5bb-d0e5edddeae4.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 239d5e6f-38d3-461f-a2a1-52abe106e8bb ](../.././input/tests/measure/CMS117FHIRChildImmunStatus/239d5e6f-38d3-461f-a2a1-52abe106e8bb/MeasureReport-382384c3-a4c8-4b52-a5ab-1129c957c4d5.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 92ed2664-a594-4cac-9001-3044b14a02f7 ](../.././input/tests/measure/CMS117FHIRChildImmunStatus/92ed2664-a594-4cac-9001-3044b14a02f7/MeasureReport-7508d5b2-3858-4e4b-b699-f076405b16ee.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 9e57c539-0442-415a-a187-87adc7acdd8a ](../.././input/tests/measure/CMS117FHIRChildImmunStatus/9e57c539-0442-415a-a187-87adc7acdd8a/MeasureReport-2cc8e873-5006-4a7e-9bb2-3223667c6061.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ aeb0266c-a8ec-4262-a4bc-6bc343a85230 ](../.././input/tests/measure/CMS117FHIRChildImmunStatus/aeb0266c-a8ec-4262-a4bc-6bc343a85230/MeasureReport-583b5775-ec4f-4c12-9e56-9e164a0d669b.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ b5f9f533-30c2-4fbe-b06e-3f8dccc8792c ](../.././input/tests/measure/CMS117FHIRChildImmunStatus/b5f9f533-30c2-4fbe-b06e-3f8dccc8792c/MeasureReport-29cfa3eb-f8f3-44d9-b70e-2a5cc5432fdb.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ dd1e534c-aa60-4ff3-a955-109f034b408f ](../.././input/tests/measure/CMS117FHIRChildImmunStatus/dd1e534c-aa60-4ff3-a955-109f034b408f/MeasureReport-088851e5-54bf-44b4-8fe1-fa0733cdcd31.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ fe0cb80b-232c-4c84-8b2a-f27eaf3078ff ](../.././input/tests/measure/CMS117FHIRChildImmunStatus/fe0cb80b-232c-4c84-8b2a-f27eaf3078ff/MeasureReport-8e4c6c23-db3f-42f5-972a-c31f33d1fd2f.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-
-
 #### CMS122FHIRDiabetesAssessGT9Pct
 [ [cql] ](../../input/cql/CMS122FHIRDiabetesAssessGT9Pct.cql) [ [test results] ](../../input/tests/results/CMS122FHIRDiabetesAssessGT9Pct.txt)
 
-Mismatched Test Cases (19 of  of 55)
+Mismatched Test Cases (6 of  of 55)
 | Test Case | Group | Population | Expected | Actual |
 |---|---|---|:---:|:---:|
-| [ 12ccd41a-83aa-405a-83b3-c756564c4de5 ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/12ccd41a-83aa-405a-83b3-c756564c4de5/MeasureReport-b60e15c5-d245-4c59-9089-5b3440601ae9.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 63ae0b9f-2636-4bf3-85ef-4ff20bdb09de ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/63ae0b9f-2636-4bf3-85ef-4ff20bdb09de/MeasureReport-df039417-d939-44cd-863b-c48f210acb40.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 64ba4a87-8cf6-4cfb-b0e7-506dd08c8bbe ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/64ba4a87-8cf6-4cfb-b0e7-506dd08c8bbe/MeasureReport-687098af-4e64-45da-86f8-6bb70be03188.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 6b6a5f96-c2a8-43f1-a353-7b5700ecb031 ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/6b6a5f96-c2a8-43f1-a353-7b5700ecb031/MeasureReport-5d9e9fa7-7fb0-4ea4-9e2a-89cb9ec2b721.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 6d9426d1-5554-4d6b-9ed0-e3736dd17482 ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/6d9426d1-5554-4d6b-9ed0-e3736dd17482/MeasureReport-a3fbc91c-1b80-4662-bb94-b16208051dc6.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 6f0553ac-e12a-4af5-ad27-05339f4b4ec0 ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/6f0553ac-e12a-4af5-ad27-05339f4b4ec0/MeasureReport-af9e410a-aa02-4a46-a7b5-3a2830aa89be.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 7d01a597-c0da-4bff-9bdd-f3516021db34 ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/7d01a597-c0da-4bff-9bdd-f3516021db34/MeasureReport-2f7961e5-23ba-47b5-b859-099596ad98b2.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 7e69124d-ff34-4daf-b626-08d1283f71ba ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/7e69124d-ff34-4daf-b626-08d1283f71ba/MeasureReport-e0f91cb5-1173-45da-9018-e38fe9e12c5f.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 85b60f52-7b08-46f3-946b-cb317b28acf5 ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/85b60f52-7b08-46f3-946b-cb317b28acf5/MeasureReport-2cb54ad7-4330-49a5-b559-4331cbe5334c.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 86a25ad7-3801-4297-a9a4-b36b5308c9e2 ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/86a25ad7-3801-4297-a9a4-b36b5308c9e2/MeasureReport-305a18c3-f156-4d12-8800-6e649dad30b0.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 88b67805-bfef-411c-a191-12382d2c3104 ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/88b67805-bfef-411c-a191-12382d2c3104/MeasureReport-f84a2836-1491-4c2d-bc2c-57bc32709693.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 8b8ded15-0118-4d0c-ac0f-6797528cefb9 ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/8b8ded15-0118-4d0c-ac0f-6797528cefb9/MeasureReport-b48301b2-d97e-4b35-a443-48cd41fac97a.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 91986c00-e45b-4e7c-afa7-734d6fe43d16 ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/91986c00-e45b-4e7c-afa7-734d6fe43d16/MeasureReport-68269ed5-a460-418c-b70f-3e5c174ed019.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 96cfe7f0-b4e1-4e2e-a48d-ef64fb64343d ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/96cfe7f0-b4e1-4e2e-a48d-ef64fb64343d/MeasureReport-7cb09dcc-72e5-4c62-8637-92c1002e717f.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ ac4d7076-d1cb-44c6-a94f-c2c86266d53b ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/ac4d7076-d1cb-44c6-a94f-c2c86266d53b/MeasureReport-67ce8fb1-ed41-4823-ab6b-79dee31980f4.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ b6a4b9f8-21c1-44f2-a834-72f0906b4f88 ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/b6a4b9f8-21c1-44f2-a834-72f0906b4f88/MeasureReport-1f69f5d9-c1c0-48fd-80a9-843a206bab83.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ e2b82999-6313-40af-bc8b-9ddf5f97795f ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/e2b82999-6313-40af-bc8b-9ddf5f97795f/MeasureReport-57b71351-8c5b-4c1e-b26d-537e727a527c.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ eacbadee-87f7-4ed0-bfc3-b5533128dcbc ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/eacbadee-87f7-4ed0-bfc3-b5533128dcbc/MeasureReport-07a87bff-310c-4747-89f5-dac13c140e27.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ f4eeba51-a6fc-4ffd-bd62-49fd1c375f01 ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/f4eeba51-a6fc-4ffd-bd62-49fd1c375f01/MeasureReport-e375ec29-d1c1-4b3b-ad70-82d5679427f0.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-
-
-#### CMS124FHIRCervicalCancerScreen
-[ [cql] ](../../input/cql/CMS124FHIRCervicalCancerScreen.cql) [ [test results] ](../../input/tests/results/CMS124FHIRCervicalCancerScreen.txt)
-
-Mismatched Test Cases (13 of  of 34)
-| Test Case | Group | Population | Expected | Actual |
-|---|---|---|:---:|:---:|
-| [ 05cbc93d-e748-4bca-b68d-3011ebf68e28 ](../.././input/tests/measure/CMS124FHIRCervicalCancerScreen/05cbc93d-e748-4bca-b68d-3011ebf68e28/MeasureReport-ac66e7a1-8260-427e-937a-cd9df836e72a.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 0e296f04-855b-42ad-aa20-295a719a96e5 ](../.././input/tests/measure/CMS124FHIRCervicalCancerScreen/0e296f04-855b-42ad-aa20-295a719a96e5/MeasureReport-fcfadc9c-df80-4993-a06a-f3a98baf6803.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 3aef97c8-9529-433c-95d3-ea01f188e156 ](../.././input/tests/measure/CMS124FHIRCervicalCancerScreen/3aef97c8-9529-433c-95d3-ea01f188e156/MeasureReport-e1cbc9e6-5ffe-421c-9e55-10f06668eaa4.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 62bd7a1e-f946-435f-8898-39db9d870940 ](../.././input/tests/measure/CMS124FHIRCervicalCancerScreen/62bd7a1e-f946-435f-8898-39db9d870940/MeasureReport-2da3f0a6-31e1-4b71-93ba-e54b17bc2126.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 65a9a258-c453-484f-902c-743e678b44a4 ](../.././input/tests/measure/CMS124FHIRCervicalCancerScreen/65a9a258-c453-484f-902c-743e678b44a4/MeasureReport-081101f5-4fcc-41b8-bf0f-07c681af8697.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 6ee7c92c-c8cd-4025-8002-ca1253ba830b ](../.././input/tests/measure/CMS124FHIRCervicalCancerScreen/6ee7c92c-c8cd-4025-8002-ca1253ba830b/MeasureReport-2b01b1fa-eebc-4298-a356-bc06ef30edbc.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 7e41f717-097e-45a7-9a00-1e0ad852cb44 ](../.././input/tests/measure/CMS124FHIRCervicalCancerScreen/7e41f717-097e-45a7-9a00-1e0ad852cb44/MeasureReport-e78c1f1e-cc47-466f-a6d7-5dab77d27fe5.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 8723dbb4-f60f-488a-9da3-f02f04ea03bf ](../.././input/tests/measure/CMS124FHIRCervicalCancerScreen/8723dbb4-f60f-488a-9da3-f02f04ea03bf/MeasureReport-ea856e36-a8f1-44dd-9bb4-fd97e28e0b6b.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ ab346cb5-2c55-4171-93ea-aac9d266e6c7 ](../.././input/tests/measure/CMS124FHIRCervicalCancerScreen/ab346cb5-2c55-4171-93ea-aac9d266e6c7/MeasureReport-35cb669c-85a8-4056-b974-a566c232962c.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ c6ec1681-b011-425a-a850-4e187e9fd927 ](../.././input/tests/measure/CMS124FHIRCervicalCancerScreen/c6ec1681-b011-425a-a850-4e187e9fd927/MeasureReport-3afc698c-61bc-4a84-8e46-fd4768b7299d.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ cadbffa0-20b2-4c26-b202-75b9edfd0a07 ](../.././input/tests/measure/CMS124FHIRCervicalCancerScreen/cadbffa0-20b2-4c26-b202-75b9edfd0a07/MeasureReport-34b8c4ca-d69c-43da-87a7-a7d72ef39a09.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ d986061c-de3e-4d5d-95e7-f5ec93c5665c ](../.././input/tests/measure/CMS124FHIRCervicalCancerScreen/d986061c-de3e-4d5d-95e7-f5ec93c5665c/MeasureReport-ddce5657-8d40-4d72-8109-f7c3e1ebd091.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ e8813151-9334-41d7-ab4b-1d597f08d4a9 ](../.././input/tests/measure/CMS124FHIRCervicalCancerScreen/e8813151-9334-41d7-ab4b-1d597f08d4a9/MeasureReport-265b4c27-2701-4ef0-a8e0-28e1b0c0cf98.json) | Group_1 | Denominator Exclusion | 1 | 0 |
+| [ 3b62b0a8-44f2-4365-bcb9-7cadef5bab2e ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/3b62b0a8-44f2-4365-bcb9-7cadef5bab2e/MeasureReport-e85cf7dc-dcfc-4e0b-b68a-4f8ed1b9ddd4.json) | Group_1 | Denominator Exclusion<br>Numerator | 0<br>1 | 1<br>0 |
+| [ 9cba6cfa-9671-4850-803d-e286c7d59ee7 ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/9cba6cfa-9671-4850-803d-e286c7d59ee7/MeasureReport-4cf88428-9d18-4c27-a59f-189dc83cf084.json) | Group_1 | Denominator Exclusion<br>Numerator | 0<br>1 | 1<br>0 |
+| [ cade5021-b1bf-43e9-a0a4-659c05b386d0 ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/cade5021-b1bf-43e9-a0a4-659c05b386d0/MeasureReport-373f8db2-50fb-450e-8e83-c2b1ef94aa93.json) | Group_1 | Denominator Exclusion<br>Numerator | 0<br>1 | 1<br>0 |
+| [ e61be907-af68-493f-a6bc-3d93ef8b6c6e ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/e61be907-af68-493f-a6bc-3d93ef8b6c6e/MeasureReport-a4a3ee93-9b96-4259-9158-e9a1f4929c1f.json) | Group_1 | Denominator Exclusion<br>Numerator | 0<br>1 | 1<br>0 |
+| [ ede0ee7a-18ab-4ba7-934c-23618f1270ea ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/ede0ee7a-18ab-4ba7-934c-23618f1270ea/MeasureReport-ac90199a-d913-470f-85f0-801ea59d5f06.json) | Group_1 | Denominator Exclusion<br>Numerator | 0<br>1 | 1<br>0 |
+| [ f5771b74-a7de-439a-a51f-49a3863e086b ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/f5771b74-a7de-439a-a51f-49a3863e086b/MeasureReport-50f84e99-bb0e-4b7c-bc0b-b81dfb59c503.json) | Group_1 | Denominator Exclusion<br>Numerator | 0<br>1 | 1<br>0 |
 
 
 #### CMS125FHIRBreastCancerScreen
 [ [cql] ](../../input/cql/CMS125FHIRBreastCancerScreen.cql) [ [test results] ](../../input/tests/results/CMS125FHIRBreastCancerScreen.txt)
 
-Mismatched Test Cases (18 of  of 66)
+Mismatched Test Cases (8 of  of 66)
 | Test Case | Group | Population | Expected | Actual |
 |---|---|---|:---:|:---:|
-| [ 01c88972-84e2-4594-835b-924481b9990a ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/01c88972-84e2-4594-835b-924481b9990a/MeasureReport-e676f8fb-fbc5-4323-8f2f-df0cfdd80b9d.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 0930082c-fda1-42e8-a15f-92ceaefa5908 ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/0930082c-fda1-42e8-a15f-92ceaefa5908/MeasureReport-7a4f414d-68b6-4a95-9c19-e5cbec4f2605.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 0beefd14-c554-4f1e-856c-c8696177ce9e ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/0beefd14-c554-4f1e-856c-c8696177ce9e/MeasureReport-5e9d1098-0613-4441-ac17-09a992fd6dee.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 14193177-2f4e-4480-a471-87ff9d137a8b ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/14193177-2f4e-4480-a471-87ff9d137a8b/MeasureReport-360de092-eb92-49f7-958d-47bc1e79c3cd.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 2886b1b6-5834-4788-8cd7-b54bbda54ca9 ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/2886b1b6-5834-4788-8cd7-b54bbda54ca9/MeasureReport-72062307-5e9c-4b35-858b-b1ac46b877f2.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 3ea0a87a-3ded-4939-920a-4e69bc20a26f ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/3ea0a87a-3ded-4939-920a-4e69bc20a26f/MeasureReport-6e528bdf-df67-4f23-af00-fc257b686d14.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 461f1aab-e645-4973-ae9a-4c09bfaef59a ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/461f1aab-e645-4973-ae9a-4c09bfaef59a/MeasureReport-0709b11a-1a4d-482d-b2a1-e562f15ab9f6.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 4f10a0f7-bb14-40d5-beb2-c728eb88a30d ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/4f10a0f7-bb14-40d5-beb2-c728eb88a30d/MeasureReport-6b17ecfe-be06-4b57-b9dc-771f4f180d0d.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 5c8bffdf-7ef4-44e1-af5a-8a64f1b7e545 ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/5c8bffdf-7ef4-44e1-af5a-8a64f1b7e545/MeasureReport-b814bacf-21ef-46e4-bd83-73c0dd5ad2a6.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 5fd02264-fd4e-4eb7-a635-0023876920ac ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/5fd02264-fd4e-4eb7-a635-0023876920ac/MeasureReport-ef76250a-2408-42d0-9147-1cc0b459090e.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 62901c95-5d12-45e8-b5b1-d131e36d8299 ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/62901c95-5d12-45e8-b5b1-d131e36d8299/MeasureReport-1129152b-fe9b-4ccf-b28b-71bada6d3088.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 73f77133-4d08-438a-ac81-6bb858a74c31 ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/73f77133-4d08-438a-ac81-6bb858a74c31/MeasureReport-ffe8b795-6293-4c6e-915c-ffb0923c2297.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 7a09940e-c3c8-49a7-bf09-eaf9df116dfb ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/7a09940e-c3c8-49a7-bf09-eaf9df116dfb/MeasureReport-6ee6dbd2-a3c8-4c36-b129-ef136ee08d8d.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 8a0f6b6e-fb1c-4e60-b150-b88d1a4e487b ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/8a0f6b6e-fb1c-4e60-b150-b88d1a4e487b/MeasureReport-874b2823-67e5-48c4-916a-3457357a1508.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 99b68a44-5e66-4c37-a513-80db8b6249ce ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/99b68a44-5e66-4c37-a513-80db8b6249ce/MeasureReport-49135ebe-fd39-4017-aacf-88e191d3125d.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ adb08da2-b4d0-4916-9b9c-7c2c86e1042b ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/adb08da2-b4d0-4916-9b9c-7c2c86e1042b/MeasureReport-28a4057b-1650-4474-b2d8-14ddee97ae4b.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ bbb391da-9572-4954-be95-3ea00eb31c91 ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/bbb391da-9572-4954-be95-3ea00eb31c91/MeasureReport-44e2a7d7-b35b-4902-a4d9-d89ff4221755.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ cc1a4555-2e3e-43ac-bbca-6e44ea41b2f3 ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/cc1a4555-2e3e-43ac-bbca-6e44ea41b2f3/MeasureReport-ff2520e5-8d79-493c-b3a0-76278531021d.json) | Group_1 | Denominator Exclusion | 1 | 0 |
+| [ 0ced1e0c-9c92-4582-a4b1-e44f130e436f ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/0ced1e0c-9c92-4582-a4b1-e44f130e436f/MeasureReport-a6399df7-7d9a-45da-a64b-97f695646ce6.json) | Group_1 | Denominator Exclusion | 0 | 1 |
+| [ 14b87edd-7f1e-4f6a-9910-f905966ec904 ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/14b87edd-7f1e-4f6a-9910-f905966ec904/MeasureReport-eb7ec114-0c95-4e73-98ad-772a8197ffff.json) | Group_1 | Denominator Exclusion | 0 | 1 |
+| [ 24557438-17c9-405c-88dc-0c0bfda17d27 ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/24557438-17c9-405c-88dc-0c0bfda17d27/MeasureReport-f2a7180d-acd8-4394-acdd-8959d861ef65.json) | Group_1 | Denominator Exclusion | 0 | 1 |
+| [ 5e3f01ad-1eda-4cb7-8d37-1146beae59e9 ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/5e3f01ad-1eda-4cb7-8d37-1146beae59e9/MeasureReport-ac67c1e3-d0df-4745-bc85-d4ec0a18e8f3.json) | Group_1 | Denominator Exclusion | 0 | 1 |
+| [ 8278ae07-69ec-469c-ae01-e933d051f764 ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/8278ae07-69ec-469c-ae01-e933d051f764/MeasureReport-ee5db0d0-8af1-4521-a060-aed5b026e194.json) | Group_1 | Denominator Exclusion | 0 | 1 |
+| [ d4540640-2561-4ebd-b7c6-15878a4dc582 ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/d4540640-2561-4ebd-b7c6-15878a4dc582/MeasureReport-2e186c68-d7f4-4b2e-9f8a-e73c79905e7e.json) | Group_1 | Denominator Exclusion | 0 | 1 |
+| [ da85601e-ce6f-4351-b639-1e58c725bf2f ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/da85601e-ce6f-4351-b639-1e58c725bf2f/MeasureReport-699e12b2-26d4-43a8-add0-bcdd6629fe88.json) | Group_1 | Denominator Exclusion | 0 | 1 |
+| [ f38ce16a-658f-4aa0-b4a6-fac61d2e58a8 ](../.././input/tests/measure/CMS125FHIRBreastCancerScreen/f38ce16a-658f-4aa0-b4a6-fac61d2e58a8/MeasureReport-81d2ade5-fa91-428c-b39f-3f0b8b7b2c16.json) | Group_1 | Denominator Exclusion | 0 | 1 |
 
 
 #### CMS129FHIRProstCaBoneScanUse
@@ -493,52 +446,25 @@ Mismatched Test Cases (49 of  of 51)
 #### CMS130FHIRColorectalCancerScrn
 [ [cql] ](../../input/cql/CMS130FHIRColorectalCancerScrn.cql) [ [test results] ](../../input/tests/results/CMS130FHIRColorectalCancerScrn.txt)
 
-Mismatched Test Cases (16 of  of 64)
+Mismatched Test Cases (1 of  of 64)
 | Test Case | Group | Population | Expected | Actual |
 |---|---|---|:---:|:---:|
-| [ 007ec5f1-08cf-474a-a472-f6a92cca4b79 ](../.././input/tests/measure/CMS130FHIRColorectalCancerScrn/007ec5f1-08cf-474a-a472-f6a92cca4b79/MeasureReport-1f790f7a-6451-49d4-8749-218958c2ae80.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 02488708-2ac0-4814-828c-04b8be9b1e70 ](../.././input/tests/measure/CMS130FHIRColorectalCancerScrn/02488708-2ac0-4814-828c-04b8be9b1e70/MeasureReport-1aeea0f3-b0f1-4c07-92b9-3651e1a2cdd3.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 0f930f59-9061-4b28-b2e5-21cc5ab6b613 ](../.././input/tests/measure/CMS130FHIRColorectalCancerScrn/0f930f59-9061-4b28-b2e5-21cc5ab6b613/MeasureReport-6ebe3bb3-aae4-4f28-8198-f00d6c451797.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 46635c8a-3f72-4424-98ae-01b849d0ff19 ](../.././input/tests/measure/CMS130FHIRColorectalCancerScrn/46635c8a-3f72-4424-98ae-01b849d0ff19/MeasureReport-14848d95-4b53-41e0-9f17-3677181a1c72.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 4e1abf20-b68c-401b-9a33-fdf9bc765005 ](../.././input/tests/measure/CMS130FHIRColorectalCancerScrn/4e1abf20-b68c-401b-9a33-fdf9bc765005/MeasureReport-8c11cb6d-a601-47e7-a910-0d47488b9769.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 59128a5c-f9da-4cb3-9e98-97ee67380533 ](../.././input/tests/measure/CMS130FHIRColorectalCancerScrn/59128a5c-f9da-4cb3-9e98-97ee67380533/MeasureReport-2bbe889d-f9f2-44cf-8d34-eecba30afe9b.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 5fd0d61d-d5e0-4138-8a8d-6e3969af6107 ](../.././input/tests/measure/CMS130FHIRColorectalCancerScrn/5fd0d61d-d5e0-4138-8a8d-6e3969af6107/MeasureReport-8155e372-74fd-49e6-bd5f-330536b7bce6.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 6dbaf3b3-8c47-4e0a-91fe-2ec06f2f0339 ](../.././input/tests/measure/CMS130FHIRColorectalCancerScrn/6dbaf3b3-8c47-4e0a-91fe-2ec06f2f0339/MeasureReport-10e2ca7a-ea38-430d-a3b6-661c1c4562be.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 6f6cdf8c-e562-4113-bf5d-f91237b975a5 ](../.././input/tests/measure/CMS130FHIRColorectalCancerScrn/6f6cdf8c-e562-4113-bf5d-f91237b975a5/MeasureReport-befb6056-35d0-485b-8970-f4cd2adcfbda.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 7ee1a25c-a4c7-4bd2-8670-4083b32ecc70 ](../.././input/tests/measure/CMS130FHIRColorectalCancerScrn/7ee1a25c-a4c7-4bd2-8670-4083b32ecc70/MeasureReport-7d04b754-45f9-40ef-a545-5eba7a7c4c3d.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ a989a58f-82c5-4221-addb-5e29c2514df7 ](../.././input/tests/measure/CMS130FHIRColorectalCancerScrn/a989a58f-82c5-4221-addb-5e29c2514df7/MeasureReport-e5cf69e7-079f-49bf-9ab3-734d461bf051.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ b70f2fc0-3254-4240-af70-793cd1bc90b2 ](../.././input/tests/measure/CMS130FHIRColorectalCancerScrn/b70f2fc0-3254-4240-af70-793cd1bc90b2/MeasureReport-ba581c59-3c3d-4422-be16-35fba150b12d.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ d0c9e870-5e7b-4a9e-b34d-9d600ff8c1c6 ](../.././input/tests/measure/CMS130FHIRColorectalCancerScrn/d0c9e870-5e7b-4a9e-b34d-9d600ff8c1c6/MeasureReport-f894699d-3ec6-4ab7-b2e0-429332184cd3.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ dcaccac3-ef0d-4755-becd-3e6aebe2a06a ](../.././input/tests/measure/CMS130FHIRColorectalCancerScrn/dcaccac3-ef0d-4755-becd-3e6aebe2a06a/MeasureReport-0c770776-f8b6-47c5-bf6c-555d4edfb807.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ df62e712-a702-4c1e-82c6-4676578371f9 ](../.././input/tests/measure/CMS130FHIRColorectalCancerScrn/df62e712-a702-4c1e-82c6-4676578371f9/MeasureReport-713ee9c5-7e80-4a21-89c9-3892325c33c5.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ fede210f-db17-4e0a-9bcd-5dc383f0fb93 ](../.././input/tests/measure/CMS130FHIRColorectalCancerScrn/fede210f-db17-4e0a-9bcd-5dc383f0fb93/MeasureReport-f9cd4db0-1d53-42d9-80f9-0a8a5efabb7e.json) | Group_1 | Denominator Exclusion | 1 | 0 |
+| [ f9ef1fd1-cced-47ad-a47b-d9c20254511c ](../.././input/tests/measure/CMS130FHIRColorectalCancerScrn/f9ef1fd1-cced-47ad-a47b-d9c20254511c/MeasureReport-c93af428-5af9-4a94-bc1e-4c5aaa6ba707.json) | Group_1 | Denominator Exclusion | 0 | 1 |
 
 
 #### CMS131FHIRDiabetesEyeExam
 [ [cql] ](../../input/cql/CMS131FHIRDiabetesEyeExam.cql) [ [test results] ](../../input/tests/results/CMS131FHIRDiabetesEyeExam.txt)
 
-Mismatched Test Cases (19 of  of 63)
+Mismatched Test Cases (7 of  of 63)
 | Test Case | Group | Population | Expected | Actual |
 |---|---|---|:---:|:---:|
-| [ 0c9d7ae1-4643-4c50-bc48-0274a3f2d234 ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/0c9d7ae1-4643-4c50-bc48-0274a3f2d234/MeasureReport-bde81f56-68a5-4cff-849e-d768bd2e48a1.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 106633c6-3739-442f-b7cc-7269399481cf ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/106633c6-3739-442f-b7cc-7269399481cf/MeasureReport-6ebd64d2-c85b-4578-a340-a516a0e5675b.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 36222907-f670-4253-a251-63198bb3fc6c ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/36222907-f670-4253-a251-63198bb3fc6c/MeasureReport-e5009366-6515-4f9d-a77b-a47c0dd24f39.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 3624228c-097b-4f91-9211-f29f72b8ddaf ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/3624228c-097b-4f91-9211-f29f72b8ddaf/MeasureReport-e74b5bd2-156c-483a-a067-59b7b0e6db5e.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 65c895d1-ba13-410a-bcfc-be3b771b5eb8 ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/65c895d1-ba13-410a-bcfc-be3b771b5eb8/MeasureReport-34b8740c-235f-4866-affb-a92533914b6d.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 728333bf-6ff0-4d29-9181-3b6a30b7059a ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/728333bf-6ff0-4d29-9181-3b6a30b7059a/MeasureReport-a2107eca-c487-4933-a228-ad6854376616.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 97935b1b-262b-4c05-9a56-2124a3aa1de0 ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/97935b1b-262b-4c05-9a56-2124a3aa1de0/MeasureReport-4b146bcc-55aa-4d05-b9f7-293f08f6c828.json) | Group_1 | Denominator Exclusion | 1 | 0 |
+| [ 01a1241d-fd97-4c72-b288-fd31c4c7ae80 ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/01a1241d-fd97-4c72-b288-fd31c4c7ae80/MeasureReport-f6d5405c-4d38-4df3-985e-564f0da456f7.json) | Group_1 | Denominator Exclusion | 0 | 1 |
+| [ 4eaa0238-d22c-44c2-a91e-81239a497359 ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/4eaa0238-d22c-44c2-a91e-81239a497359/MeasureReport-04e1a1e5-8015-4ce9-8834-0d8d1241223c.json) | Group_1 | Denominator Exclusion | 0 | 1 |
+| [ 61dfb0bd-8fe0-4e30-a911-fa07c782afd9 ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/61dfb0bd-8fe0-4e30-a911-fa07c782afd9/MeasureReport-b60724c0-7608-4762-8f76-9f60a2aa00bc.json) | Group_1 | Denominator Exclusion | 0 | 1 |
+| [ 8ffd1c24-67a9-4991-86cb-3378a45ffd6e ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/8ffd1c24-67a9-4991-86cb-3378a45ffd6e/MeasureReport-ca2cc70b-1082-456d-a454-48be6e80c1e4.json) | Group_1 | Denominator Exclusion | 0 | 1 |
 | [ 985b5e49-2f5d-4eb3-a33c-2d0eb156bf7b ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/985b5e49-2f5d-4eb3-a33c-2d0eb156bf7b/MeasureReport-8e0e0b26-f0c3-431a-bb63-9bf90b8d406a.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ a6cd48c6-fb25-41d4-aea4-da7fb856cc12 ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/a6cd48c6-fb25-41d4-aea4-da7fb856cc12/MeasureReport-20db834b-59b3-445d-8c06-5fbda3fb0d62.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ b3af1243-c45d-4061-8d36-baa6de256376 ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/b3af1243-c45d-4061-8d36-baa6de256376/MeasureReport-197c1fc9-63f3-481a-905f-102110b77fe8.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ b7a8c85e-3608-44ec-be34-c9089fa3dd17 ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/b7a8c85e-3608-44ec-be34-c9089fa3dd17/MeasureReport-050adf2c-b0d0-4601-8bb9-ddf975e090cd.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ c1340d6e-581d-4775-a0af-b8dcdbcf7320 ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/c1340d6e-581d-4775-a0af-b8dcdbcf7320/MeasureReport-eb978a3a-121c-47d5-bc4a-043cab1352eb.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ c36eddf7-a780-480c-baf8-ef865ccdb9d2 ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/c36eddf7-a780-480c-baf8-ef865ccdb9d2/MeasureReport-1da1fe0c-0bcc-4b24-9bd6-6d309c1ecd92.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ d46ab51c-9b21-4b1c-b1dd-090c7f3e831a ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/d46ab51c-9b21-4b1c-b1dd-090c7f3e831a/MeasureReport-47e3c1ff-3e0f-4d77-83cd-f4acbea86e90.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ d8946843-06c7-4b82-992a-91a9c20ec7c0 ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/d8946843-06c7-4b82-992a-91a9c20ec7c0/MeasureReport-c2e6ca0d-6330-4d32-92b0-85150dfdd9e3.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ e9b9b388-e663-4533-8484-7d930efd1851 ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/e9b9b388-e663-4533-8484-7d930efd1851/MeasureReport-c4c2d471-952b-4e84-8daf-41671f16d202.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ ea0e556f-387e-4883-a320-047aa3a238e4 ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/ea0e556f-387e-4883-a320-047aa3a238e4/MeasureReport-971f1137-8a16-44a1-b144-ed49125f9a93.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ f0b61b7a-4381-486d-9eee-2128ada5280a ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/f0b61b7a-4381-486d-9eee-2128ada5280a/MeasureReport-0dfe6124-5f9e-4c30-a52f-e6c50f17e949.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ f77b9abc-9c77-4e75-96c8-cc3bf25e08f4 ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/f77b9abc-9c77-4e75-96c8-cc3bf25e08f4/MeasureReport-5a0399ed-8998-4d4b-bd3a-e34e2aeea795.json) | Group_1 | Denominator Exclusion | 1 | 0 |
+| [ d4091ecf-638c-41ae-bae9-2b0c3bea864e ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/d4091ecf-638c-41ae-bae9-2b0c3bea864e/MeasureReport-10397419-4a20-4c3b-a57b-317cc9b6a2a1.json) | Group_1 | Denominator Exclusion | 0 | 1 |
+| [ f45a1cb0-d1a7-42cf-9cae-6ea6c7799085 ](../.././input/tests/measure/CMS131FHIRDiabetesEyeExam/f45a1cb0-d1a7-42cf-9cae-6ea6c7799085/MeasureReport-f6941c4e-ecb8-40af-b82f-acfa7880f882.json) | Group_1 | Denominator Exclusion | 0 | 1 |
 
 
 #### CMS133FHIRCataracts2040BCVA90Days
@@ -626,124 +552,11 @@ Mismatched Test Cases (7 of  of 26)
 #### CMS136FHIRChildADHDMedFollowUp
 [ [cql] ](../../input/cql/CMS136FHIRChildADHDMedFollowUp.cql) [ [test results] ](../../input/tests/results/CMS136FHIRChildADHDMedFollowUp.txt)
 
-Mismatched Test Cases (25 of  of 128)
+Mismatched Test Cases (2 of  of 128)
 | Test Case | Group | Population | Expected | Actual |
 |---|---|---|:---:|:---:|
-| [ 0039c514-9277-46cd-9e6a-2f402b5357f5 ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/0039c514-9277-46cd-9e6a-2f402b5357f5/MeasureReport-27ccf017-c687-42a0-83f3-9943fec666c4.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 0039c514-9277-46cd-9e6a-2f402b5357f5 ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/0039c514-9277-46cd-9e6a-2f402b5357f5/MeasureReport-27ccf017-c687-42a0-83f3-9943fec666c4.json) | Group_2 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 00f27092-14a7-4d87-b35a-5a112ca99201 ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/00f27092-14a7-4d87-b35a-5a112ca99201/MeasureReport-351a58d1-450e-4d51-bb86-85a7169aecef.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 048c41bc-fe7e-465f-bc10-6ccf7a7d5250 ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/048c41bc-fe7e-465f-bc10-6ccf7a7d5250/MeasureReport-b5595330-1ead-452b-8c77-b50bcdcd54c1.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 304b7ef3-bd6c-488e-9409-70039f1da018 ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/304b7ef3-bd6c-488e-9409-70039f1da018/MeasureReport-43945c4a-b476-4b15-826a-4e28eafa432a.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 304b7ef3-bd6c-488e-9409-70039f1da018 ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/304b7ef3-bd6c-488e-9409-70039f1da018/MeasureReport-43945c4a-b476-4b15-826a-4e28eafa432a.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 5e536adf-1159-404e-92e7-94d4f1affd98 ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/5e536adf-1159-404e-92e7-94d4f1affd98/MeasureReport-dbd4f8f2-fffe-42a7-b8bc-ce0d020db2a2.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 5e536adf-1159-404e-92e7-94d4f1affd98 ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/5e536adf-1159-404e-92e7-94d4f1affd98/MeasureReport-dbd4f8f2-fffe-42a7-b8bc-ce0d020db2a2.json) | Group_2 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 6a96556a-075b-4361-8a8d-fd8c8b4f125a ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/6a96556a-075b-4361-8a8d-fd8c8b4f125a/MeasureReport-a435ce24-836c-4333-ba07-54da75315920.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 6a96556a-075b-4361-8a8d-fd8c8b4f125a ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/6a96556a-075b-4361-8a8d-fd8c8b4f125a/MeasureReport-a435ce24-836c-4333-ba07-54da75315920.json) | Group_2 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 71a21841-f5bb-4e75-9328-aedf3cdc8a34 ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/71a21841-f5bb-4e75-9328-aedf3cdc8a34/MeasureReport-81da1daa-f63c-4229-80e3-f8926ede352b.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 71a21841-f5bb-4e75-9328-aedf3cdc8a34 ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/71a21841-f5bb-4e75-9328-aedf3cdc8a34/MeasureReport-81da1daa-f63c-4229-80e3-f8926ede352b.json) | Group_2 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 80644a49-f67d-4124-9c58-1547b7bdd779 ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/80644a49-f67d-4124-9c58-1547b7bdd779/MeasureReport-14bfe2e1-f99b-4f2c-9955-9485a9773c03.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 80644a49-f67d-4124-9c58-1547b7bdd779 ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/80644a49-f67d-4124-9c58-1547b7bdd779/MeasureReport-14bfe2e1-f99b-4f2c-9955-9485a9773c03.json) | Group_2 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 98e5cde7-fc04-4b89-9aef-5272087bb5c2 ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/98e5cde7-fc04-4b89-9aef-5272087bb5c2/MeasureReport-ab660866-e477-4fbd-9806-fe1ba0bc3eca.json) | Group_1 | Denominator Exclusion | 1 | 0 |
 | [ a46db6aa-5016-4111-bc4e-a31156c87ec6 ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/a46db6aa-5016-4111-bc4e-a31156c87ec6/MeasureReport-dfa8baab-54e0-4173-987b-3ade0dad9a78.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 0<br>0<br>0 | 1<br>1<br>1 |
 | [ a46db6aa-5016-4111-bc4e-a31156c87ec6 ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/a46db6aa-5016-4111-bc4e-a31156c87ec6/MeasureReport-dfa8baab-54e0-4173-987b-3ade0dad9a78.json) | Group_2 | Initial Population<br>Denominator | 0<br>0 | 1<br>1 |
-| [ bee979d5-c118-4e1d-b190-62cf0e084bd1 ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/bee979d5-c118-4e1d-b190-62cf0e084bd1/MeasureReport-56c09b31-05f1-4a01-a158-e33bf739b46c.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ c8559a93-63e3-4bce-b0a6-01a85fb6db28 ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/c8559a93-63e3-4bce-b0a6-01a85fb6db28/MeasureReport-d379a074-da21-4fb2-a7d5-4c67bcedc8ba.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ c8559a93-63e3-4bce-b0a6-01a85fb6db28 ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/c8559a93-63e3-4bce-b0a6-01a85fb6db28/MeasureReport-d379a074-da21-4fb2-a7d5-4c67bcedc8ba.json) | Group_2 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ cb044844-e03d-4758-bf40-1e4db68ed10e ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/cb044844-e03d-4758-bf40-1e4db68ed10e/MeasureReport-db80673e-5d6e-4d5d-ba02-ebb033fc854f.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ cb044844-e03d-4758-bf40-1e4db68ed10e ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/cb044844-e03d-4758-bf40-1e4db68ed10e/MeasureReport-db80673e-5d6e-4d5d-ba02-ebb033fc854f.json) | Group_2 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ d95789b9-f144-43e7-81c6-fed3adba5d8f ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/d95789b9-f144-43e7-81c6-fed3adba5d8f/MeasureReport-ce74b3ee-e4db-4dd0-b489-c946a0e96df5.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ db99ef01-a9e9-47c9-a2d5-5cb9c2b23241 ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/db99ef01-a9e9-47c9-a2d5-5cb9c2b23241/MeasureReport-36fae350-739a-48f5-bbd5-b96b3e05d395.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ e5a26079-76db-4851-a15a-7dae023a25ce ](../.././input/tests/measure/CMS136FHIRChildADHDMedFollowUp/e5a26079-76db-4851-a15a-7dae023a25ce/MeasureReport-e6fb73a8-cb41-433d-97e3-f0a54f9a5659.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-
-
-#### CMS137FHIRSUDTxInitEngagement
-[ [cql] ](../../input/cql/CMS137FHIRSUDTxInitEngagement.cql) [ [test results] ](../../input/tests/results/CMS137FHIRSUDTxInitEngagement.txt)
-
-Mismatched Test Cases (18 of  of 90)
-| Test Case | Group | Population | Expected | Actual |
-|---|---|---|:---:|:---:|
-| [ 19b5b244-6834-40f7-b8a2-ff2c6fb84fb0 ](../.././input/tests/measure/CMS137FHIRSUDTxInitEngagement/19b5b244-6834-40f7-b8a2-ff2c6fb84fb0/MeasureReport-f5557134-9b6a-4c28-9607-151c0a3c416a.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 19b5b244-6834-40f7-b8a2-ff2c6fb84fb0 ](../.././input/tests/measure/CMS137FHIRSUDTxInitEngagement/19b5b244-6834-40f7-b8a2-ff2c6fb84fb0/MeasureReport-f5557134-9b6a-4c28-9607-151c0a3c416a.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 19e9d2c7-4030-46c9-80e5-8c71fcae5227 ](../.././input/tests/measure/CMS137FHIRSUDTxInitEngagement/19e9d2c7-4030-46c9-80e5-8c71fcae5227/MeasureReport-af961b5c-c44a-419e-9418-7d78756e7976.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 19e9d2c7-4030-46c9-80e5-8c71fcae5227 ](../.././input/tests/measure/CMS137FHIRSUDTxInitEngagement/19e9d2c7-4030-46c9-80e5-8c71fcae5227/MeasureReport-af961b5c-c44a-419e-9418-7d78756e7976.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 3698ad63-09e3-46e8-ba42-39c9cd235603 ](../.././input/tests/measure/CMS137FHIRSUDTxInitEngagement/3698ad63-09e3-46e8-ba42-39c9cd235603/MeasureReport-633918c1-ce60-4a4b-b4fe-8cbb531a2526.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 3698ad63-09e3-46e8-ba42-39c9cd235603 ](../.././input/tests/measure/CMS137FHIRSUDTxInitEngagement/3698ad63-09e3-46e8-ba42-39c9cd235603/MeasureReport-633918c1-ce60-4a4b-b4fe-8cbb531a2526.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 404859c4-6f6e-4376-ae4d-d02a479e62aa ](../.././input/tests/measure/CMS137FHIRSUDTxInitEngagement/404859c4-6f6e-4376-ae4d-d02a479e62aa/MeasureReport-09a79f8c-e435-43de-a70d-7f7ba2254bbf.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 404859c4-6f6e-4376-ae4d-d02a479e62aa ](../.././input/tests/measure/CMS137FHIRSUDTxInitEngagement/404859c4-6f6e-4376-ae4d-d02a479e62aa/MeasureReport-09a79f8c-e435-43de-a70d-7f7ba2254bbf.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 408f327a-94aa-4787-a1c6-e6fc7fde341d ](../.././input/tests/measure/CMS137FHIRSUDTxInitEngagement/408f327a-94aa-4787-a1c6-e6fc7fde341d/MeasureReport-0b364380-31bf-47ee-9c41-01fc2ab484a4.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 408f327a-94aa-4787-a1c6-e6fc7fde341d ](../.././input/tests/measure/CMS137FHIRSUDTxInitEngagement/408f327a-94aa-4787-a1c6-e6fc7fde341d/MeasureReport-0b364380-31bf-47ee-9c41-01fc2ab484a4.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 46954fc1-3432-4e5d-b920-a2087f01abba ](../.././input/tests/measure/CMS137FHIRSUDTxInitEngagement/46954fc1-3432-4e5d-b920-a2087f01abba/MeasureReport-6a3216bb-7d25-4219-aa62-58c1f0170972.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 46954fc1-3432-4e5d-b920-a2087f01abba ](../.././input/tests/measure/CMS137FHIRSUDTxInitEngagement/46954fc1-3432-4e5d-b920-a2087f01abba/MeasureReport-6a3216bb-7d25-4219-aa62-58c1f0170972.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 6fc30283-94af-4a06-8325-cbc65e9b4b7c ](../.././input/tests/measure/CMS137FHIRSUDTxInitEngagement/6fc30283-94af-4a06-8325-cbc65e9b4b7c/MeasureReport-3ec739bd-5cf7-472c-969e-d80429839200.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 6fc30283-94af-4a06-8325-cbc65e9b4b7c ](../.././input/tests/measure/CMS137FHIRSUDTxInitEngagement/6fc30283-94af-4a06-8325-cbc65e9b4b7c/MeasureReport-3ec739bd-5cf7-472c-969e-d80429839200.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 8715fad1-2969-418a-b3d3-45b2581f4fe3 ](../.././input/tests/measure/CMS137FHIRSUDTxInitEngagement/8715fad1-2969-418a-b3d3-45b2581f4fe3/MeasureReport-3aff156c-cc70-4811-a8df-a8c10f22724c.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 8715fad1-2969-418a-b3d3-45b2581f4fe3 ](../.././input/tests/measure/CMS137FHIRSUDTxInitEngagement/8715fad1-2969-418a-b3d3-45b2581f4fe3/MeasureReport-3aff156c-cc70-4811-a8df-a8c10f22724c.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ feb97651-b478-467e-97c9-3bc514a0a26b ](../.././input/tests/measure/CMS137FHIRSUDTxInitEngagement/feb97651-b478-467e-97c9-3bc514a0a26b/MeasureReport-a3855237-4d8a-45bf-b31b-c2f561baadd5.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ feb97651-b478-467e-97c9-3bc514a0a26b ](../.././input/tests/measure/CMS137FHIRSUDTxInitEngagement/feb97651-b478-467e-97c9-3bc514a0a26b/MeasureReport-a3855237-4d8a-45bf-b31b-c2f561baadd5.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-
-
-#### CMS138FHIRTobaccoScrnCessation
-[ [cql] ](../../input/cql/CMS138FHIRTobaccoScrnCessation.cql) [ [test results] ](../../input/tests/results/CMS138FHIRTobaccoScrnCessation.txt)
-
-Mismatched Test Cases (40 of  of 141)
-| Test Case | Group | Population | Expected | Actual |
-|---|---|---|:---:|:---:|
-| [ 007fe881-a18d-418f-8ddf-0ee94fc9a10a ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/007fe881-a18d-418f-8ddf-0ee94fc9a10a/MeasureReport-45a1ad86-db80-4c37-b6f0-1dcdf04167bf.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 007fe881-a18d-418f-8ddf-0ee94fc9a10a ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/007fe881-a18d-418f-8ddf-0ee94fc9a10a/MeasureReport-45a1ad86-db80-4c37-b6f0-1dcdf04167bf.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ 0d221636-5f14-4074-9337-eb4b0868fb3e ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/0d221636-5f14-4074-9337-eb4b0868fb3e/MeasureReport-59a9caa8-e71c-4bdf-90ec-ce2224d90dd5.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 0d221636-5f14-4074-9337-eb4b0868fb3e ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/0d221636-5f14-4074-9337-eb4b0868fb3e/MeasureReport-59a9caa8-e71c-4bdf-90ec-ce2224d90dd5.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ 44a3e280-b4ad-4725-b806-1ea7592114d8 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/44a3e280-b4ad-4725-b806-1ea7592114d8/MeasureReport-5060c69e-b9b0-415d-8853-c6d953e17489.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 44a3e280-b4ad-4725-b806-1ea7592114d8 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/44a3e280-b4ad-4725-b806-1ea7592114d8/MeasureReport-5060c69e-b9b0-415d-8853-c6d953e17489.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 44a3e280-b4ad-4725-b806-1ea7592114d8 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/44a3e280-b4ad-4725-b806-1ea7592114d8/MeasureReport-5060c69e-b9b0-415d-8853-c6d953e17489.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ 6410550a-c928-415b-b8bc-aa1284ca6933 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/6410550a-c928-415b-b8bc-aa1284ca6933/MeasureReport-b410a68c-155b-4349-ac16-a1ca9ae771ba.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 6410550a-c928-415b-b8bc-aa1284ca6933 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/6410550a-c928-415b-b8bc-aa1284ca6933/MeasureReport-b410a68c-155b-4349-ac16-a1ca9ae771ba.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ 72c8b10f-fffd-411f-bf81-c7d0608ad314 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/72c8b10f-fffd-411f-bf81-c7d0608ad314/MeasureReport-a436c88f-b046-4569-bca3-55d12ef645e6.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 72c8b10f-fffd-411f-bf81-c7d0608ad314 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/72c8b10f-fffd-411f-bf81-c7d0608ad314/MeasureReport-a436c88f-b046-4569-bca3-55d12ef645e6.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 72c8b10f-fffd-411f-bf81-c7d0608ad314 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/72c8b10f-fffd-411f-bf81-c7d0608ad314/MeasureReport-a436c88f-b046-4569-bca3-55d12ef645e6.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ 73d69a14-7e70-4c9f-89e3-62da4a370fd3 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/73d69a14-7e70-4c9f-89e3-62da4a370fd3/MeasureReport-78680856-a975-47b9-9b99-f2b5bb300936.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 73d69a14-7e70-4c9f-89e3-62da4a370fd3 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/73d69a14-7e70-4c9f-89e3-62da4a370fd3/MeasureReport-78680856-a975-47b9-9b99-f2b5bb300936.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ 76e371e4-0363-4fad-9573-a06ada971eef ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/76e371e4-0363-4fad-9573-a06ada971eef/MeasureReport-ceee4067-e616-47a2-b1d1-25694b739861.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 76e371e4-0363-4fad-9573-a06ada971eef ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/76e371e4-0363-4fad-9573-a06ada971eef/MeasureReport-ceee4067-e616-47a2-b1d1-25694b739861.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ 828caebe-4bd7-4579-85c6-d6340a9f3240 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/828caebe-4bd7-4579-85c6-d6340a9f3240/MeasureReport-c0d13ef6-090f-435c-a291-9bcb794bbc08.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 828caebe-4bd7-4579-85c6-d6340a9f3240 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/828caebe-4bd7-4579-85c6-d6340a9f3240/MeasureReport-c0d13ef6-090f-435c-a291-9bcb794bbc08.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 828caebe-4bd7-4579-85c6-d6340a9f3240 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/828caebe-4bd7-4579-85c6-d6340a9f3240/MeasureReport-c0d13ef6-090f-435c-a291-9bcb794bbc08.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ 9fba5feb-b77c-496f-981f-6d062f3c1d7c ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/9fba5feb-b77c-496f-981f-6d062f3c1d7c/MeasureReport-ff3f2ea4-b4bc-434c-8800-1967f5b80b8f.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 9fba5feb-b77c-496f-981f-6d062f3c1d7c ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/9fba5feb-b77c-496f-981f-6d062f3c1d7c/MeasureReport-ff3f2ea4-b4bc-434c-8800-1967f5b80b8f.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 9fba5feb-b77c-496f-981f-6d062f3c1d7c ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/9fba5feb-b77c-496f-981f-6d062f3c1d7c/MeasureReport-ff3f2ea4-b4bc-434c-8800-1967f5b80b8f.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ a0a8fd4f-bfd4-4669-aaef-f66ae5af5eda ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/a0a8fd4f-bfd4-4669-aaef-f66ae5af5eda/MeasureReport-fe41c096-08c3-42ce-b6ad-96de6f88d808.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ a0a8fd4f-bfd4-4669-aaef-f66ae5af5eda ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/a0a8fd4f-bfd4-4669-aaef-f66ae5af5eda/MeasureReport-fe41c096-08c3-42ce-b6ad-96de6f88d808.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ ab8310c0-bcc3-4197-8ec6-beeb23f0b0b5 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/ab8310c0-bcc3-4197-8ec6-beeb23f0b0b5/MeasureReport-02825288-0d86-4de2-8f43-b1b60c9533b7.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ ab8310c0-bcc3-4197-8ec6-beeb23f0b0b5 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/ab8310c0-bcc3-4197-8ec6-beeb23f0b0b5/MeasureReport-02825288-0d86-4de2-8f43-b1b60c9533b7.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ ab8310c0-bcc3-4197-8ec6-beeb23f0b0b5 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/ab8310c0-bcc3-4197-8ec6-beeb23f0b0b5/MeasureReport-02825288-0d86-4de2-8f43-b1b60c9533b7.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ bac2713c-8165-40ce-8180-fb5d44a10f7f ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/bac2713c-8165-40ce-8180-fb5d44a10f7f/MeasureReport-49095abd-511f-4e6f-a870-c7a3e6c820ed.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ bac2713c-8165-40ce-8180-fb5d44a10f7f ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/bac2713c-8165-40ce-8180-fb5d44a10f7f/MeasureReport-49095abd-511f-4e6f-a870-c7a3e6c820ed.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ c56fda5f-6cd9-4057-aaef-5c843a8241f1 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/c56fda5f-6cd9-4057-aaef-5c843a8241f1/MeasureReport-2408d069-8202-4f51-b5d2-5b886d2487de.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ c56fda5f-6cd9-4057-aaef-5c843a8241f1 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/c56fda5f-6cd9-4057-aaef-5c843a8241f1/MeasureReport-2408d069-8202-4f51-b5d2-5b886d2487de.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ c56fda5f-6cd9-4057-aaef-5c843a8241f1 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/c56fda5f-6cd9-4057-aaef-5c843a8241f1/MeasureReport-2408d069-8202-4f51-b5d2-5b886d2487de.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ e3422e20-4e31-4c24-a72b-3c1e1f47de95 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/e3422e20-4e31-4c24-a72b-3c1e1f47de95/MeasureReport-f5466b54-94e5-40d3-88c1-0b3d223d0598.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ e3422e20-4e31-4c24-a72b-3c1e1f47de95 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/e3422e20-4e31-4c24-a72b-3c1e1f47de95/MeasureReport-f5466b54-94e5-40d3-88c1-0b3d223d0598.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ e383c9a2-7b5e-4ab6-b2e2-642a2304d6e2 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/e383c9a2-7b5e-4ab6-b2e2-642a2304d6e2/MeasureReport-db328de7-8d39-4fb3-bb41-9da9de27714c.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ e383c9a2-7b5e-4ab6-b2e2-642a2304d6e2 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/e383c9a2-7b5e-4ab6-b2e2-642a2304d6e2/MeasureReport-db328de7-8d39-4fb3-bb41-9da9de27714c.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ e383c9a2-7b5e-4ab6-b2e2-642a2304d6e2 ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/e383c9a2-7b5e-4ab6-b2e2-642a2304d6e2/MeasureReport-db328de7-8d39-4fb3-bb41-9da9de27714c.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ ed2fe491-3eb7-424a-bf95-5d44b6102cec ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/ed2fe491-3eb7-424a-bf95-5d44b6102cec/MeasureReport-841afe4d-1c7b-4b08-805e-14715b1f61b0.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ ed2fe491-3eb7-424a-bf95-5d44b6102cec ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/ed2fe491-3eb7-424a-bf95-5d44b6102cec/MeasureReport-841afe4d-1c7b-4b08-805e-14715b1f61b0.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ ed2fe491-3eb7-424a-bf95-5d44b6102cec ](../.././input/tests/measure/CMS138FHIRTobaccoScrnCessation/ed2fe491-3eb7-424a-bf95-5d44b6102cec/MeasureReport-841afe4d-1c7b-4b08-805e-14715b1f61b0.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-
-
-#### CMS139FHIRFallRiskScreening
-[ [cql] ](../../input/cql/CMS139FHIRFallRiskScreening.cql) [ [test results] ](../../input/tests/results/CMS139FHIRFallRiskScreening.txt)
-
-Mismatched Test Cases (8 of  of 29)
-| Test Case | Group | Population | Expected | Actual |
-|---|---|---|:---:|:---:|
-| [ 1a370226-6ab1-487f-b1da-08741e08f725 ](../.././input/tests/measure/CMS139FHIRFallRiskScreening/1a370226-6ab1-487f-b1da-08741e08f725/MeasureReport-68c89ec1-05bf-42aa-9821-fd9a2279d302.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 2b6eca9d-7580-4262-ba2c-97f6c174cc33 ](../.././input/tests/measure/CMS139FHIRFallRiskScreening/2b6eca9d-7580-4262-ba2c-97f6c174cc33/MeasureReport-637df085-bb25-42cb-b3e5-9d64309c67b3.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 4576786d-d477-4447-8bdb-f9d5c2e6600c ](../.././input/tests/measure/CMS139FHIRFallRiskScreening/4576786d-d477-4447-8bdb-f9d5c2e6600c/MeasureReport-e495b37a-c1b6-4da3-9486-3d5e3753bffa.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 4a1c85c3-e97c-4644-b6a1-2475aa1c27e2 ](../.././input/tests/measure/CMS139FHIRFallRiskScreening/4a1c85c3-e97c-4644-b6a1-2475aa1c27e2/MeasureReport-f10e1e09-0087-49af-8edf-76a8c490870c.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 65b723f6-246d-4320-a181-a64f7f1fd837 ](../.././input/tests/measure/CMS139FHIRFallRiskScreening/65b723f6-246d-4320-a181-a64f7f1fd837/MeasureReport-67507ea0-6379-4747-8e2e-e052786191ea.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 741236df-31ad-463b-b730-fb113cfa09a8 ](../.././input/tests/measure/CMS139FHIRFallRiskScreening/741236df-31ad-463b-b730-fb113cfa09a8/MeasureReport-c215cf44-4531-46ba-841f-fc2e6c3acbf5.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 839e7c3a-a94f-418f-96cb-d356bf6de1da ](../.././input/tests/measure/CMS139FHIRFallRiskScreening/839e7c3a-a94f-418f-96cb-d356bf6de1da/MeasureReport-4eeaab54-1b2f-4cd1-a276-0b729c5c134a.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ b7261db5-e945-48b9-90dd-0d0761c09295 ](../.././input/tests/measure/CMS139FHIRFallRiskScreening/b7261db5-e945-48b9-90dd-0d0761c09295/MeasureReport-6ed4041b-dc15-4e7d-b9f2-43a5bf2599c1.json) | Group_1 | Denominator Exclusion | 1 | 0 |
 
 
 #### CMS142FHIRCommWithDrManagingDiab
@@ -926,24 +739,6 @@ Missing Results (106 of 106 test cases)
 | [ ffab1562-be09-428c-9e96-e30868867493 ](../.././input/tests/measure/CMS145FHIRCADBBlockerTPMIorLVSD/ffab1562-be09-428c-9e96-e30868867493/MeasureReport-e452db53-4343-4d81-ae7f-d5dc613d5f06.json) | Group_2 |
 
 
-#### CMS146FHIRApproTestPharyngitis
-[ [cql] ](../../input/cql/CMS146FHIRApproTestPharyngitis.cql) [ [test results] ](../../input/tests/results/CMS146FHIRApproTestPharyngitis.txt)
-
-Mismatched Test Cases (10 of  of 38)
-| Test Case | Group | Population | Expected | Actual |
-|---|---|---|:---:|:---:|
-| [ 32b213a8-4071-4bc7-8db8-8ab080e5e468 ](../.././input/tests/measure/CMS146FHIRApproTestPharyngitis/32b213a8-4071-4bc7-8db8-8ab080e5e468/MeasureReport-67ff9e66-a7c8-436b-a67d-3aa602178ae6.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 4b78839b-3a31-4dc7-9b6b-4e06f005c7e0 ](../.././input/tests/measure/CMS146FHIRApproTestPharyngitis/4b78839b-3a31-4dc7-9b6b-4e06f005c7e0/MeasureReport-1d6ef741-100c-4563-9ccd-9691fae93ce0.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ a6e7ec82-b80e-4f76-b382-91956c4873a9 ](../.././input/tests/measure/CMS146FHIRApproTestPharyngitis/a6e7ec82-b80e-4f76-b382-91956c4873a9/MeasureReport-9c11417a-c2cd-4457-8980-32abb9e409be.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ b23aa001-1331-46f0-9818-19f6dc890668 ](../.././input/tests/measure/CMS146FHIRApproTestPharyngitis/b23aa001-1331-46f0-9818-19f6dc890668/MeasureReport-46f817e8-87c8-469f-8ba8-f3b880e4a7c2.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ c257e23d-80d0-4ab8-9374-e38815eab144 ](../.././input/tests/measure/CMS146FHIRApproTestPharyngitis/c257e23d-80d0-4ab8-9374-e38815eab144/MeasureReport-7dc95b5d-9459-43b6-82b4-b7932a722d22.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ c5401e41-5ec7-4d84-b0ab-600dd4b8cdaf ](../.././input/tests/measure/CMS146FHIRApproTestPharyngitis/c5401e41-5ec7-4d84-b0ab-600dd4b8cdaf/MeasureReport-7c1cb2ed-0171-4b32-b816-b950835f6c5b.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ c5f2b465-bfa2-4f94-8512-ff04308a8159 ](../.././input/tests/measure/CMS146FHIRApproTestPharyngitis/c5f2b465-bfa2-4f94-8512-ff04308a8159/MeasureReport-1abd2a30-2360-4dca-a0e2-b8e8e81a1226.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ c8d42ccd-9523-414f-b568-e0fdae94a84a ](../.././input/tests/measure/CMS146FHIRApproTestPharyngitis/c8d42ccd-9523-414f-b568-e0fdae94a84a/MeasureReport-3bf5f8e0-39ee-4780-9027-c464fb9d066c.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ e251036b-b9dc-4c2c-8841-5d34064501ed ](../.././input/tests/measure/CMS146FHIRApproTestPharyngitis/e251036b-b9dc-4c2c-8841-5d34064501ed/MeasureReport-612900b7-2620-4c59-ae05-80da3bd37f62.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ ed5a5721-71d3-4247-9f9b-4097e55fccfb ](../.././input/tests/measure/CMS146FHIRApproTestPharyngitis/ed5a5721-71d3-4247-9f9b-4097e55fccfb/MeasureReport-b18a2c73-10ab-4edf-a7ef-a17dc0117798.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-
-
 #### CMS149FHIRDementiaCognitiveAssess
 [ [cql] ](../../input/cql/CMS149FHIRDementiaCognitiveAssess.cql) [ [test results] ](../../input/tests/results/CMS149FHIRDementiaCognitiveAssess.txt)
 
@@ -988,74 +783,31 @@ Missing Results (33 of 33 test cases)
 #### CMS153FHIRChlamydiaScreening
 [ [cql] ](../../input/cql/CMS153FHIRChlamydiaScreening.cql) [ [test results] ](../../input/tests/results/CMS153FHIRChlamydiaScreening.txt)
 
-Mismatched Test Cases (10 of  of 32)
+Mismatched Test Cases (2 of  of 32)
 | Test Case | Group | Population | Expected | Actual |
 |---|---|---|:---:|:---:|
 | [ 195e897b-ff4f-4af6-b0d4-77d353b9e556 ](../.././input/tests/measure/CMS153FHIRChlamydiaScreening/195e897b-ff4f-4af6-b0d4-77d353b9e556/MeasureReport-b88dc38e-4c93-4aff-a11f-1f87648b2d8e.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ 1c0607a1-de1a-46e2-98f5-5ea7c5f50506 ](../.././input/tests/measure/CMS153FHIRChlamydiaScreening/1c0607a1-de1a-46e2-98f5-5ea7c5f50506/MeasureReport-63cb19bf-8392-414f-a85a-b9b0b0b2ac27.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 5e5374d9-3830-47dd-bbf4-dbc8960c4870 ](../.././input/tests/measure/CMS153FHIRChlamydiaScreening/5e5374d9-3830-47dd-bbf4-dbc8960c4870/MeasureReport-e232afe7-1802-42c7-bece-73e3c3eed518.json) | Group_1 | Denominator Exclusion | 1 | 0 |
 | [ 6e31a1eb-0d32-4a9b-aa86-ee34436f99c1 ](../.././input/tests/measure/CMS153FHIRChlamydiaScreening/6e31a1eb-0d32-4a9b-aa86-ee34436f99c1/MeasureReport-e4ce5a72-a538-4824-b4d3-f113be7ffa87.json) | Group_1 | Initial Population<br>Denominator | 0<br>0 | 1<br>1 |
-| [ 840339a3-d0c2-4fa8-8f80-cfdd57f48868 ](../.././input/tests/measure/CMS153FHIRChlamydiaScreening/840339a3-d0c2-4fa8-8f80-cfdd57f48868/MeasureReport-4bf8ced0-b40e-4dda-8e11-f21cb98a5a93.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ c0225f3d-ea64-4bb4-873b-b28ebc10050a ](../.././input/tests/measure/CMS153FHIRChlamydiaScreening/c0225f3d-ea64-4bb4-873b-b28ebc10050a/MeasureReport-68ca3d69-cb0f-4698-a7f5-f0d3dc1efe40.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ dc0d63ab-8b3a-4f90-ab19-0c4c18d398a8 ](../.././input/tests/measure/CMS153FHIRChlamydiaScreening/dc0d63ab-8b3a-4f90-ab19-0c4c18d398a8/MeasureReport-0ec39626-4340-4634-bdc4-cfdb4f7d4c16.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ dda878bb-eb46-4562-a455-862009c0f7ce ](../.././input/tests/measure/CMS153FHIRChlamydiaScreening/dda878bb-eb46-4562-a455-862009c0f7ce/MeasureReport-84a2ba68-914a-4d14-ae94-289f9d97f767.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ ec8a19c5-8fd1-40e9-974b-98fbccd921b8 ](../.././input/tests/measure/CMS153FHIRChlamydiaScreening/ec8a19c5-8fd1-40e9-974b-98fbccd921b8/MeasureReport-24ee7fa0-b85d-4687-ac57-dbc68a502ef6.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ f6a69563-6b05-4dcb-87e6-dd3bdd25f597 ](../.././input/tests/measure/CMS153FHIRChlamydiaScreening/f6a69563-6b05-4dcb-87e6-dd3bdd25f597/MeasureReport-d4d0a628-e8e4-4974-98d7-bb5e85d19f1c.json) | Group_1 | Denominator Exclusion | 1 | 0 |
 
 
 #### CMS154FHIRAppropriateTxforURI
 [ [cql] ](../../input/cql/CMS154FHIRAppropriateTxforURI.cql) [ [test results] ](../../input/tests/results/CMS154FHIRAppropriateTxforURI.txt)
 
-Mismatched Test Cases (9 of  of 33)
+Mismatched Test Cases (1 of  of 33)
 | Test Case | Group | Population | Expected | Actual |
 |---|---|---|:---:|:---:|
-| [ 1b24b0b1-92fa-405d-88d1-e550896598c1 ](../.././input/tests/measure/CMS154FHIRAppropriateTxforURI/1b24b0b1-92fa-405d-88d1-e550896598c1/MeasureReport-6a48888f-f761-48e6-810e-492b3076c1bb.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 41bc23b2-9bf6-4e81-ae25-2b5f78b61b87 ](../.././input/tests/measure/CMS154FHIRAppropriateTxforURI/41bc23b2-9bf6-4e81-ae25-2b5f78b61b87/MeasureReport-5ccfac91-e99c-41f2-bfbe-41456dae9a68.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
 | [ 482ffdf6-99e3-47f5-aeeb-1bdcdb423222 ](../.././input/tests/measure/CMS154FHIRAppropriateTxforURI/482ffdf6-99e3-47f5-aeeb-1bdcdb423222/MeasureReport-4d8aaa42-ca59-4e58-9dd2-a490a1ced8e7.json) | Group_1 | Initial Population<br>Denominator<br>Denominator Exclusion | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 673d2f3c-b735-4672-8a4e-2f77060e1802 ](../.././input/tests/measure/CMS154FHIRAppropriateTxforURI/673d2f3c-b735-4672-8a4e-2f77060e1802/MeasureReport-ed8267f2-2bc7-49d6-b3aa-224dc36a055a.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 78a48c68-f018-47da-a1cc-c96b63c248e8 ](../.././input/tests/measure/CMS154FHIRAppropriateTxforURI/78a48c68-f018-47da-a1cc-c96b63c248e8/MeasureReport-f9c64aec-b84d-4d2c-9b1e-394b157f7fce.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ 99d50203-60f7-466b-a253-a0908d85a7a3 ](../.././input/tests/measure/CMS154FHIRAppropriateTxforURI/99d50203-60f7-466b-a253-a0908d85a7a3/MeasureReport-50040dfb-2df8-4ce1-a479-aa51b99b7e48.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ acb44fb3-b572-4dfd-891c-c8b2cc24e1b8 ](../.././input/tests/measure/CMS154FHIRAppropriateTxforURI/acb44fb3-b572-4dfd-891c-c8b2cc24e1b8/MeasureReport-21c6e892-0dc9-4961-99fe-0445b5861ec0.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ cac03a54-f595-411e-bc00-c9146222a68c ](../.././input/tests/measure/CMS154FHIRAppropriateTxforURI/cac03a54-f595-411e-bc00-c9146222a68c/MeasureReport-16148c46-b783-41b7-9a19-dd384884943e.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
-| [ dc6b0b42-949a-481e-8134-bb536a2f3fe9 ](../.././input/tests/measure/CMS154FHIRAppropriateTxforURI/dc6b0b42-949a-481e-8134-bb536a2f3fe9/MeasureReport-cd60a6e2-f676-4d4d-9dfe-4eba47c3d333.json) | Group_1 | Denominator Exclusion<br>Numerator | 1<br>0 | 0<br>1 |
 
 
 #### CMS155FHIRWgtAssessCounseling
 [ [cql] ](../../input/cql/CMS155FHIRWgtAssessCounseling.cql) [ [test results] ](../../input/tests/results/CMS155FHIRWgtAssessCounseling.txt)
 
-Mismatched Test Cases (33 of  of 102)
+Mismatched Test Cases (6 of  of 102)
 | Test Case | Group | Population | Expected | Actual |
 |---|---|---|:---:|:---:|
-| [ 1e0720b0-0782-4455-a355-8c1ecec3c653 ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/1e0720b0-0782-4455-a355-8c1ecec3c653/MeasureReport-7d33c5b1-3b26-4351-b0ed-4ca6a482f9b0.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 1e0720b0-0782-4455-a355-8c1ecec3c653 ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/1e0720b0-0782-4455-a355-8c1ecec3c653/MeasureReport-7d33c5b1-3b26-4351-b0ed-4ca6a482f9b0.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 1e0720b0-0782-4455-a355-8c1ecec3c653 ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/1e0720b0-0782-4455-a355-8c1ecec3c653/MeasureReport-7d33c5b1-3b26-4351-b0ed-4ca6a482f9b0.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ 259f8551-1cea-44f5-ae9e-e3f083d9f48f ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/259f8551-1cea-44f5-ae9e-e3f083d9f48f/MeasureReport-9a4e385c-e5b5-4a1f-8c97-d46e0b8f8edc.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 259f8551-1cea-44f5-ae9e-e3f083d9f48f ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/259f8551-1cea-44f5-ae9e-e3f083d9f48f/MeasureReport-9a4e385c-e5b5-4a1f-8c97-d46e0b8f8edc.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 259f8551-1cea-44f5-ae9e-e3f083d9f48f ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/259f8551-1cea-44f5-ae9e-e3f083d9f48f/MeasureReport-9a4e385c-e5b5-4a1f-8c97-d46e0b8f8edc.json) | Group_3 | Denominator Exclusion | 1 | 0 |
 | [ 2f117e63-a44a-4471-8f7d-d39ec5e21b16 ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/2f117e63-a44a-4471-8f7d-d39ec5e21b16/MeasureReport-38ac7916-93e7-4358-a04d-a6d36d89f98f.json) | Group_1 | Denominator Exclusion | 1 | 0 |
 | [ 2f117e63-a44a-4471-8f7d-d39ec5e21b16 ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/2f117e63-a44a-4471-8f7d-d39ec5e21b16/MeasureReport-38ac7916-93e7-4358-a04d-a6d36d89f98f.json) | Group_2 | Denominator Exclusion | 1 | 0 |
 | [ 2f117e63-a44a-4471-8f7d-d39ec5e21b16 ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/2f117e63-a44a-4471-8f7d-d39ec5e21b16/MeasureReport-38ac7916-93e7-4358-a04d-a6d36d89f98f.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ 4304f97a-e2bb-4cda-93fa-ab510a136403 ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/4304f97a-e2bb-4cda-93fa-ab510a136403/MeasureReport-264e2520-208e-41be-81f4-bc4d5a572bb4.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 4304f97a-e2bb-4cda-93fa-ab510a136403 ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/4304f97a-e2bb-4cda-93fa-ab510a136403/MeasureReport-264e2520-208e-41be-81f4-bc4d5a572bb4.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 4304f97a-e2bb-4cda-93fa-ab510a136403 ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/4304f97a-e2bb-4cda-93fa-ab510a136403/MeasureReport-264e2520-208e-41be-81f4-bc4d5a572bb4.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ 4a9211fc-d757-47ae-8bc0-0803c43a6728 ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/4a9211fc-d757-47ae-8bc0-0803c43a6728/MeasureReport-1dc2fe64-0680-4f05-a338-53e9683c97ed.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 4a9211fc-d757-47ae-8bc0-0803c43a6728 ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/4a9211fc-d757-47ae-8bc0-0803c43a6728/MeasureReport-1dc2fe64-0680-4f05-a338-53e9683c97ed.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 4a9211fc-d757-47ae-8bc0-0803c43a6728 ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/4a9211fc-d757-47ae-8bc0-0803c43a6728/MeasureReport-1dc2fe64-0680-4f05-a338-53e9683c97ed.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ 53711871-5aac-4e37-a047-9dae85fcf6cb ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/53711871-5aac-4e37-a047-9dae85fcf6cb/MeasureReport-67399cd5-5e99-424d-815b-a49ed47204cf.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 53711871-5aac-4e37-a047-9dae85fcf6cb ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/53711871-5aac-4e37-a047-9dae85fcf6cb/MeasureReport-67399cd5-5e99-424d-815b-a49ed47204cf.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 53711871-5aac-4e37-a047-9dae85fcf6cb ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/53711871-5aac-4e37-a047-9dae85fcf6cb/MeasureReport-67399cd5-5e99-424d-815b-a49ed47204cf.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ 598662b8-30c9-4f9b-a2d1-d91bea113d77 ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/598662b8-30c9-4f9b-a2d1-d91bea113d77/MeasureReport-2a08ab53-d12a-4e82-b01d-196e9bcbd06f.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 598662b8-30c9-4f9b-a2d1-d91bea113d77 ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/598662b8-30c9-4f9b-a2d1-d91bea113d77/MeasureReport-2a08ab53-d12a-4e82-b01d-196e9bcbd06f.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 598662b8-30c9-4f9b-a2d1-d91bea113d77 ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/598662b8-30c9-4f9b-a2d1-d91bea113d77/MeasureReport-2a08ab53-d12a-4e82-b01d-196e9bcbd06f.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ a0c68789-2a1b-4bc4-b6a4-d8f6b154d8ac ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/a0c68789-2a1b-4bc4-b6a4-d8f6b154d8ac/MeasureReport-04e2d651-cddf-493d-9207-79e01e89bd25.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ a0c68789-2a1b-4bc4-b6a4-d8f6b154d8ac ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/a0c68789-2a1b-4bc4-b6a4-d8f6b154d8ac/MeasureReport-04e2d651-cddf-493d-9207-79e01e89bd25.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ a0c68789-2a1b-4bc4-b6a4-d8f6b154d8ac ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/a0c68789-2a1b-4bc4-b6a4-d8f6b154d8ac/MeasureReport-04e2d651-cddf-493d-9207-79e01e89bd25.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ bd9b9e02-ce12-43cb-af1c-25298c891e62 ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/bd9b9e02-ce12-43cb-af1c-25298c891e62/MeasureReport-5d4a8d58-0826-4c1f-bcad-2165ad44e41a.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ bd9b9e02-ce12-43cb-af1c-25298c891e62 ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/bd9b9e02-ce12-43cb-af1c-25298c891e62/MeasureReport-5d4a8d58-0826-4c1f-bcad-2165ad44e41a.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ bd9b9e02-ce12-43cb-af1c-25298c891e62 ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/bd9b9e02-ce12-43cb-af1c-25298c891e62/MeasureReport-5d4a8d58-0826-4c1f-bcad-2165ad44e41a.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ dbb639f6-f7b7-41c8-bc30-84e5574c08cd ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/dbb639f6-f7b7-41c8-bc30-84e5574c08cd/MeasureReport-3f78c46d-a5dc-4caf-88e4-af0b8f336db1.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ dbb639f6-f7b7-41c8-bc30-84e5574c08cd ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/dbb639f6-f7b7-41c8-bc30-84e5574c08cd/MeasureReport-3f78c46d-a5dc-4caf-88e4-af0b8f336db1.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ dbb639f6-f7b7-41c8-bc30-84e5574c08cd ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/dbb639f6-f7b7-41c8-bc30-84e5574c08cd/MeasureReport-3f78c46d-a5dc-4caf-88e4-af0b8f336db1.json) | Group_3 | Denominator Exclusion | 1 | 0 |
 | [ f9daa593-c909-43a1-9fb7-f3116380d37f ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/f9daa593-c909-43a1-9fb7-f3116380d37f/MeasureReport-b4f9a0ec-8cfd-4db0-86c7-ea92320f539b.json) | Group_1 | Denominator Exclusion | 1 | 0 |
 | [ f9daa593-c909-43a1-9fb7-f3116380d37f ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/f9daa593-c909-43a1-9fb7-f3116380d37f/MeasureReport-b4f9a0ec-8cfd-4db0-86c7-ea92320f539b.json) | Group_2 | Denominator Exclusion | 1 | 0 |
 | [ f9daa593-c909-43a1-9fb7-f3116380d37f ](../.././input/tests/measure/CMS155FHIRWgtAssessCounseling/f9daa593-c909-43a1-9fb7-f3116380d37f/MeasureReport-b4f9a0ec-8cfd-4db0-86c7-ea92320f539b.json) | Group_3 | Denominator Exclusion | 1 | 0 |
@@ -1114,50 +866,6 @@ Missing Results (45 of 177 test cases)
 | [ ea9af1dc-c26e-4bc3-947b-6c4bbd65523c ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/ea9af1dc-c26e-4bc3-947b-6c4bbd65523c/MeasureReport-95607d58-bfa1-43fb-8fe9-8a0e479b8885.json) | Group_3 |
 
 
-Mismatched Test Cases (39 of  of 177)
-| Test Case | Group | Population | Expected | Actual |
-|---|---|---|:---:|:---:|
-| [ 05aa403d-44c1-4c71-acb9-7808568b6a4f ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/05aa403d-44c1-4c71-acb9-7808568b6a4f/MeasureReport-01b4a3fd-29dd-470c-9eda-149b0cb3528b.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 05aa403d-44c1-4c71-acb9-7808568b6a4f ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/05aa403d-44c1-4c71-acb9-7808568b6a4f/MeasureReport-01b4a3fd-29dd-470c-9eda-149b0cb3528b.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 05aa403d-44c1-4c71-acb9-7808568b6a4f ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/05aa403d-44c1-4c71-acb9-7808568b6a4f/MeasureReport-01b4a3fd-29dd-470c-9eda-149b0cb3528b.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ 28da77ab-fe4d-44f2-a2fe-9c260e941cfb ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/28da77ab-fe4d-44f2-a2fe-9c260e941cfb/MeasureReport-869d8f10-b533-4fbf-bf72-8536e0524eb6.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 28da77ab-fe4d-44f2-a2fe-9c260e941cfb ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/28da77ab-fe4d-44f2-a2fe-9c260e941cfb/MeasureReport-869d8f10-b533-4fbf-bf72-8536e0524eb6.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 28da77ab-fe4d-44f2-a2fe-9c260e941cfb ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/28da77ab-fe4d-44f2-a2fe-9c260e941cfb/MeasureReport-869d8f10-b533-4fbf-bf72-8536e0524eb6.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ 32186189-fe9c-41d5-9654-68c0c60aaac6 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/32186189-fe9c-41d5-9654-68c0c60aaac6/MeasureReport-8b5f7af9-95da-4008-b4d7-acd1c843c4b9.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 32186189-fe9c-41d5-9654-68c0c60aaac6 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/32186189-fe9c-41d5-9654-68c0c60aaac6/MeasureReport-8b5f7af9-95da-4008-b4d7-acd1c843c4b9.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 32186189-fe9c-41d5-9654-68c0c60aaac6 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/32186189-fe9c-41d5-9654-68c0c60aaac6/MeasureReport-8b5f7af9-95da-4008-b4d7-acd1c843c4b9.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ 35b521b6-1fdd-4742-8137-36213864b0fb ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/35b521b6-1fdd-4742-8137-36213864b0fb/MeasureReport-23f4dccf-5051-4dc7-bf21-c6e77c9b48df.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 35b521b6-1fdd-4742-8137-36213864b0fb ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/35b521b6-1fdd-4742-8137-36213864b0fb/MeasureReport-23f4dccf-5051-4dc7-bf21-c6e77c9b48df.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 35b521b6-1fdd-4742-8137-36213864b0fb ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/35b521b6-1fdd-4742-8137-36213864b0fb/MeasureReport-23f4dccf-5051-4dc7-bf21-c6e77c9b48df.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ 60883694-3c84-4343-b12b-b017f1c57587 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/60883694-3c84-4343-b12b-b017f1c57587/MeasureReport-c5ff3e07-42c8-446f-a8e9-757fcf945f64.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 60883694-3c84-4343-b12b-b017f1c57587 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/60883694-3c84-4343-b12b-b017f1c57587/MeasureReport-c5ff3e07-42c8-446f-a8e9-757fcf945f64.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 60883694-3c84-4343-b12b-b017f1c57587 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/60883694-3c84-4343-b12b-b017f1c57587/MeasureReport-c5ff3e07-42c8-446f-a8e9-757fcf945f64.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ 688e8e1b-8054-4c30-83e8-ab99fdd7ccfb ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/688e8e1b-8054-4c30-83e8-ab99fdd7ccfb/MeasureReport-367fa966-8eaa-453c-b019-f3783fc5017a.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 688e8e1b-8054-4c30-83e8-ab99fdd7ccfb ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/688e8e1b-8054-4c30-83e8-ab99fdd7ccfb/MeasureReport-367fa966-8eaa-453c-b019-f3783fc5017a.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 688e8e1b-8054-4c30-83e8-ab99fdd7ccfb ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/688e8e1b-8054-4c30-83e8-ab99fdd7ccfb/MeasureReport-367fa966-8eaa-453c-b019-f3783fc5017a.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ 8b2f163f-e180-4169-b41a-9c3b77ae0302 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/8b2f163f-e180-4169-b41a-9c3b77ae0302/MeasureReport-cd8cb6ca-4a62-4609-9c22-4f64998f7a15.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 8b2f163f-e180-4169-b41a-9c3b77ae0302 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/8b2f163f-e180-4169-b41a-9c3b77ae0302/MeasureReport-cd8cb6ca-4a62-4609-9c22-4f64998f7a15.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 8b2f163f-e180-4169-b41a-9c3b77ae0302 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/8b2f163f-e180-4169-b41a-9c3b77ae0302/MeasureReport-cd8cb6ca-4a62-4609-9c22-4f64998f7a15.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ 8b33d091-6e1e-4992-9ae6-63adc9401862 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/8b33d091-6e1e-4992-9ae6-63adc9401862/MeasureReport-24189274-2376-4e39-ad9b-55c67f00e95f.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 8b33d091-6e1e-4992-9ae6-63adc9401862 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/8b33d091-6e1e-4992-9ae6-63adc9401862/MeasureReport-24189274-2376-4e39-ad9b-55c67f00e95f.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 8b33d091-6e1e-4992-9ae6-63adc9401862 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/8b33d091-6e1e-4992-9ae6-63adc9401862/MeasureReport-24189274-2376-4e39-ad9b-55c67f00e95f.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ 9f9302aa-f988-4131-a265-3996467aeed7 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/9f9302aa-f988-4131-a265-3996467aeed7/MeasureReport-ea703c4c-a8b9-48db-b342-4a77823746c9.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 9f9302aa-f988-4131-a265-3996467aeed7 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/9f9302aa-f988-4131-a265-3996467aeed7/MeasureReport-ea703c4c-a8b9-48db-b342-4a77823746c9.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ 9f9302aa-f988-4131-a265-3996467aeed7 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/9f9302aa-f988-4131-a265-3996467aeed7/MeasureReport-ea703c4c-a8b9-48db-b342-4a77823746c9.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ ad4aced6-dec9-4309-86a1-246b7c0dd6d9 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/ad4aced6-dec9-4309-86a1-246b7c0dd6d9/MeasureReport-ec5d0ab8-320b-4ae9-b84c-6adeaf31bc55.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ ad4aced6-dec9-4309-86a1-246b7c0dd6d9 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/ad4aced6-dec9-4309-86a1-246b7c0dd6d9/MeasureReport-ec5d0ab8-320b-4ae9-b84c-6adeaf31bc55.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ ad4aced6-dec9-4309-86a1-246b7c0dd6d9 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/ad4aced6-dec9-4309-86a1-246b7c0dd6d9/MeasureReport-ec5d0ab8-320b-4ae9-b84c-6adeaf31bc55.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ b9e0084c-8386-48e2-b17d-87c508c566f9 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/b9e0084c-8386-48e2-b17d-87c508c566f9/MeasureReport-fde74230-5c8d-495c-8488-1e46ce024a96.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ b9e0084c-8386-48e2-b17d-87c508c566f9 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/b9e0084c-8386-48e2-b17d-87c508c566f9/MeasureReport-fde74230-5c8d-495c-8488-1e46ce024a96.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ b9e0084c-8386-48e2-b17d-87c508c566f9 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/b9e0084c-8386-48e2-b17d-87c508c566f9/MeasureReport-fde74230-5c8d-495c-8488-1e46ce024a96.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ bb83b7f0-6542-4105-b2f0-5d2018167a9e ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/bb83b7f0-6542-4105-b2f0-5d2018167a9e/MeasureReport-2e6ce7a3-3b86-4820-a4e2-7d8386b7a118.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ bb83b7f0-6542-4105-b2f0-5d2018167a9e ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/bb83b7f0-6542-4105-b2f0-5d2018167a9e/MeasureReport-2e6ce7a3-3b86-4820-a4e2-7d8386b7a118.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ bb83b7f0-6542-4105-b2f0-5d2018167a9e ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/bb83b7f0-6542-4105-b2f0-5d2018167a9e/MeasureReport-2e6ce7a3-3b86-4820-a4e2-7d8386b7a118.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-| [ eac1ad4e-e4cb-49c8-a9b1-6ddf5eec85a1 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/eac1ad4e-e4cb-49c8-a9b1-6ddf5eec85a1/MeasureReport-46815b9a-4304-46ab-bfa6-7cb74306e987.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ eac1ad4e-e4cb-49c8-a9b1-6ddf5eec85a1 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/eac1ad4e-e4cb-49c8-a9b1-6ddf5eec85a1/MeasureReport-46815b9a-4304-46ab-bfa6-7cb74306e987.json) | Group_2 | Denominator Exclusion | 1 | 0 |
-| [ eac1ad4e-e4cb-49c8-a9b1-6ddf5eec85a1 ](../.././input/tests/measure/CMS156FHIRHighRiskMedsElderly/eac1ad4e-e4cb-49c8-a9b1-6ddf5eec85a1/MeasureReport-46815b9a-4304-46ab-bfa6-7cb74306e987.json) | Group_3 | Denominator Exclusion | 1 | 0 |
-
-
 #### CMS157FHIRPainIntensityQuantified
 [ [cql] ](../../input/cql/CMS157FHIRPainIntensityQuantified.cql) [ [test results] ](../../input/tests/results/CMS157FHIRPainIntensityQuantified.txt)
 
@@ -1204,13 +912,11 @@ Mismatched Test Cases (6 of  of 67)
 #### CMS165FHIRControllingHighBP
 [ [cql] ](../../input/cql/CMS165FHIRControllingHighBP.cql) [ [test results] ](../../input/tests/results/CMS165FHIRControllingHighBP.txt)
 
-Mismatched Test Cases (4 of  of 15)
+Mismatched Test Cases (2 of  of 15)
 | Test Case | Group | Population | Expected | Actual |
 |---|---|---|:---:|:---:|
-| [ 0e867903-400d-4d71-a7fd-dc9b96d94a17 ](../.././input/tests/measure/CMS165FHIRControllingHighBP/0e867903-400d-4d71-a7fd-dc9b96d94a17/MeasureReport-24439e57-9c88-474c-baf8-4d424d40153e.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 29d930b1-1bb6-4089-9ed6-aa2b7b77d5a4 ](../.././input/tests/measure/CMS165FHIRControllingHighBP/29d930b1-1bb6-4089-9ed6-aa2b7b77d5a4/MeasureReport-1590b87e-b65f-4331-8ffa-0d2952d2fba0.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 352a05d3-750c-45bd-a170-a8a8822b7697 ](../.././input/tests/measure/CMS165FHIRControllingHighBP/352a05d3-750c-45bd-a170-a8a8822b7697/MeasureReport-4c90f4fe-b99f-4678-be7d-65a13fc481fb.json) | Group_1 | Denominator Exclusion | 1 | 0 |
-| [ 3e214018-7420-4e1f-a24d-e9426ace2bd8 ](../.././input/tests/measure/CMS165FHIRControllingHighBP/3e214018-7420-4e1f-a24d-e9426ace2bd8/MeasureReport-b4faaa79-84c9-4e1f-a15a-0a0267eb1a1b.json) | Group_1 | Denominator Exclusion | 1 | 0 |
+| [ 1905549a-1783-4195-95b9-b0879cb81d96 ](../.././input/tests/measure/CMS165FHIRControllingHighBP/1905549a-1783-4195-95b9-b0879cb81d96/MeasureReport-48b71fbe-f1ba-4c56-950a-30901e055481.json) | Group_1 | Denominator Exclusion | 0 | 1 |
+| [ 2c55811b-1571-43e5-919c-f90bf763b3d4 ](../.././input/tests/measure/CMS165FHIRControllingHighBP/2c55811b-1571-43e5-919c-f90bf763b3d4/MeasureReport-75c17983-f022-41f6-8008-b1f8cc73f3c6.json) | Group_1 | Denominator Exclusion | 0 | 1 |
 
 
 #### CMS177FHIRChildMDDSuicideAssmt
@@ -1248,7 +954,7 @@ Mismatched Test Cases (15 of  of 125)
 #### CMS347FHIRStatinPreventionTxCVD
 [ [cql] ](../../input/cql/CMS347FHIRStatinPreventionTxCVD.cql) [ [test results] ](../../input/tests/results/CMS347FHIRStatinPreventionTxCVD.txt)
 
-Mismatched Test Cases (179 of  of 352)
+Mismatched Test Cases (176 of  of 352)
 | Test Case | Group | Population | Expected | Actual |
 |---|---|---|:---:|:---:|
 | [ 0045ec92-0b70-4961-8a7c-41b5c43d53a1 ](../.././input/tests/measure/CMS347FHIRStatinPreventionTxCVD/0045ec92-0b70-4961-8a7c-41b5c43d53a1/MeasureReport-d8b9368d-8de3-47d7-b512-3522043eaca8.json) | Group_2 | Denominator Exception | 1 | 0 |
@@ -1280,10 +986,7 @@ Mismatched Test Cases (179 of  of 352)
 | [ 0aaae01e-d3b0-4b76-abf8-a044fd4f5d80 ](../.././input/tests/measure/CMS347FHIRStatinPreventionTxCVD/0aaae01e-d3b0-4b76-abf8-a044fd4f5d80/MeasureReport-b458a7fb-93c1-4b34-9056-26bdeaac5f32.json) | Group_2 | Denominator Exception | 1 | 0 |
 | [ 0aaae01e-d3b0-4b76-abf8-a044fd4f5d80 ](../.././input/tests/measure/CMS347FHIRStatinPreventionTxCVD/0aaae01e-d3b0-4b76-abf8-a044fd4f5d80/MeasureReport-b458a7fb-93c1-4b34-9056-26bdeaac5f32.json) | Group_3 | Denominator Exception | 1 | 0 |
 | [ 0aaae01e-d3b0-4b76-abf8-a044fd4f5d80 ](../.././input/tests/measure/CMS347FHIRStatinPreventionTxCVD/0aaae01e-d3b0-4b76-abf8-a044fd4f5d80/MeasureReport-b458a7fb-93c1-4b34-9056-26bdeaac5f32.json) | Group_4 | Denominator Exception | 1 | 0 |
-| [ 0ba942ff-50d6-4123-ab21-adcf5fdff0df ](../.././input/tests/measure/CMS347FHIRStatinPreventionTxCVD/0ba942ff-50d6-4123-ab21-adcf5fdff0df/MeasureReport-18f93977-8cfb-4d93-82af-9d6f292eda19.json) | Group_1 | Initial Population<br>Denominator<br>Denominator Exception | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 0ba942ff-50d6-4123-ab21-adcf5fdff0df ](../.././input/tests/measure/CMS347FHIRStatinPreventionTxCVD/0ba942ff-50d6-4123-ab21-adcf5fdff0df/MeasureReport-18f93977-8cfb-4d93-82af-9d6f292eda19.json) | Group_2 | Denominator Exception | 1 | 0 |
-| [ 0ba942ff-50d6-4123-ab21-adcf5fdff0df ](../.././input/tests/measure/CMS347FHIRStatinPreventionTxCVD/0ba942ff-50d6-4123-ab21-adcf5fdff0df/MeasureReport-18f93977-8cfb-4d93-82af-9d6f292eda19.json) | Group_3 | Denominator Exception | 1 | 0 |
-| [ 0ba942ff-50d6-4123-ab21-adcf5fdff0df ](../.././input/tests/measure/CMS347FHIRStatinPreventionTxCVD/0ba942ff-50d6-4123-ab21-adcf5fdff0df/MeasureReport-18f93977-8cfb-4d93-82af-9d6f292eda19.json) | Group_4 | Denominator Exception | 1 | 0 |
+| [ 0ba942ff-50d6-4123-ab21-adcf5fdff0df ](../.././input/tests/measure/CMS347FHIRStatinPreventionTxCVD/0ba942ff-50d6-4123-ab21-adcf5fdff0df/MeasureReport-18f93977-8cfb-4d93-82af-9d6f292eda19.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
 | [ 0ce81150-5908-49a1-bef9-21406359af63 ](../.././input/tests/measure/CMS347FHIRStatinPreventionTxCVD/0ce81150-5908-49a1-bef9-21406359af63/MeasureReport-fb6196c7-1a0a-4fbd-856b-f87833da5d80.json) | Group_1 | Denominator Exception | 1 | 0 |
 | [ 0ce81150-5908-49a1-bef9-21406359af63 ](../.././input/tests/measure/CMS347FHIRStatinPreventionTxCVD/0ce81150-5908-49a1-bef9-21406359af63/MeasureReport-fb6196c7-1a0a-4fbd-856b-f87833da5d80.json) | Group_2 | Initial Population<br>Denominator<br>Denominator Exception | 1<br>1<br>1 | 0<br>0<br>0 |
 | [ 0ce81150-5908-49a1-bef9-21406359af63 ](../.././input/tests/measure/CMS347FHIRStatinPreventionTxCVD/0ce81150-5908-49a1-bef9-21406359af63/MeasureReport-fb6196c7-1a0a-4fbd-856b-f87833da5d80.json) | Group_3 | Denominator Exception | 1 | 0 |

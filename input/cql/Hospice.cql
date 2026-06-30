@@ -25,8 +25,10 @@ code "Discharge to home for hospice care (procedure)": '428361000124107' from "S
 code "Hospice care [Minimum Data Set]": '45755-6' from "LOINC" display 'Hospice care [Minimum Data Set]'
 code "Yes (qualifier value)": '373066001' from "SNOMEDCT" display 'Yes (qualifier value)'
 
+//parameter "Measurement Period" Interval<DateTime>
 parameter "Measurement Period" Interval<DateTime>
-
+  default Interval[@2026-01-01T00:00:00.000Z, @2027-01-01T00:00:00.000Z)
+  
 context Patient
 
 define "Has Hospice Services":
@@ -54,3 +56,11 @@ define "Has Hospice Services":
     or exists ((([FHIR.Condition: "Hospice Diagnosis"]).verified()) HospiceCareDiagnosis
         where HospiceCareDiagnosis.prevalenceInterval() overlaps day of "Measurement Period"
     )
+
+// define "Has Hospice Services":
+//   exists ((([USQualityCore.Encounter: "Encounter Inpatient"]).isEncounterPerformed()) InpatientEncounter
+//       where (InpatientEncounter.hospitalization.dischargeDisposition ~ "Discharge to home for hospice care (procedure)"
+//           or InpatientEncounter.hospitalization.dischargeDisposition ~ "Discharge to healthcare facility for hospice care (procedure)"
+//       )
+//         and InpatientEncounter.period ends during day of "Measurement Period"
+//   )
