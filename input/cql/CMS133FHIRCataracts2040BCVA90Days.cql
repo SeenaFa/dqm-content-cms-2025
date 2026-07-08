@@ -267,7 +267,7 @@ define "Cataract Surgeries in Patients with Significant Ocular Conditions Impact
       union ( ["ConditionProblemsHealthConcerns": "Visual Field Defects"]
           union ["ConditionEncounterDiagnosis": "Visual Field Defects"]
       ) ) ComorbidDiagnosis
-      such that ComorbidDiagnosis.onset.toInterval ( ) overlaps before day of CataractSurgeryPerformed.performed.toInterval ( )
+      such that ComorbidDiagnosis.onset.toInterval ( ) starts before day of CataractSurgeryPerformed.performed.toInterval ( )
         and ComorbidDiagnosis.isVerified ( )
 
 define "Numerator":
@@ -301,3 +301,10 @@ define "SDE Race":
 
 define "SDE Sex":
   SDE."SDE Sex"
+
+// define "test":
+// "Cataract Surgery Between January and September of Measurement Period" CataractSurgeryPerformed
+// with ((["ConditionProblemsHealthConcerns": "Choroidal Detachment"]
+//            union ["ConditionEncounterDiagnosis": "Choroidal Detachment"]))ComorbidDiagnosis
+//        such that ComorbidDiagnosis.isVerified ( )
+//        and ComorbidDiagnosis.onset.toInterval ( ) starts before day of CataractSurgeryPerformed.performed.toInterval ( )
