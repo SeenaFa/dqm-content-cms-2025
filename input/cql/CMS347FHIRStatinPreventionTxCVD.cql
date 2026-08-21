@@ -199,6 +199,7 @@ define "Medication Active during the Measurement Period":
     union [MedicationRequest: "High Intensity Statin Therapy"] ) ActiveStatin
     where ActiveStatin.medicationRequestPeriod ( ) overlaps day of "Measurement Period"
       and ActiveStatin.status in { 'active', 'completed' }
+      and ( ActiveStatin.doNotPerform is null or not ActiveStatin.doNotPerform )
 
 define "Patients Aged 20 to 75 with LDL Cholesterol Result Greater than or Equal to 190 or Hypercholesterolemia without ASCVD":
   "Patients Aged 20 to 75 at Start of Measurement Period"
@@ -246,7 +247,8 @@ define "Statin Therapy Ordered during Measurement Period":
     union [MedicationRequest: "High Intensity Statin Therapy"] ) StatinRequest
     where StatinRequest.authoredOn during day of "Measurement Period"
       and StatinRequest.status in { 'active', 'completed' }
-      and StatinRequest.intent in { 'order', 'original-order', 'reflex-order', 'filter-order', 'instance-order' }
+      and StatinRequest.intent in { 'order', 'original-order', 'reflex-order', 'filler-order', 'instance-order' }
+      and ( StatinRequest.doNotPerform is null or not StatinRequest.doNotPerform )
 
 define "Ten Year CVD Risk is High":
   exists ( ( [ObservationScreeningAssessment: "Cardiovascular disease 10Y risk [Likelihood]"]
