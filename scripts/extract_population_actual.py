@@ -126,8 +126,19 @@ def validate_measure_population_counts(measurename: str, populations: Dict[str, 
     measurepop_count = len(measurepop) if isinstance(measurepop, list) else measurepop
     measurepopexc_count = len(measurepopexc) if isinstance(measurepopexc, list) else measurepopexc
 
-    
-    if denom_count < 2:
+    # A patient who is not in this group's own Denominator can never count toward this
+    # group's Numerator, Denominator Exclusion, or Denominator Exception, even when those
+    # criteria expressions are shared (unqualified) across multiple groups/strata, as in
+    # multi-population measures like CMS347. Gate on this group's own Denominator value
+    # before any of the more granular numerator/exclusion adjustment rules below, since
+    # those rules key off the (possibly cross-group-shared) Numerator/Exclusion values
+    # rather than this group's own Denominator.
+    if not denom_count:
+        numer_count = 0
+        numex_count = 0
+        denex_count = 0
+        denexc_count = 0
+    elif denom_count < 2:
         if not numer and numex and (denom and denex):
             numer_count = 0
             numex_count = 0
