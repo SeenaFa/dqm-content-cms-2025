@@ -4253,11 +4253,11 @@ PASS,CMS871FHIRHHHyper,76dc2b63-710c-4ac5-afef-f76c2ef07dcd,Group_1:Denominator,
 PASS,CMS871FHIRHHHyper,76dc2b63-710c-4ac5-afef-f76c2ef07dcd,Group_1:Denominator Exclusion,0,0
 PASS,CMS871FHIRHHHyper,76dc2b63-710c-4ac5-afef-f76c2ef07dcd,Group_1:Numerator,1,1
 PASS,CMS871FHIRHHHyper,76dc2b63-710c-4ac5-afef-f76c2ef07dcd,Group_1:Numerator Exclusion,0,0
-FAIL,CMS871FHIRHHHyper,35719b1a-85bd-4072-b8d5-7218309358c6,Group_1:Initial Population,1,MISSING
-FAIL,CMS871FHIRHHHyper,35719b1a-85bd-4072-b8d5-7218309358c6,Group_1:Denominator,1,MISSING
-FAIL,CMS871FHIRHHHyper,35719b1a-85bd-4072-b8d5-7218309358c6,Group_1:Denominator Exclusion,0,MISSING
-FAIL,CMS871FHIRHHHyper,35719b1a-85bd-4072-b8d5-7218309358c6,Group_1:Numerator,0,MISSING
-FAIL,CMS871FHIRHHHyper,35719b1a-85bd-4072-b8d5-7218309358c6,Group_1:Numerator Exclusion,0,MISSING
+PASS,CMS871FHIRHHHyper,35719b1a-85bd-4072-b8d5-7218309358c6,Group_1:Initial Population,1,1
+PASS,CMS871FHIRHHHyper,35719b1a-85bd-4072-b8d5-7218309358c6,Group_1:Denominator,1,1
+PASS,CMS871FHIRHHHyper,35719b1a-85bd-4072-b8d5-7218309358c6,Group_1:Denominator Exclusion,0,0
+PASS,CMS871FHIRHHHyper,35719b1a-85bd-4072-b8d5-7218309358c6,Group_1:Numerator,0,0
+PASS,CMS871FHIRHHHyper,35719b1a-85bd-4072-b8d5-7218309358c6,Group_1:Numerator Exclusion,0,0
 FAIL,CMS871FHIRHHHyper,98533ccd-24ee-41b3-aab2-ef6cbf89e00d,Group_1:Initial Population,1,MISSING
 FAIL,CMS871FHIRHHHyper,98533ccd-24ee-41b3-aab2-ef6cbf89e00d,Group_1:Denominator,1,MISSING
 FAIL,CMS871FHIRHHHyper,98533ccd-24ee-41b3-aab2-ef6cbf89e00d,Group_1:Denominator Exclusion,1,MISSING
@@ -4298,11 +4298,11 @@ PASS,CMS871FHIRHHHyper,62f61668-6b4e-4d0a-be44-16a83dfec00e,Group_1:Denominator,
 PASS,CMS871FHIRHHHyper,62f61668-6b4e-4d0a-be44-16a83dfec00e,Group_1:Denominator Exclusion,1,1
 PASS,CMS871FHIRHHHyper,62f61668-6b4e-4d0a-be44-16a83dfec00e,Group_1:Numerator,0,0
 PASS,CMS871FHIRHHHyper,62f61668-6b4e-4d0a-be44-16a83dfec00e,Group_1:Numerator Exclusion,0,0
-FAIL,CMS871FHIRHHHyper,7507debb-a991-4de0-bd71-634a684ddcd7,Group_1:Initial Population,1,MISSING
-FAIL,CMS871FHIRHHHyper,7507debb-a991-4de0-bd71-634a684ddcd7,Group_1:Denominator,1,MISSING
-FAIL,CMS871FHIRHHHyper,7507debb-a991-4de0-bd71-634a684ddcd7,Group_1:Denominator Exclusion,0,MISSING
-FAIL,CMS871FHIRHHHyper,7507debb-a991-4de0-bd71-634a684ddcd7,Group_1:Numerator,0,MISSING
-FAIL,CMS871FHIRHHHyper,7507debb-a991-4de0-bd71-634a684ddcd7,Group_1:Numerator Exclusion,0,MISSING
+PASS,CMS871FHIRHHHyper,7507debb-a991-4de0-bd71-634a684ddcd7,Group_1:Initial Population,1,1
+PASS,CMS871FHIRHHHyper,7507debb-a991-4de0-bd71-634a684ddcd7,Group_1:Denominator,1,1
+PASS,CMS871FHIRHHHyper,7507debb-a991-4de0-bd71-634a684ddcd7,Group_1:Denominator Exclusion,0,0
+PASS,CMS871FHIRHHHyper,7507debb-a991-4de0-bd71-634a684ddcd7,Group_1:Numerator,0,0
+PASS,CMS871FHIRHHHyper,7507debb-a991-4de0-bd71-634a684ddcd7,Group_1:Numerator Exclusion,0,0
 PASS,NHSNGlycemicControlHypoglycemiaInitialPopulation,62cfb49d-d68f-4366-ada1-977e827ca7e2,Group_1:Initial Population,1,1
 FAIL,NHSNGlycemicControlHypoglycemiaInitialPopulation,40b66b90-4811-4f6f-8eec-c46d1a5e6eeb,Group_1:Initial Population,1,0
 PASS,NHSNGlycemicControlHypoglycemiaInitialPopulation,6d2ba015-ead4-4a64-b3c2-91798444d44b,Group_1:Initial Population,1,1
@@ -7947,22 +7947,22 @@ PASS,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_1:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_1:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_1:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_1:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_1:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_2:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_2:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_2:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_2:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_2:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_3:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_3:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_3:Denominator Exclusion,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_3:Numerator,0,1
-FAIL,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_3:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_3:Numerator,0,0
+PASS,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_3:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_4:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_4:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_4:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_4:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_4:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,8b0f2e04-8c60-4f6e-adc5-8967a540a18f,Group_4:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,cf1d9246-dbe4-4c59-a955-e2301e37732b,Group_1:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,cf1d9246-dbe4-4c59-a955-e2301e37732b,Group_1:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,cf1d9246-dbe4-4c59-a955-e2301e37732b,Group_1:Denominator Exclusion,0,0
@@ -8086,23 +8086,23 @@ PASS,CMS347FHIRStatinPreventionTxCVD,f3fd3dca-ae0d-4f2f-915b-8ec0775f5d84,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_1:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_1:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_1:Denominator Exclusion,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_1:Numerator,0,1
-FAIL,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_1:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_1:Numerator,0,0
+PASS,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_1:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_2:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_2:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_2:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_2:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_2:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_3:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_3:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_3:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_3:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_3:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_3:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_4:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_4:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_4:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_4:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_4:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,0ba942ff-50d6-4123-ab21-adcf5fdff0df,Group_4:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,59715b85-2d66-4627-ad73-d91e5862cb5b,Group_1:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,59715b85-2d66-4627-ad73-d91e5862cb5b,Group_1:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,59715b85-2d66-4627-ad73-d91e5862cb5b,Group_1:Denominator Exclusion,0,0
@@ -8246,23 +8246,23 @@ PASS,CMS347FHIRStatinPreventionTxCVD,72194a73-a0fe-4d50-8f07-0ad92320a467,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_1:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_1:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_1:Denominator Exclusion,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_1:Numerator,0,1
-FAIL,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_1:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_1:Numerator,0,0
+PASS,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_1:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_2:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_2:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_2:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_2:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_2:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_3:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_3:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_3:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_3:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_3:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_3:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_4:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_4:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_4:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_4:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_4:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,9edcce2d-8d32-4f4f-88a5-6fa689b73f8d,Group_4:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,08f8343e-9a9e-4ff5-b21c-1fb44e29aa9a,Group_1:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,08f8343e-9a9e-4ff5-b21c-1fb44e29aa9a,Group_1:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,08f8343e-9a9e-4ff5-b21c-1fb44e29aa9a,Group_1:Denominator Exclusion,0,0
@@ -8307,22 +8307,22 @@ PASS,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_1:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_1:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_1:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_1:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_1:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_2:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_2:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_2:Denominator Exclusion,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_2:Numerator,0,1
-FAIL,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_2:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_2:Numerator,0,0
+PASS,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_2:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_3:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_3:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_3:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_3:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_3:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_3:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_4:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_4:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_4:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_4:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_4:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,4e72d245-e401-4be7-a743-84ab6a842871,Group_4:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,c75e56eb-e95d-4c65-b184-3565362eb3ba,Group_1:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,c75e56eb-e95d-4c65-b184-3565362eb3ba,Group_1:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,c75e56eb-e95d-4c65-b184-3565362eb3ba,Group_1:Denominator Exclusion,0,0
@@ -8407,22 +8407,22 @@ PASS,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_1:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_1:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_1:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_1:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_1:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_2:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_2:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_2:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_2:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_2:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_3:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_3:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_3:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_3:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_3:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_3:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_4:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_4:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_4:Denominator Exclusion,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_4:Numerator,0,1
-FAIL,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_4:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_4:Numerator,0,0
+PASS,CMS347FHIRStatinPreventionTxCVD,4d6fb0e2-636d-426f-802b-5ecb4f059440,Group_4:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,7b9268b7-2d3d-4a2b-822a-e1f470593fdf,Group_1:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,7b9268b7-2d3d-4a2b-822a-e1f470593fdf,Group_1:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,7b9268b7-2d3d-4a2b-822a-e1f470593fdf,Group_1:Denominator Exclusion,0,0
@@ -8447,22 +8447,22 @@ PASS,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_1:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_1:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_1:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_1:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_1:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_2:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_2:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_2:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_2:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_2:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_3:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_3:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_3:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_3:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_3:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_3:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_4:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_4:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_4:Denominator Exclusion,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_4:Numerator,0,1
-FAIL,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_4:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_4:Numerator,0,0
+PASS,CMS347FHIRStatinPreventionTxCVD,faae1173-bc93-4fd2-a22f-e7726430857f,Group_4:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,4fe9e695-6348-44e7-af08-0e326c1420b7,Group_1:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,4fe9e695-6348-44e7-af08-0e326c1420b7,Group_1:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,4fe9e695-6348-44e7-af08-0e326c1420b7,Group_1:Denominator Exclusion,0,0
@@ -8607,22 +8607,22 @@ PASS,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_1:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_1:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_1:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_1:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_1:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_2:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_2:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_2:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_2:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_2:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_3:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_3:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_3:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_3:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_3:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_3:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_4:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_4:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_4:Denominator Exclusion,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_4:Numerator,0,1
-FAIL,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_4:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_4:Numerator,0,0
+PASS,CMS347FHIRStatinPreventionTxCVD,e8020421-14a3-4c64-99c4-3366c1400bd7,Group_4:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,3137d292-5094-49ef-82da-d9809b599030,Group_1:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,3137d292-5094-49ef-82da-d9809b599030,Group_1:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,3137d292-5094-49ef-82da-d9809b599030,Group_1:Denominator Exclusion,0,0
@@ -8667,22 +8667,22 @@ PASS,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_1:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_1:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_1:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_1:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_1:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_2:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_2:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_2:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_2:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_2:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_3:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_3:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_3:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_3:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_3:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_3:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_4:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_4:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_4:Denominator Exclusion,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_4:Numerator,0,1
-FAIL,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_4:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_4:Numerator,0,0
+PASS,CMS347FHIRStatinPreventionTxCVD,d2c7d463-775a-4c8d-bcb0-35ea689b2d20,Group_4:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,022c05d8-8337-4f1a-9d69-abb6500b1be5,Group_1:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,022c05d8-8337-4f1a-9d69-abb6500b1be5,Group_1:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,022c05d8-8337-4f1a-9d69-abb6500b1be5,Group_1:Denominator Exclusion,0,0
@@ -8707,22 +8707,22 @@ PASS,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_1:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_1:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_1:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_1:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_1:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_2:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_2:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_2:Denominator Exclusion,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_2:Numerator,0,1
-FAIL,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_2:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_2:Numerator,0,0
+PASS,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_2:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_3:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_3:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_3:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_3:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_3:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_3:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_4:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_4:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_4:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_4:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_4:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Group_4:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,5f799983-39d3-4f03-9a9a-125dc6f12f13,Group_1:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,5f799983-39d3-4f03-9a9a-125dc6f12f13,Group_1:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,5f799983-39d3-4f03-9a9a-125dc6f12f13,Group_1:Denominator Exclusion,0,0
@@ -9286,23 +9286,23 @@ PASS,CMS347FHIRStatinPreventionTxCVD,b8893156-afda-4685-9d5e-06d2113f1409,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_1:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_1:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_1:Denominator Exclusion,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_1:Numerator,0,1
-FAIL,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_1:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_1:Numerator,0,0
+PASS,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_1:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_2:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_2:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_2:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_2:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_2:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_3:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_3:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_3:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_3:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_3:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_3:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_4:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_4:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_4:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_4:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_4:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Group_4:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,da34c14f-672e-4f66-827b-3eb08d97559e,Group_1:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,da34c14f-672e-4f66-827b-3eb08d97559e,Group_1:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,da34c14f-672e-4f66-827b-3eb08d97559e,Group_1:Denominator Exclusion,0,0
@@ -9428,11 +9428,11 @@ PASS,CMS347FHIRStatinPreventionTxCVD,52b48d35-f47c-4013-9cdc-700baad0fc0f,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,52b48d35-f47c-4013-9cdc-700baad0fc0f,Group_1:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,52b48d35-f47c-4013-9cdc-700baad0fc0f,Group_1:Numerator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,52b48d35-f47c-4013-9cdc-700baad0fc0f,Group_1:Denominator Exception,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,52b48d35-f47c-4013-9cdc-700baad0fc0f,Group_2:Initial Population,1,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,52b48d35-f47c-4013-9cdc-700baad0fc0f,Group_2:Denominator,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,52b48d35-f47c-4013-9cdc-700baad0fc0f,Group_2:Initial Population,1,1
+PASS,CMS347FHIRStatinPreventionTxCVD,52b48d35-f47c-4013-9cdc-700baad0fc0f,Group_2:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,52b48d35-f47c-4013-9cdc-700baad0fc0f,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,52b48d35-f47c-4013-9cdc-700baad0fc0f,Group_2:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,52b48d35-f47c-4013-9cdc-700baad0fc0f,Group_2:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,52b48d35-f47c-4013-9cdc-700baad0fc0f,Group_2:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,52b48d35-f47c-4013-9cdc-700baad0fc0f,Group_3:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,52b48d35-f47c-4013-9cdc-700baad0fc0f,Group_3:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,52b48d35-f47c-4013-9cdc-700baad0fc0f,Group_3:Denominator Exclusion,0,0
@@ -9641,7 +9641,7 @@ PASS,CMS347FHIRStatinPreventionTxCVD,2cff757c-4470-46a2-a685-6e23cf82c045,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,2cff757c-4470-46a2-a685-6e23cf82c045,Group_4:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,2cff757c-4470-46a2-a685-6e23cf82c045,Group_4:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,2cff757c-4470-46a2-a685-6e23cf82c045,Group_4:Denominator Exclusion,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,2cff757c-4470-46a2-a685-6e23cf82c045,Group_4:Numerator,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,2cff757c-4470-46a2-a685-6e23cf82c045,Group_4:Numerator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,2cff757c-4470-46a2-a685-6e23cf82c045,Group_4:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,df05b853-3e6d-4a12-b1db-fd9d0ec790a2,Group_1:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,df05b853-3e6d-4a12-b1db-fd9d0ec790a2,Group_1:Denominator,0,0
@@ -9653,8 +9653,8 @@ PASS,CMS347FHIRStatinPreventionTxCVD,df05b853-3e6d-4a12-b1db-fd9d0ec790a2,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,df05b853-3e6d-4a12-b1db-fd9d0ec790a2,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,df05b853-3e6d-4a12-b1db-fd9d0ec790a2,Group_2:Numerator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,df05b853-3e6d-4a12-b1db-fd9d0ec790a2,Group_2:Denominator Exception,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,df05b853-3e6d-4a12-b1db-fd9d0ec790a2,Group_3:Initial Population,1,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,df05b853-3e6d-4a12-b1db-fd9d0ec790a2,Group_3:Denominator,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,df05b853-3e6d-4a12-b1db-fd9d0ec790a2,Group_3:Initial Population,1,1
+PASS,CMS347FHIRStatinPreventionTxCVD,df05b853-3e6d-4a12-b1db-fd9d0ec790a2,Group_3:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,df05b853-3e6d-4a12-b1db-fd9d0ec790a2,Group_3:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,df05b853-3e6d-4a12-b1db-fd9d0ec790a2,Group_3:Numerator,0,0
 FAIL,CMS347FHIRStatinPreventionTxCVD,df05b853-3e6d-4a12-b1db-fd9d0ec790a2,Group_3:Denominator Exception,1,0
@@ -9668,8 +9668,8 @@ PASS,CMS347FHIRStatinPreventionTxCVD,537d14db-6ced-4cd2-9553-e88bd6551771,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,537d14db-6ced-4cd2-9553-e88bd6551771,Group_1:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,537d14db-6ced-4cd2-9553-e88bd6551771,Group_1:Numerator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,537d14db-6ced-4cd2-9553-e88bd6551771,Group_1:Denominator Exception,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,537d14db-6ced-4cd2-9553-e88bd6551771,Group_2:Initial Population,1,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,537d14db-6ced-4cd2-9553-e88bd6551771,Group_2:Denominator,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,537d14db-6ced-4cd2-9553-e88bd6551771,Group_2:Initial Population,1,1
+PASS,CMS347FHIRStatinPreventionTxCVD,537d14db-6ced-4cd2-9553-e88bd6551771,Group_2:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,537d14db-6ced-4cd2-9553-e88bd6551771,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,537d14db-6ced-4cd2-9553-e88bd6551771,Group_2:Numerator,0,0
 FAIL,CMS347FHIRStatinPreventionTxCVD,537d14db-6ced-4cd2-9553-e88bd6551771,Group_2:Denominator Exception,1,0
@@ -9806,23 +9806,23 @@ PASS,CMS347FHIRStatinPreventionTxCVD,06f036ce-62f0-4807-88d2-f3f8e70d2f31,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_1:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_1:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_1:Denominator Exclusion,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_1:Numerator,0,1
-FAIL,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_1:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_1:Numerator,0,0
+PASS,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_1:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_2:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_2:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_2:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_2:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_2:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_3:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_3:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_3:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_3:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_3:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_3:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_4:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_4:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_4:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_4:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_4:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Group_4:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,eea87300-5d3f-4c9f-8835-9245b4e19059,Group_1:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,eea87300-5d3f-4c9f-8835-9245b4e19059,Group_1:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,eea87300-5d3f-4c9f-8835-9245b4e19059,Group_1:Denominator Exclusion,0,0
@@ -9987,42 +9987,42 @@ PASS,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_1:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_1:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_1:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_1:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_1:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_2:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_2:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_2:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_2:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_2:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_3:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_3:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_3:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_3:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_3:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_3:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_4:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_4:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_4:Denominator Exclusion,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_4:Numerator,0,1
-FAIL,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_4:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_4:Numerator,0,0
+PASS,CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Group_4:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_1:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_1:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_1:Denominator Exclusion,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_1:Numerator,0,1
-FAIL,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_1:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_1:Numerator,0,0
+PASS,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_1:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_2:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_2:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_2:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_2:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_2:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_3:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_3:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_3:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_3:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_3:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_3:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_4:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_4:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_4:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_4:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_4:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,dbca4643-bd37-4e01-8024-fb7c70692fe9,Group_4:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,6fa4b970-49b2-478e-9406-e6ecc90fea22,Group_1:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,6fa4b970-49b2-478e-9406-e6ecc90fea22,Group_1:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,6fa4b970-49b2-478e-9406-e6ecc90fea22,Group_1:Denominator Exclusion,0,0
@@ -10103,8 +10103,8 @@ PASS,CMS347FHIRStatinPreventionTxCVD,5976248c-c671-41e4-90df-b3367b1faefd,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,5976248c-c671-41e4-90df-b3367b1faefd,Group_4:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,5976248c-c671-41e4-90df-b3367b1faefd,Group_4:Numerator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,5976248c-c671-41e4-90df-b3367b1faefd,Group_4:Denominator Exception,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,a03e2988-3bed-4fc5-b1e7-70eac99f0612,Group_1:Initial Population,1,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,a03e2988-3bed-4fc5-b1e7-70eac99f0612,Group_1:Denominator,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,a03e2988-3bed-4fc5-b1e7-70eac99f0612,Group_1:Initial Population,1,1
+PASS,CMS347FHIRStatinPreventionTxCVD,a03e2988-3bed-4fc5-b1e7-70eac99f0612,Group_1:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,a03e2988-3bed-4fc5-b1e7-70eac99f0612,Group_1:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,a03e2988-3bed-4fc5-b1e7-70eac99f0612,Group_1:Numerator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,a03e2988-3bed-4fc5-b1e7-70eac99f0612,Group_1:Denominator Exception,0,0
@@ -10128,11 +10128,11 @@ PASS,CMS347FHIRStatinPreventionTxCVD,93aea3e2-4736-4be0-830f-54c1ef6df6d5,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,93aea3e2-4736-4be0-830f-54c1ef6df6d5,Group_1:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,93aea3e2-4736-4be0-830f-54c1ef6df6d5,Group_1:Numerator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,93aea3e2-4736-4be0-830f-54c1ef6df6d5,Group_1:Denominator Exception,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,93aea3e2-4736-4be0-830f-54c1ef6df6d5,Group_2:Initial Population,1,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,93aea3e2-4736-4be0-830f-54c1ef6df6d5,Group_2:Denominator,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,93aea3e2-4736-4be0-830f-54c1ef6df6d5,Group_2:Initial Population,1,1
+PASS,CMS347FHIRStatinPreventionTxCVD,93aea3e2-4736-4be0-830f-54c1ef6df6d5,Group_2:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,93aea3e2-4736-4be0-830f-54c1ef6df6d5,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,93aea3e2-4736-4be0-830f-54c1ef6df6d5,Group_2:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,93aea3e2-4736-4be0-830f-54c1ef6df6d5,Group_2:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,93aea3e2-4736-4be0-830f-54c1ef6df6d5,Group_2:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,93aea3e2-4736-4be0-830f-54c1ef6df6d5,Group_3:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,93aea3e2-4736-4be0-830f-54c1ef6df6d5,Group_3:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,93aea3e2-4736-4be0-830f-54c1ef6df6d5,Group_3:Denominator Exclusion,0,0
@@ -10503,11 +10503,11 @@ PASS,CMS347FHIRStatinPreventionTxCVD,4a0c6648-a1b6-4361-b966-d3046c519fea,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,4a0c6648-a1b6-4361-b966-d3046c519fea,Group_4:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4a0c6648-a1b6-4361-b966-d3046c519fea,Group_4:Numerator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4a0c6648-a1b6-4361-b966-d3046c519fea,Group_4:Denominator Exception,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,0f853b02-7949-4d97-ab69-1e48045afe95,Group_1:Initial Population,1,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,0f853b02-7949-4d97-ab69-1e48045afe95,Group_1:Denominator,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,0f853b02-7949-4d97-ab69-1e48045afe95,Group_1:Initial Population,1,1
+PASS,CMS347FHIRStatinPreventionTxCVD,0f853b02-7949-4d97-ab69-1e48045afe95,Group_1:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,0f853b02-7949-4d97-ab69-1e48045afe95,Group_1:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0f853b02-7949-4d97-ab69-1e48045afe95,Group_1:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,0f853b02-7949-4d97-ab69-1e48045afe95,Group_1:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,0f853b02-7949-4d97-ab69-1e48045afe95,Group_1:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,0f853b02-7949-4d97-ab69-1e48045afe95,Group_2:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0f853b02-7949-4d97-ab69-1e48045afe95,Group_2:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,0f853b02-7949-4d97-ab69-1e48045afe95,Group_2:Denominator Exclusion,0,0
@@ -10593,8 +10593,8 @@ PASS,CMS347FHIRStatinPreventionTxCVD,59d6bb14-b82e-4295-baf1-d96be73e1e38,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,59d6bb14-b82e-4295-baf1-d96be73e1e38,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,59d6bb14-b82e-4295-baf1-d96be73e1e38,Group_2:Numerator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,59d6bb14-b82e-4295-baf1-d96be73e1e38,Group_2:Denominator Exception,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,59d6bb14-b82e-4295-baf1-d96be73e1e38,Group_3:Initial Population,1,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,59d6bb14-b82e-4295-baf1-d96be73e1e38,Group_3:Denominator,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,59d6bb14-b82e-4295-baf1-d96be73e1e38,Group_3:Initial Population,1,1
+PASS,CMS347FHIRStatinPreventionTxCVD,59d6bb14-b82e-4295-baf1-d96be73e1e38,Group_3:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,59d6bb14-b82e-4295-baf1-d96be73e1e38,Group_3:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,59d6bb14-b82e-4295-baf1-d96be73e1e38,Group_3:Numerator,0,0
 FAIL,CMS347FHIRStatinPreventionTxCVD,59d6bb14-b82e-4295-baf1-d96be73e1e38,Group_3:Denominator Exception,1,0
@@ -10666,23 +10666,23 @@ PASS,CMS347FHIRStatinPreventionTxCVD,35d9e119-50ef-4df1-b303-f348596657ad,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_1:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_1:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_1:Denominator Exclusion,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_1:Numerator,0,1
-FAIL,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_1:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_1:Numerator,0,0
+PASS,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_1:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_2:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_2:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_2:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_2:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_2:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_3:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_3:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_3:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_3:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_3:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_3:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_4:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_4:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_4:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_4:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_4:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,1116b208-af60-4f6b-a5f1-448209aec45f,Group_4:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,6840a0da-456f-40f7-b939-aac2cdf5620d,Group_1:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,6840a0da-456f-40f7-b939-aac2cdf5620d,Group_1:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,6840a0da-456f-40f7-b939-aac2cdf5620d,Group_1:Denominator Exclusion,0,0
@@ -10807,22 +10807,22 @@ PASS,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_1:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_1:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_1:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_1:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_1:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_2:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_2:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_2:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_2:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_2:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_3:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_3:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_3:Denominator Exclusion,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_3:Numerator,0,1
-FAIL,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_3:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_3:Numerator,0,0
+PASS,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_3:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_4:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_4:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_4:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_4:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_4:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,9a06f385-0bed-4f35-9af4-1ff7971c07f5,Group_4:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,b88292a5-2443-44a2-a268-2a6cb95f92bd,Group_1:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,b88292a5-2443-44a2-a268-2a6cb95f92bd,Group_1:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,b88292a5-2443-44a2-a268-2a6cb95f92bd,Group_1:Denominator Exclusion,0,0
@@ -10953,8 +10953,8 @@ PASS,CMS347FHIRStatinPreventionTxCVD,1d3021bb-b593-4efc-af5b-320243bbe9b7,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,1d3021bb-b593-4efc-af5b-320243bbe9b7,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,1d3021bb-b593-4efc-af5b-320243bbe9b7,Group_2:Numerator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,1d3021bb-b593-4efc-af5b-320243bbe9b7,Group_2:Denominator Exception,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,1d3021bb-b593-4efc-af5b-320243bbe9b7,Group_3:Initial Population,1,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,1d3021bb-b593-4efc-af5b-320243bbe9b7,Group_3:Denominator,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,1d3021bb-b593-4efc-af5b-320243bbe9b7,Group_3:Initial Population,1,1
+PASS,CMS347FHIRStatinPreventionTxCVD,1d3021bb-b593-4efc-af5b-320243bbe9b7,Group_3:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,1d3021bb-b593-4efc-af5b-320243bbe9b7,Group_3:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,1d3021bb-b593-4efc-af5b-320243bbe9b7,Group_3:Numerator,0,0
 FAIL,CMS347FHIRStatinPreventionTxCVD,1d3021bb-b593-4efc-af5b-320243bbe9b7,Group_3:Denominator Exception,1,0
@@ -11123,8 +11123,8 @@ PASS,CMS347FHIRStatinPreventionTxCVD,c00d7354-2160-48f4-a251-1fcf892d1b42,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,c00d7354-2160-48f4-a251-1fcf892d1b42,Group_4:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,c00d7354-2160-48f4-a251-1fcf892d1b42,Group_4:Numerator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,c00d7354-2160-48f4-a251-1fcf892d1b42,Group_4:Denominator Exception,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,4120512a-d0f4-4ffa-acd9-0191db3b7f46,Group_1:Initial Population,1,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,4120512a-d0f4-4ffa-acd9-0191db3b7f46,Group_1:Denominator,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,4120512a-d0f4-4ffa-acd9-0191db3b7f46,Group_1:Initial Population,1,1
+PASS,CMS347FHIRStatinPreventionTxCVD,4120512a-d0f4-4ffa-acd9-0191db3b7f46,Group_1:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,4120512a-d0f4-4ffa-acd9-0191db3b7f46,Group_1:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,4120512a-d0f4-4ffa-acd9-0191db3b7f46,Group_1:Numerator,0,0
 FAIL,CMS347FHIRStatinPreventionTxCVD,4120512a-d0f4-4ffa-acd9-0191db3b7f46,Group_1:Denominator Exception,1,0
@@ -11246,25 +11246,25 @@ PASS,CMS347FHIRStatinPreventionTxCVD,694248de-4f73-4557-816b-f6a932f15793,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_1:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_1:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_1:Denominator Exclusion,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_1:Numerator,0,1
-FAIL,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_1:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_1:Numerator,0,0
+PASS,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_1:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_2:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_2:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_2:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_2:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_2:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_3:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_3:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_3:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_3:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_3:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_3:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_4:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_4:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_4:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_4:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_4:Denominator Exception,0,1
-FAIL,CMS347FHIRStatinPreventionTxCVD,759a89b4-51ed-4622-adae-6b0930701ebb,Group_1:Initial Population,1,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,759a89b4-51ed-4622-adae-6b0930701ebb,Group_1:Denominator,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,d06256e5-091f-445e-898f-b8c31d8d3772,Group_4:Denominator Exception,0,0
+PASS,CMS347FHIRStatinPreventionTxCVD,759a89b4-51ed-4622-adae-6b0930701ebb,Group_1:Initial Population,1,1
+PASS,CMS347FHIRStatinPreventionTxCVD,759a89b4-51ed-4622-adae-6b0930701ebb,Group_1:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,759a89b4-51ed-4622-adae-6b0930701ebb,Group_1:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,759a89b4-51ed-4622-adae-6b0930701ebb,Group_1:Numerator,0,0
 FAIL,CMS347FHIRStatinPreventionTxCVD,759a89b4-51ed-4622-adae-6b0930701ebb,Group_1:Denominator Exception,1,0
@@ -11287,42 +11287,42 @@ PASS,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_1:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_1:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_1:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_1:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_1:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_2:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_2:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_2:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_2:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_2:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_3:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_3:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_3:Denominator Exclusion,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_3:Numerator,0,1
-FAIL,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_3:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_3:Numerator,0,0
+PASS,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_3:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_4:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_4:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_4:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_4:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_4:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Group_4:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_1:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_1:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_1:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_1:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_1:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_1:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_2:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_2:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_2:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_2:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_2:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_3:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_3:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_3:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_3:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_3:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_3:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_4:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_4:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_4:Denominator Exclusion,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_4:Numerator,0,1
-FAIL,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_4:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_4:Numerator,0,0
+PASS,CMS347FHIRStatinPreventionTxCVD,95ab5fd7-b1be-4dd3-ba42-1b48215fab70,Group_4:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,d5c55655-2c12-4300-9ee1-31044497d665,Group_1:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d5c55655-2c12-4300-9ee1-31044497d665,Group_1:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,d5c55655-2c12-4300-9ee1-31044497d665,Group_1:Denominator Exclusion,0,0
@@ -11393,8 +11393,8 @@ PASS,CMS347FHIRStatinPreventionTxCVD,3e09af44-0445-4077-b73c-6896fdbe49c5,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,3e09af44-0445-4077-b73c-6896fdbe49c5,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,3e09af44-0445-4077-b73c-6896fdbe49c5,Group_2:Numerator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,3e09af44-0445-4077-b73c-6896fdbe49c5,Group_2:Denominator Exception,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,3e09af44-0445-4077-b73c-6896fdbe49c5,Group_3:Initial Population,1,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,3e09af44-0445-4077-b73c-6896fdbe49c5,Group_3:Denominator,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,3e09af44-0445-4077-b73c-6896fdbe49c5,Group_3:Initial Population,1,1
+PASS,CMS347FHIRStatinPreventionTxCVD,3e09af44-0445-4077-b73c-6896fdbe49c5,Group_3:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,3e09af44-0445-4077-b73c-6896fdbe49c5,Group_3:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,3e09af44-0445-4077-b73c-6896fdbe49c5,Group_3:Numerator,0,0
 FAIL,CMS347FHIRStatinPreventionTxCVD,3e09af44-0445-4077-b73c-6896fdbe49c5,Group_3:Denominator Exception,1,0
@@ -11406,23 +11406,23 @@ PASS,CMS347FHIRStatinPreventionTxCVD,3e09af44-0445-4077-b73c-6896fdbe49c5,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_1:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_1:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_1:Denominator Exclusion,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_1:Numerator,0,1
-FAIL,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_1:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_1:Numerator,0,0
+PASS,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_1:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_2:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_2:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_2:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_2:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_2:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_3:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_3:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_3:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_3:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_3:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_3:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_4:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_4:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_4:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_4:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_4:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,70fd1056-5313-417f-bbbe-9f2bacf942bb,Group_4:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,f3b17514-f40d-43f9-baa9-a0418142ca98,Group_1:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,f3b17514-f40d-43f9-baa9-a0418142ca98,Group_1:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,f3b17514-f40d-43f9-baa9-a0418142ca98,Group_1:Denominator Exclusion,0,0
@@ -11466,23 +11466,23 @@ PASS,CMS347FHIRStatinPreventionTxCVD,24acf4a1-d67f-4584-9b6b-6c8025ffcc0a,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_1:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_1:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_1:Denominator Exclusion,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_1:Numerator,0,1
-FAIL,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_1:Denominator Exception,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_1:Numerator,0,0
+PASS,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_1:Denominator Exception,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_2:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_2:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_2:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_2:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_2:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_2:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_3:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_3:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_3:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_3:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_3:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_3:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_4:Initial Population,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_4:Denominator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_4:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_4:Numerator,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_4:Denominator Exception,0,1
+PASS,CMS347FHIRStatinPreventionTxCVD,cbb6a940-7c9b-4d80-b9be-39a029f6f0b0,Group_4:Denominator Exception,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,20922873-db29-4914-a413-eed415e4504b,Group_1:Initial Population,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,20922873-db29-4914-a413-eed415e4504b,Group_1:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,20922873-db29-4914-a413-eed415e4504b,Group_1:Denominator Exclusion,0,0
@@ -11623,8 +11623,8 @@ PASS,CMS347FHIRStatinPreventionTxCVD,3c4aa676-8ef0-415c-a71e-09289d57cbfa,Group_
 PASS,CMS347FHIRStatinPreventionTxCVD,3c4aa676-8ef0-415c-a71e-09289d57cbfa,Group_4:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,3c4aa676-8ef0-415c-a71e-09289d57cbfa,Group_4:Numerator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,3c4aa676-8ef0-415c-a71e-09289d57cbfa,Group_4:Denominator Exception,0,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,a0202aaf-756f-4d08-8329-8fd585ddda63,Group_1:Initial Population,1,0
-FAIL,CMS347FHIRStatinPreventionTxCVD,a0202aaf-756f-4d08-8329-8fd585ddda63,Group_1:Denominator,1,0
+PASS,CMS347FHIRStatinPreventionTxCVD,a0202aaf-756f-4d08-8329-8fd585ddda63,Group_1:Initial Population,1,1
+PASS,CMS347FHIRStatinPreventionTxCVD,a0202aaf-756f-4d08-8329-8fd585ddda63,Group_1:Denominator,1,1
 PASS,CMS347FHIRStatinPreventionTxCVD,a0202aaf-756f-4d08-8329-8fd585ddda63,Group_1:Denominator Exclusion,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,a0202aaf-756f-4d08-8329-8fd585ddda63,Group_1:Numerator,0,0
 PASS,CMS347FHIRStatinPreventionTxCVD,a0202aaf-756f-4d08-8329-8fd585ddda63,Group_1:Denominator Exception,0,0
