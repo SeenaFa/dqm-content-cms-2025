@@ -24,7 +24,7 @@
         {
           "name": "Measurement Period",
           "type": "Interval<DateTime>",
-          "value": "Interval[@2026-01-01T00:00:00.000Z, @2026-02-01T00:00:00.000Z)"
+          "value": "Interval[@2025-01-01T00:00:00.000Z, @2025-02-01T00:00:00.000Z)"
         }
       ]
     }
