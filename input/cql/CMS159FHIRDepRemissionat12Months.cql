@@ -99,7 +99,7 @@ define "Depression Diagnoses":
 define "Depression Encounter":
   [Encounter: "Contact or Office Visit"] ValidEncounter
     with "Depression Diagnoses" Depression
-      such that ValidEncounter.period overlaps Depression.onset.toInterval ( )
+      such that ValidEncounter.period overlaps ( if Depression is ConditionProblemsHealthConcerns then (Depression as ConditionProblemsHealthConcerns).prevalenceInterval ( ) else (Depression as ConditionEncounterDiagnosis).prevalenceInterval ( ) )
         and ValidEncounter.period ends during day of "Denominator Identification Period"
         and ValidEncounter.status = 'finished'
 
@@ -112,7 +112,7 @@ define "Has Mental Health Disorder Diagnoses":
       union [ConditionEncounterDiagnosis: "Schizophrenia or Psychotic Disorder"]
       union [ConditionProblemsHealthConcerns: "Pervasive Developmental Disorder"]
       union [ConditionEncounterDiagnosis: "Pervasive Developmental Disorder"] ) MentalHealthDisorderDiagnoses
-      where start of MentalHealthDisorderDiagnoses.onset.toInterval ( ) on or before day of end of "Measure Assessment Period"
+      where start of ( if MentalHealthDisorderDiagnoses is ConditionProblemsHealthConcerns then (MentalHealthDisorderDiagnoses as ConditionProblemsHealthConcerns).prevalenceInterval ( ) else (MentalHealthDisorderDiagnoses as ConditionEncounterDiagnosis).prevalenceInterval ( ) ) on or before day of end of "Measure Assessment Period"
         and MentalHealthDisorderDiagnoses.isVerified ( )
   )
 
@@ -152,7 +152,7 @@ define "Has Hospice Services prior to or during the Measure Assessment Period":
     )
     or exists ( ( [ConditionProblemsHealthConcerns: "Hospice Diagnosis"]
         union [ConditionEncounterDiagnosis: "Hospice Diagnosis"] ) HospiceCareDiagnosis
-        where HospiceCareDiagnosis.onset.toInterval ( ) overlaps day of Interval[start of "Denominator Identification Period", end of "Measure Assessment Period"]
+        where ( if HospiceCareDiagnosis is ConditionProblemsHealthConcerns then (HospiceCareDiagnosis as ConditionProblemsHealthConcerns).prevalenceInterval ( ) else (HospiceCareDiagnosis as ConditionEncounterDiagnosis).prevalenceInterval ( ) ) overlaps day of Interval[start of "Denominator Identification Period", end of "Measure Assessment Period"]
           and HospiceCareDiagnosis.isVerified ( )
     )
 
@@ -171,7 +171,7 @@ define "Has Palliative Care prior to or during the Measure Assessment Period":
   )
     or exists ( ( [ConditionProblemsHealthConcerns: "Palliative Care Diagnosis"]
         union [ConditionEncounterDiagnosis: "Palliative Care Diagnosis"] ) PalliativeDiagnosis
-        where PalliativeDiagnosis.onset.toInterval ( ) overlaps day of Interval[start of "Denominator Identification Period", end of "Measure Assessment Period"]
+        where ( if PalliativeDiagnosis is ConditionProblemsHealthConcerns then (PalliativeDiagnosis as ConditionProblemsHealthConcerns).prevalenceInterval ( ) else (PalliativeDiagnosis as ConditionEncounterDiagnosis).prevalenceInterval ( ) ) overlaps day of Interval[start of "Denominator Identification Period", end of "Measure Assessment Period"]
           and PalliativeDiagnosis.isVerified ( )
     )
     or exists ( [Encounter: "Palliative Care Encounter"] PalliativeEncounter

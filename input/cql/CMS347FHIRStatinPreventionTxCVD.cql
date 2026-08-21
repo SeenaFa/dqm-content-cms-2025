@@ -148,13 +148,13 @@ define "Has Allergy to Statin":
 
 define "Has Diabetes Diagnosis":
   exists ( [ConditionProblemsHealthConcerns: "Diabetes"] DiabetesDiagnosis
-      where DiabetesDiagnosis.onset.toInterval ( ) overlaps day of "Measurement Period"
+      where DiabetesDiagnosis.prevalenceInterval ( ) overlaps day of "Measurement Period"
         and DiabetesDiagnosis.isVerified ( )
   )
 
 define "Has ESRD Diagnosis":
   exists ( [ConditionProblemsHealthConcerns: "End Stage Renal Disease"] ESRD
-      where ESRD.onset.toInterval ( ) overlaps day of "Measurement Period"
+      where ESRD.prevalenceInterval ( ) overlaps day of "Measurement Period"
         and ESRD.isVerified ( )
   )
 

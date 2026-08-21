@@ -268,7 +268,7 @@ define "Cataract Surgeries in Patients with Significant Ocular Conditions Impact
       union ( ["ConditionProblemsHealthConcerns": "Visual Field Defects"]
           union ["ConditionEncounterDiagnosis": "Visual Field Defects"]
       ) ) ComorbidDiagnosis
-      such that ComorbidDiagnosis.onset.toInterval ( ) overlaps before day of CataractSurgeryPerformed.performed.toInterval ( )
+      such that ( if ComorbidDiagnosis is ConditionProblemsHealthConcerns then (ComorbidDiagnosis as ConditionProblemsHealthConcerns).prevalenceInterval ( ) else (ComorbidDiagnosis as ConditionEncounterDiagnosis).prevalenceInterval ( ) ) overlaps before day of CataractSurgeryPerformed.performed.toInterval ( )
         and ComorbidDiagnosis.isVerified ( )
 
 define "Numerator":

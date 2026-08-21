@@ -78,7 +78,7 @@ define "Initial Population":
     and exists ( ( ( [ConditionProblemsHealthConcerns: "Heart Failure"]
           union [ConditionEncounterDiagnosis: "Heart Failure"]
       ).verified ( ) ) HeartFailure
-        where HeartFailure.onset.toInterval ( ) overlaps before day of "Measurement Period"
+        where ( if HeartFailure is ConditionProblemsHealthConcerns then (HeartFailure as ConditionProblemsHealthConcerns).prevalenceInterval ( ) else (HeartFailure as ConditionEncounterDiagnosis).prevalenceInterval ( ) ) overlaps before day of "Measurement Period"
     )
     and exists ( "Outpatient Encounters with at least one subsequent Outpatient Encounter during Measurement Period" )
 

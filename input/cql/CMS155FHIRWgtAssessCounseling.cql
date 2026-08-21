@@ -64,7 +64,7 @@ define "Pregnancy Diagnosis Which Overlaps Measurement Period":
   ( ( [ConditionProblemsHealthConcerns: "Pregnancy"]
       union [ConditionEncounterDiagnosis: "Pregnancy"]
   ).verified ( ) ) PregnancyDiag
-    where PregnancyDiag.onset.toInterval ( ) overlaps "Measurement Period"
+    where ( if PregnancyDiag is ConditionProblemsHealthConcerns then (PregnancyDiag as ConditionProblemsHealthConcerns).prevalenceInterval ( ) else (PregnancyDiag as ConditionEncounterDiagnosis).prevalenceInterval ( ) ) overlaps "Measurement Period"
 
 define "Numerator 1":
   exists "BMI Percentile in Measurement Period"
