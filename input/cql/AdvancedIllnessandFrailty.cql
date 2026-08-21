@@ -28,6 +28,8 @@ code "Lives in nursing home (finding)": '160734000' from "SNOMEDCT" display 'Liv
 code "Medical equipment used": '98181-1' from "LOINC" display 'Medical equipment used'
 
 parameter "Measurement Period" Interval<DateTime>
+  // Measurement Period default removed; value is now supplied via input/tests/config.json
+  // default Interval[@2026-01-01T00:00:00.000Z, @2027-01-01T00:00:00.000Z)
 
 context Patient
 

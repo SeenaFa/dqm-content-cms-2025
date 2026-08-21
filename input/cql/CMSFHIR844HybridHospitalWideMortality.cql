@@ -36,7 +36,8 @@ valueset "White blood cells count lab test": 'http://cts.nlm.nih.gov/fhir/ValueS
 code "Systolic blood pressure": '8480-6' from "LOINC" display 'Systolic BP'
 
 parameter "Measurement Period" Interval<DateTime>
-  default Interval[@2026-01-01T00:00:00.000Z, @2027-01-01T00:00:00.000Z)
+  // Measurement Period default removed; value is now supplied via input/tests/config.json
+  // default Interval[@2026-01-01T00:00:00.000Z, @2027-01-01T00:00:00.000Z)
 
 context Patient
 

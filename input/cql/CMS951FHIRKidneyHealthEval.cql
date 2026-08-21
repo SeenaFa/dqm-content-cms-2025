@@ -36,7 +36,8 @@ valueset "Urine Albumin Creatinine Ratio": 'http://cts.nlm.nih.gov/fhir/ValueSet
 valueset "Urine Creatinine": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1178.87'
 
 parameter "Measurement Period" Interval<DateTime>
-  default Interval[@2026-01-01T00:00:00.000Z, @2027-01-01T00:00:00.000Z)
+  // Measurement Period default removed; value is now supplied via input/tests/config.json
+  // default Interval[@2026-01-01T00:00:00.000Z, @2027-01-01T00:00:00.000Z)
 
 context Patient
 

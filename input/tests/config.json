@@ -1,0 +1,32 @@
+{
+  "testCasesToExclude": [],
+  "resultFormat": "flat",
+  "flatResultsInSubfolder": false,
+  "parameters": [
+    {
+      "name": "Measurement Period",
+      "type": "Interval<DateTime>",
+      "value": "Interval[@2026-01-01T00:00:00.000Z, @2027-01-01T00:00:00.000Z)"
+    },
+    {
+      "library": "CMS1264FHIRECATREHQR",
+      "parameters": [
+        {
+          "name": "Measurement Period",
+          "type": "Interval<DateTime>",
+          "value": "Interval[@2027-01-01T00:00:00.000Z, @2028-01-01T00:00:00.000Z)"
+        }
+      ]
+    },
+    {
+      "library": "NHSNAcuteCareHospitalMonthlyInitialPopulation1",
+      "parameters": [
+        {
+          "name": "Measurement Period",
+          "type": "Interval<DateTime>",
+          "value": "Interval[@2026-01-01T00:00:00.000Z, @2026-02-01T00:00:00.000Z)"
+        }
+      ]
+    }
+  ]
+}

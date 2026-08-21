@@ -49,7 +49,8 @@ code "VR-12 Physical component summary (PCS) score - oblique method T-score": '7
 code "VR-12 Physical component summary (PCS) score - orthogonal method T-score": '72027-6' from "LOINC" display 'VR-12 Physical component summary (PCS) score - orthogonal method T-score'
 
 parameter "Measurement Period" Interval<DateTime>
-  default Interval[@2026-01-01T00:00:00.000Z, @2027-01-01T00:00:00.000Z)
+  // Measurement Period default removed; value is now supplied via input/tests/config.json
+  // default Interval[@2026-01-01T00:00:00.000Z, @2027-01-01T00:00:00.000Z)
 
 context Patient
 

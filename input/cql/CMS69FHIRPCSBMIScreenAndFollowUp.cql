@@ -40,7 +40,8 @@ code "Body mass index (BMI) [Ratio]": '39156-5' from "LOINC" display 'Body mass 
 code "virtual": 'VR' from "ActCode" display 'virtual'
 
 parameter "Measurement Period" Interval<DateTime>
-  default Interval[@2026-01-01T00:00:00.000Z, @2027-01-01T00:00:00.000Z)
+  // Measurement Period default removed; value is now supplied via input/tests/config.json
+  // default Interval[@2026-01-01T00:00:00.000Z, @2027-01-01T00:00:00.000Z)
 
 context Patient
 

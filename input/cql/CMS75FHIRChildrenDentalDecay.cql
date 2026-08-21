@@ -21,7 +21,8 @@ valueset "Clinical Oral Evaluation": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.
 valueset "Dental Caries": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.125.12.1004'
 
 parameter "Measurement Period" Interval<DateTime>
-  default Interval[@2026-01-01T00:00:00.000Z, @2027-01-01T00:00:00.000Z)
+  // Measurement Period default removed; value is now supplied via input/tests/config.json
+  // default Interval[@2026-01-01T00:00:00.000Z, @2027-01-01T00:00:00.000Z)
 
 context Patient
 

@@ -32,7 +32,8 @@ code "Emergency room": 'ER' from "RoleCode" display 'Emergency room'
 code "Emergency trauma unit": 'ETU' from "RoleCode" display 'Emergency trauma unit'
 
 parameter "Measurement Period" Interval<DateTime>
-  default Interval[@2027-01-01T00:00:00.000Z, @2028-01-01T00:00:00.000Z)
+  // Measurement Period default removed; value is now supplied via input/tests/config.json
+  // default Interval[@2027-01-01T00:00:00.000Z, @2028-01-01T00:00:00.000Z)
 
 context Patient
 

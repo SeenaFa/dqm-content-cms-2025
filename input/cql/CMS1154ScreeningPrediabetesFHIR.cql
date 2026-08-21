@@ -44,7 +44,8 @@ code "refuted": 'refuted' from ConditionVerificationStatusCodes display 'Refuted
 code "entered-in-error": 'entered-in-error' from ConditionVerificationStatusCodes display 'Entered in Error'
 
 parameter "Measurement Period" Interval<DateTime>
-  default Interval[@2026-01-01T00:00:00.000Z, @2027-01-01T00:00:00.000Z)
+  // Measurement Period default removed; value is now supplied via input/tests/config.json
+  // default Interval[@2026-01-01T00:00:00.000Z, @2027-01-01T00:00:00.000Z)
 
 context Patient
 
