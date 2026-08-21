@@ -66,6 +66,7 @@ define "Has Baseline DEXA Scan Two Years Prior to the Start of or Less than Thre
             or DEXAOrdered.authoredOn 2 years or less before day of OrderTwelveMonthsADT.authoredOn
         where DEXAOrdered.status in { 'active', 'completed' }
           and DEXAOrdered.intent = 'order'
+          and ( DEXAOrdered.doNotPerform is null or not DEXAOrdered.doNotPerform )
     )
       union ( [ObservationClinicalResult: "DEXA Bone Density for Urology Care"] DEXAPerformed
           with "Order for 12 Months of ADT in 3 Months Before to 9 Months After Start of Measurement Period" OrderTwelveMonthsADT

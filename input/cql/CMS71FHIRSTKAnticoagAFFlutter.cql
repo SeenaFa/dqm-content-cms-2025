@@ -110,6 +110,7 @@ define "Numerator":
             or DischargeAnticoagulant.isDischarge ( )
         )
         and DischargeAnticoagulant.authoredOn during Encounter.period
+        and ( DischargeAnticoagulant.doNotPerform is null or not DischargeAnticoagulant.doNotPerform )
         and not exists ( ["TaskRejected"] TaskReject
             where TaskReject.focus.references ( DischargeAnticoagulant )
               and TaskReject.code ~ USQualityCoreCommon."Fulfill"

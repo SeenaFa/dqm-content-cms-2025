@@ -49,6 +49,7 @@ define "Numerator":
             or DischargeAntithrombotic.isDischarge ( )
         )
         and DischargeAntithrombotic.authoredOn during IschemicStrokeEncounter.period
+        and ( DischargeAntithrombotic.doNotPerform is null or not DischargeAntithrombotic.doNotPerform )
         and not exists ( ["TaskRejected"] TaskReject
             where TaskReject.focus.references ( DischargeAntithrombotic )
               and TaskReject.code ~ USQualityCoreCommon."Fulfill"

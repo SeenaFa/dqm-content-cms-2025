@@ -77,6 +77,7 @@ define "SDE Sex":
 define "Has ACEI or ARB or ARNI Ordered":
   exists ( [MedicationRequest: medication in "ACE Inhibitor or ARB or ARNI"] ACEIOrARBOrARNIOrdered
       where ACEIOrARBOrARNIOrdered.isOrderedDuringHeartFailureOutpatientEncounter ( )
+        and ( ACEIOrARBOrARNIOrdered.doNotPerform is null or not ACEIOrARBOrARNIOrdered.doNotPerform )
   )
 
 define "Has Allergy or Intolerance to ACEI or ARB or ARNI Ingredient":
@@ -126,4 +127,5 @@ define "Has Medical or Patient Reason for Not Ordering ACEI or ARB or ARNI":
 define "Is Currently Taking ACEI or ARB or ARNI":
   exists ( [MedicationRequest: medication in "ACE Inhibitor or ARB or ARNI"] ActiveACEIOrARBOrARNI
       where ActiveACEIOrARBOrARNI.overlapsAfterHeartFailureOutpatientEncounter ( )
+        and ( ActiveACEIOrARBOrARNI.doNotPerform is null or not ActiveACEIOrARBOrARNI.doNotPerform )
   )
