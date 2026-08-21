@@ -299,7 +299,7 @@ define "No VTE Prophylaxis Medication Administered Or Ordered":
       return {
         id: NoMedicationAdm.id,
         medicationStatusReason: NoMedicationAdm.statusReason,
-        authoredOn: NoMedicationAdm.effective
+        authoredOn: NoMedicationAdm.recorded ( )
       }
   )
     union ( ( ["MedicationNotRequested": "Low Dose Unfractionated Heparin for VTE Prophylaxis"]
