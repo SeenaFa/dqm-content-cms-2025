@@ -70,7 +70,7 @@ define "Diabetic Retinopathy Encounter":
   "Qualifying Encounter During Day of Measurement Period" ValidQualifyingEncounter
     with ( ["ConditionProblemsHealthConcerns": "Diabetic Retinopathy"]
       union ["ConditionEncounterDiagnosis": "Diabetic Retinopathy"] ) DiabeticRetinopathy
-      such that DiabeticRetinopathy.onset.toInterval ( ) overlaps day of ValidQualifyingEncounter.period
+      such that ( if DiabeticRetinopathy is ConditionProblemsHealthConcerns then (DiabeticRetinopathy as ConditionProblemsHealthConcerns).prevalenceInterval ( ) else (DiabeticRetinopathy as ConditionEncounterDiagnosis).prevalenceInterval ( ) ) overlaps day of ValidQualifyingEncounter.period
         and DiabeticRetinopathy.isVerified ( )
 
 define "Medical or Patient Reason for Not Communicating Level of Severity of Retinopathy":
@@ -93,7 +93,7 @@ define "Primary Open Angle Glaucoma Encounter":
   "Qualifying Encounter During Day of Measurement Period" ValidQualifyingEncounter
     with ( ["ConditionProblemsHealthConcerns": "Primary Open-Angle Glaucoma"]
       union ["ConditionEncounterDiagnosis": "Primary Open-Angle Glaucoma"] ) PrimaryOpenAngleGlaucoma
-      such that PrimaryOpenAngleGlaucoma.onset.toInterval ( ) overlaps day of ValidQualifyingEncounter.period
+      such that ( if PrimaryOpenAngleGlaucoma is ConditionProblemsHealthConcerns then (PrimaryOpenAngleGlaucoma as ConditionProblemsHealthConcerns).prevalenceInterval ( ) else (PrimaryOpenAngleGlaucoma as ConditionEncounterDiagnosis).prevalenceInterval ( ) ) overlaps day of ValidQualifyingEncounter.period
         and PrimaryOpenAngleGlaucoma.isVerified ( )
 
 define "Medical Reason for Not Performing Cup to Disc Ratio":
