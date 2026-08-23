@@ -51,14 +51,29 @@ define "Has IPSD and Major Depression Diagnosis":
         union [ConditionEncounterDiagnosis: "Major Depression"]
     ).verified ( ) ) MajorDepression
       where "IPSD" is not null
-        and date from start of MajorDepression.onset.toInterval ( ) within 60 days of "IPSD"
+        and date from start of ( if MajorDepression is ConditionProblemsHealthConcerns then (MajorDepression as ConditionProblemsHealthConcerns).prevalenceInterval ( ) else (MajorDepression as ConditionEncounterDiagnosis).prevalenceInterval ( ) ) within 60 days of "IPSD"
   )
+
+define function AntidepressantCoveragePeriod(Dispense MedicationDispense):
+  Dispense D
+    let
+      totalDaysSupplied: D.daysSupply.value,
+      startDate:
+        Coalesce(
+          date from D.whenHandedOver,
+          date from D.whenPrepared
+        )
+    return
+      if startDate is not null and totalDaysSupplied is not null then
+        Interval[startDate, startDate + CMD.Quantity(totalDaysSupplied - 1, 'day')]
+      else
+        null
 
 define "IPSD":
   First((([MedicationDispense: "Antidepressant Medication"]).isMedicationDispensed()) Antidepressant
-      where start of Antidepressant.medicationDispensePeriod() in day of "Intake Period"
+      where start of AntidepressantCoveragePeriod(Antidepressant) in day of "Intake Period"
       return {
-        AntidepressantDate: date from start of Antidepressant.medicationDispensePeriod()
+        AntidepressantDate: date from start of AntidepressantCoveragePeriod(Antidepressant)
       }
       sort by AntidepressantDate
   ).AntidepressantDate
@@ -101,7 +116,7 @@ define "Cumulative Medication Duration Greater Than or Equal to 84 Days":
 
 define "Antidepressant Medication Period Between IPSD and 114 Days After IPSD":
   ( ( [MedicationDispense: "Antidepressant Medication"] ).isMedicationDispensed ( ) ) Antidepressant
-    let MedicationPeriod: Antidepressant.medicationDispensePeriod ( )
+    let MedicationPeriod: AntidepressantCoveragePeriod(Antidepressant)
     return MedicationPeriod
       intersect Interval["IPSD", "IPSD" + 114 days]
 
@@ -113,7 +128,7 @@ define "Cumulative Medication Duration Greater Than or Equal to 180 Days":
 
 define "Antidepressant Medication Period Between IPSD and 231 Days After IPSD":
   ( ( [MedicationDispense: "Antidepressant Medication"] ).isMedicationDispensed ( ) ) Antidepressant
-    let MedicationPeriod: Antidepressant.medicationDispensePeriod ( )
+    let MedicationPeriod: AntidepressantCoveragePeriod(Antidepressant)
     return MedicationPeriod
       intersect Interval["IPSD", "IPSD" + 231 days]
 
