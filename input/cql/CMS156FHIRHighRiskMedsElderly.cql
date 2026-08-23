@@ -225,14 +225,14 @@ define "Generalized Anxiety Disorder Diagnosis":
 define "Antipsychotic Index Prescription Start Date":
   First((([MedicationRequest: "Potentially Harmful Antipsychotics for Older Adults"]).isMedicationOrder()) AntipsychoticMedication
       where AntipsychoticMedication.authoredOn during "Measurement Period"
-      return AntipsychoticMedication.authoredOn
+      return FHIRHelpers.ToDateTime ( AntipsychoticMedication.authoredOn )
       sort asc
   )
 
 define "Benzodiazepine Index Prescription Start Date":
   First((([MedicationRequest: "Potentially Harmful Benzodiazepines for Older Adults"]).isMedicationOrder()) BenzodiazepineMedication
       where BenzodiazepineMedication.authoredOn during "Measurement Period"
-      return BenzodiazepineMedication.authoredOn
+      return FHIRHelpers.ToDateTime ( BenzodiazepineMedication.authoredOn )
       sort asc
   )
 
