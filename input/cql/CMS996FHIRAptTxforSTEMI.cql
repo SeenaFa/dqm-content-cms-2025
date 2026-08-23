@@ -267,7 +267,7 @@ define "ED Encounter with a Documented Reason for No PCI Performed":
       such that ( PCINotDone.statusReason in "Patient Refusal"
           or PCINotDone.statusReason in "Procedure Not Indicated/Contraindicated"
       )
-        and PCINotDone.performed during EDwSTEMI.period
+        and (PCINotDone.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded').value as FHIR.dateTime) during EDwSTEMI.period
 
 define "ED Encounter with a Documented Reason for Not Administering Fibrinolytic Therapy":
   "ED Encounter with STEMI Diagnosis" EDwSTEMI
@@ -275,7 +275,7 @@ define "ED Encounter with a Documented Reason for Not Administering Fibrinolytic
       such that ( FibrinolyticNoMed.statusReason in "Patient Refusal"
           or FibrinolyticNoMed.statusReason in "Drug Intervention Not Indicated/Contraindicated"
       )
-        and FibrinolyticNoMed.effective during EDwSTEMI.period
+        and FibrinolyticNoMed.recorded ( ) during EDwSTEMI.period
 
 define "Fibrinolytic Therapy Administration within 30 Minutes of Arrival":
   "ED Encounter with STEMI Diagnosis" EDwithSTEMI

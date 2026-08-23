@@ -62,7 +62,7 @@ define "Numerator":
 define "Denominator Exceptions":
   "Qualifying Encounter During Day of Measurement Period" QualifyingEncounter
     with [ProcedureNotDone: code ~ "Documentation of current medications (procedure)"] MedicationsNotDocumented
-      such that MedicationsNotDocumented.recorded ( ) during day of QualifyingEncounter.period
+      such that (MedicationsNotDocumented.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded').value as FHIR.dateTime) during day of QualifyingEncounter.period
         and MedicationsNotDocumented.status = 'not-done'
         and exists ( MedicationsNotDocumented.reasonCode reasonItem
             where reasonItem ~ "Acute health crisis (finding)"

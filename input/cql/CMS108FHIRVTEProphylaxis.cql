@@ -407,7 +407,7 @@ define "No Mechanical VTE Prophylaxis Performed Or Ordered":
         return {
           id: DeviceNotApplied.id,
           requestStatusReason: DeviceNotApplied.statusReason,
-          authoredOn: DeviceNotApplied.performed
+          authoredOn: (DeviceNotApplied.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded').value as FHIR.dateTime)
         }
     )
 
