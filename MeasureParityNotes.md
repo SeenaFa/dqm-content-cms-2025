@@ -1052,6 +1052,60 @@ quirk-avoidance concern applies, only "does this match the pre-migration source.
   genuinely unfixed and parked for whoever picks it up next, per the same reasoning as CMS996/CMS108's
   `.recorded()` situation — needs a real compile-verified attempt, not another guess.
 
+### 21. `recorded()` ambiguous-overload bug — real fix found (via the `Negation-troubleshooting` branch), applied to CMS68/CMS996/CMS108/CMS190
+
+- **Files**: `input/cql/CMS68FHIRDocumentationCurrentMeds.cql`, `input/cql/CMS996FHIRAptTxforSTEMI.cql`
+  (two sites), `input/cql/CMS108FHIRVTEProphylaxis.cql`, `input/cql/CMS190FHIRVTEProphylaxisICU.cql`.
+- **Why**: the `Negation-troubleshooting` branch (merged into `measure-fixes`, see git history) added
+  a scratch `NegationTest.cql` specifically to isolate the "negation resources don't seem to work"
+  hypothesis. Using it as a fast, disposable repro (single test case, ~2s per run, zero blast radius
+  to real measures), tried three approaches in sequence against its `"Procedure Not Done for Medical
+  Reasons"` define, which calls `.recorded()` on a `ProcedureNotDone` value:
+  1. `(X as FHIR.Procedure).recorded ( )` → `"Could not resolve call to operator recorded with
+     signature (FHIR.Procedure)"`. Root cause: `recorded(procedure Procedure)` is declared inside
+     `USQualityCoreCommon.cql`, which `using USQualityCore` — so its `Procedure` means
+     `USQualityCore.Procedure`, not `FHIR.Procedure`. Casting to the wrong ancestor just lands on a
+     type nothing is declared for.
+  2. `USQualityCoreCommon.recorded(X)` (explicit qualified, non-fluent invocation) →
+     `"Operator recorded with signature (USQualityCore.ProcedureNotDone) is a fluent function and can
+     only be invoked with fluent syntax."` Confirms this engine flatly disallows calling a fluent
+     function via qualified static syntax, regardless of ambiguity — a dead end independent of the
+     runtime-class issue.
+  3. **Working fix**: `(X.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded'
+     ).value as FHIR.dateTime)` — bypass `recorded()` entirely and read the underlying FHIR extension
+     directly, exactly matching what `recorded()`'s own implementation does internally. `ext()` is
+     declared generically in `FHIRCommon.cql` for `DomainResource`/`Element` — one declaration, no
+     per-profile sibling to collide with — so it isn't subject to the same runtime-class-collision bug.
+     Confirmed via a fresh, completely error-free evaluation of `NegationTest.cql` (previously: 100%
+     "Ambiguous call" error) — `"Diabetic Retinopathy Encounter"`/`"Primary Open Angle Glaucoma
+     Encounter"` also both returned correct, non-empty results in the same run, incidentally also
+     re-confirming entry #20's `prevalenceInterval` fix end-to-end.
+- **Applied to the real measures blocked by this exact bug**:
+  - `CMS68FHIRDocumentationCurrentMeds.cql:65` — `MedicationsNotDocumented.recorded ( )` (a
+    `ProcedureNotDone`) → the `ext()` bypass.
+  - `CMS996FHIRAptTxforSTEMI.cql:270` — `PCINotDone.performed` (a `ProcedureNotDone`, wrongly swapped
+    to the wrong field during the original migration per entry #19's diagnosis) → the `ext()` bypass,
+    restoring the correct field via the correct mechanism.
+  - `CMS996FHIRAptTxforSTEMI.cql:278` — `FibrinolyticNoMed.effective` (a
+    `MedicationAdministrationNotDone`, **not** actually affected by this bug at all — confirmed only
+    one `recorded(medicationAdministrationNotDone MedicationAdministrationNotDone)` overload exists,
+    no colliding sibling) → simply reverted to plain `FibrinolyticNoMed.recorded ( )`, no bypass needed.
+  - `CMS108FHIRVTEProphylaxis.cql:410` and `CMS190FHIRVTEProphylaxisICU.cql:370` —
+    `DeviceNotApplied.performed` (both `ProcedureNotDone`, both previously left at the wrong-but-stable
+    field — `CMS190`'s specifically reverted back to this in entry #19 after the earlier ambiguity was
+    found and no fix was known yet) → the `ext()` bypass in both.
+- **Status**: not yet verified against a fresh test run. Given this whole session's track record with
+  `ProcedureNotDone`/`Procedure`-adjacent overload issues, treat as promising but unconfirmed until a
+  real test run shows these 4 files no longer producing missing-results/wrong-numerator-and-exception
+  patterns. Recommend re-running `CMS68` (1 missing result), `CMS996` (12 mismatches, doNotPerform
+  signature), `CMS108` (21 mismatches), and `CMS190` (19 mismatches) specifically.
+- **Broader implication**: this pattern (bypass an ambiguous fluent function by inlining its
+  underlying extension access via `.ext(...)`) is likely applicable to *any* future
+  `recorded()`/similar-fluent-function ambiguity between USQualityCore sibling profile types that
+  share a runtime class — worth checking first before assuming something is a genuine unfixable
+  engine limitation, per this and entries #19/#20's pattern of over-attributing bugs to "external, not
+  fixable" before actually testing a workaround.
+
 ## Tried and reverted (did not resolve the issue)
 
 ### CMS135FHIRACEIorARBorARNIforHF — two independent CQL rewrite attempts, both reverted
@@ -1123,12 +1177,29 @@ quirk-avoidance concern applies, only "does this match the pre-migration source.
   `CMS646FHIRIntravesicalBCGTherapy`, `CMS156FHIRHighRiskMedsElderly`, `CMS871FHIRHHHyper`,
   `CMS1173FHIRDiagnosticDelayVTE`. Not reshaping correct CQL to route around it — file upstream if
   this gets prioritized.
-- **Ambiguous overload resolution — likely cql-to-elm gap.** `USQualityCoreCommon.cql` defines
-  `recorded(Procedure)` and `recorded(ProcedureNotDone)` as separate overloads; since
-  `ProcedureNotDone` derives from `Procedure`, calling `.recorded()` on a `ProcedureNotDone` value
-  is structurally ambiguous to this translator version instead of resolving to the more specific
-  overload. Surfaced in `CMS68FHIRDocumentationCurrentMeds` once its retrieve started actually
-  matching data (after fix #1 above).
+- **RESOLVED, 2026-08-21 — workaround found and applied (see entry #21 below).** ~~Ambiguous overload
+  resolution — likely cql-to-elm gap.~~ `USQualityCoreCommon.cql` defines `recorded(Procedure)` and
+  `recorded(ProcedureNotDone)` as separate overloads. The original theory (ProcedureNotDone derives
+  from Procedure, so the translator can't resolve to the more specific one) was wrong: per the
+  model info, `USQualityCore.Procedure` and `USQualityCore.ProcedureNotDone` are actually **siblings**
+  (both `baseType="USCore.ProcedureProfile"`, not one deriving from the other), and both compile to
+  the identical underlying `org.hl7.fhir.r4.model.Procedure` Java class — the same
+  "sibling-profile-types-share-a-runtime-class" issue documented at length in entries #19/#20 for
+  `ConditionProblemsHealthConcerns`/`ConditionEncounterDiagnosis`. Confirmed via a live, isolated
+  repro (`NegationTest.cql`'s `"Procedure Not Done for Medical Reasons"` define) that a disambiguating
+  cast doesn't help here (unlike the true-subtype `ProcedureNotDone`/`Procedure` case this was
+  originally mis-diagnosed as) — `(X as FHIR.Procedure).recorded()` fails outright ("Could not resolve
+  call to operator recorded with signature (FHIR.Procedure)", since `recorded` is declared for
+  `USQualityCore.Procedure`, not `FHIR.Procedure`), and explicit qualified invocation
+  (`USQualityCoreCommon.recorded(X)`) is rejected by the engine entirely regardless of ambiguity
+  ("... is a fluent function and can only be invoked with fluent syntax"). **The actual fix**: bypass
+  `recorded()` altogether and inline what it does internally — read the extension directly:
+  `(X.ext('http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-recorded'
+  ).value as FHIR.dateTime)`. `ext()` is declared generically for `DomainResource`/`Element` in
+  `FHIRCommon.cql` — no per-profile sibling overload exists for it, so it's not subject to the same
+  collision. Confirmed working via a fresh, error-free evaluation of `NegationTest.cql`. Applied to
+  the three real measures blocked by this bug (`CMS68`, `CMS996`, `CMS108`, plus `CMS190`'s
+  previously-reverted-to-a-known-safe-but-wrong-field instance from entry #19) — see entry #21.
 - **CMS135/CMS165's `"Unable to extract codes from fhirType Reference"`** — see "Tried and
   reverted" above. Leaning external but not confirmed; needs a stack trace before filing anything.
 
