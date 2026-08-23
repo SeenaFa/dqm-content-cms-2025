@@ -457,7 +457,7 @@ more instances of the config.json fix (#9) or of each other.
 - **Status**: **VERIFIED.** CMS104 improved 15 → 7 in the next test run, consistent with this fix
   (plus #14's one `Claim.item` fix) working.
 
-### 14. `Claim.item` missing `.encounter`/`.diagnosisSequence` links — 1 of 22 fixed, 21 remaining (new category, needs follow-up)
+### 14. `Claim.item` missing `.encounter`/`.diagnosisSequence` links — 4 fixed total; follow-up scan closed the rest as false positives (procedure-type claims)
 
 - **Why**: diagnosing CMS104's remaining IP-level mismatches (test case
   `0b1aa8ee-e8bf-49f5-b968-48c5a9702843`, description "Testing do not perform not true"). Unlike
@@ -474,13 +474,29 @@ more instances of the config.json fix (#9) or of each other.
   "Encounter/2be30658-0b61-4a07-b87d-bf812d2dafc0"}]` (the inpatient encounter in that folder;
   there's also a separate `EMER` encounter that isn't the right target — picking the correct one
   requires per-case judgment, not a blind mechanical fix like #7/#11).
-- **NOT yet fixed — same gap found in 21 more `Claim` fixtures** via a repo-wide scan for `item[]`
-  entries missing `encounter` or `diagnosisSequence`: `CMS108FHIRVTEProphylaxis` (12),
-  `CMS190FHIRVTEProphylaxisICU` (7), `CMS104FHIRSTKDCAntithrombotic` (1 more),
-  `CMS1017FHIRHHFI` (1). Each needs the same per-case judgment call (which Encounter in that
-  folder is the right link target) — not safe to fix mechanically/in bulk the way #7/#11 were.
-- **Status**: 1 fixed, not yet verified against a fresh test run; 21 more identified but
-  unaddressed.
+- **Follow-up scan (2026-08-23) corrected the count**: a repo-wide sweep for `item[]` entries
+  missing `encounter` or `diagnosisSequence` flagged 21 fixtures, but **19 are false positives**
+  — the CMS108 (12) / CMS190 (7) claims are *procedure-type* claims: they carry
+  `claim.procedure[]` (`type: primary`, ICD-10-PCS codes) plus `item.procedureSequence` feeding
+  `claimPrincipalProcedure()` (`input/cql/CQMCommon.cql:490`) via `hasPrincipalProcedureOf()`,
+  and legitimately have **no `claim.diagnosis[]` at all**. Adding `diagnosisSequence` there would
+  dangle. No action needed.
+- **Fixed (2026-08-23, 3 real gaps)**:
+  - `CMS104FHIRSTKDCAntithrombotic/e84c89f7-.../Claim-5ca62962....json` — added
+    `"diagnosisSequence": [1]` (principal SNOMED 111297002 Nonparalytic stroke) and
+    `"encounter": [{"reference": "Encounter/78fdcacc-ae1b-445f-af15-caf5304a5851"}]` (the sole
+    Encounter in that folder); this test case currently fails IP/D/DenException E=1/A=0.
+  - `CMS1017FHIRHHFI/e6d91b78-.../Claim-bd849de3-....json` — added `"diagnosisSequence": [1]`
+    (diagnosis seq 1 = W01.0XXA); item already had the encounter link.
+  - `CMS1017FHIRHHFI/e6d91b78-.../Claim-4dee9c95-....json` — repaired a **dangling** link:
+    item had `"diagnosisSequence": [1, 2]` but the claim's `diagnosis[]` only contains sequence
+    2 (M80.00XA); changed to `[2]`. Case passes today; fix keeps it valid without changing
+    resolved values.
+- **Status**: **VERIFIED (2026-08-23 1747 run).** Delta vs the 1718 baseline is exactly one
+  removed mismatch row — CMS104's `e84c89f7` (was IP/D/DenException E=1/A=0) now passes,
+  confirming SNOMED 111297002 resolves via the restored principal-diagnosis chain. CMS1017's two
+  repaired claims stayed passing as expected. Fail count 840 → 837; no other measure moved.
+  This entry is closed: 4 fixed and verified, 19 not-applicable.
 
 ### 15. CMS133 `Denominator Exclusions` used a point-in-time onset check instead of `prevalenceInterval()` — KEPT, pending re-verification
 
@@ -669,8 +685,16 @@ more instances of the config.json fix (#9) or of each other.
     others) are a confirmed-allergy/intolerance-diagnosis check
     (`"Has Diagnosis of Allergy or Intolerance to ACEI or ARB"`), unrelated to the doNotPerform fix
     applied to this same file above. Not investigated further.
-- **Status**: not yet verified against a fresh test run.
-- **Status**: not yet verified against a fresh test run.
+- **Status**: **VERIFIED** (`discrepancy_report-measure-fixes-20260823-0730.md`). All doNotPerform/
+  reasonRefused/`.toInterval()` fixes landed with no regressions. Per-measure outcomes: CMS71 2
+  mismatches left (exactly the documented-not-fixed TaskRejected union branch); CMS135's doNotPerform
+  cases resolved (its 3 remaining mismatches are the documented allergy/intolerance issue, and its 3
+  missing results are the separately-tabled Reference-extraction error); CMS144 fully passing;
+  CMS645's DEXA case resolved (2 remaining mismatches are the documented unrelated IP-level failures);
+  CMS22 down to 1 mismatch. Adjacent bug #2's CMS646 `.toInterval()` fix landed without crashing
+  anything, but fixture `e648fa70-...` still mismatches (Denominator Exception E=1/A=0) — consistent
+  with its own description self-flagging "negation issues"; treated as a separate open item, not a
+  failed fix.
 
 ### 18. Fix #16's `.prevalenceInterval()` rollout caused total execution failure in 3 measures — CAUGHT, fixed, needs re-verification
 
@@ -877,9 +901,11 @@ quirk-avoidance concern applies, only "does this match the pre-migration source.
   (already correctly applies the `union`→single-`[Condition: ...]` simplification, with its own
   self-aware TODO comment), `Hospice.cql`, `PalliativeCare.cql`, `SupplementalDataElements.cql`,
   `TJCOverall.cql`, `VTE.cql` — all mechanical-only diffs, no genuine logic regressions found.
-- **Status**: all fixes in this entry marked "KEPT" are applied but **not yet verified** against a fresh
-  test run — same caveat as #16/#17/#18. Recommend the next fresh test run cover CMS2, CMS144, CMS155,
-  CMS159, CMS190 specifically to confirm these land as intended and CMS190 doesn't regress again.
+- **Status**: **VERIFIED** (`discrepancy_report-measure-fixes-20260823-0730.md`). CMS155 fully
+  passing; CMS159 improved 8→2 mismatches (the prevalenceInterval family resolved; the remaining 2
+  are a Denominator Exclusion↔Numerator swap, now cleanly diagnosable); CMS2 fully passing (the
+  ObservationCancelled uncomment worked); AHAOverall revert confirmed safe — CMS144 fully passing.
+  CMS190's recorded() ext bypass landed separately in #21 (see below).
 
 ### 20. CRITICAL: fix #18's `Status.cql` `prevalenceInterval` overload caused a repo-wide circular-reference compile failure — caught and fixed same session
 
@@ -1094,17 +1120,158 @@ quirk-avoidance concern applies, only "does this match the pre-migration source.
     `DeviceNotApplied.performed` (both `ProcedureNotDone`, both previously left at the wrong-but-stable
     field — `CMS190`'s specifically reverted back to this in entry #19 after the earlier ambiguity was
     found and no fix was known yet) → the `ext()` bypass in both.
-- **Status**: not yet verified against a fresh test run. Given this whole session's track record with
-  `ProcedureNotDone`/`Procedure`-adjacent overload issues, treat as promising but unconfirmed until a
-  real test run shows these 4 files no longer producing missing-results/wrong-numerator-and-exception
-  patterns. Recommend re-running `CMS68` (1 missing result), `CMS996` (12 mismatches, doNotPerform
-  signature), `CMS108` (21 mismatches), and `CMS190` (19 mismatches) specifically.
+- **Status**: **VERIFIED** (`discrepancy_report-measure-fixes-20260823-0730.md`), with partial
+  resolution as predicted: CMS68 → fully passing (0 missing results); CMS996 12→8 mismatches;
+  CMS108 21→14; CMS190 19→11. All four improved without crashes or new missing results. The
+  residuals are distinct, smaller-batch issues (e.g. CMS108/CMS190's remaining gaps line up with
+  the Claim.item linkage follow-up in #14).
 - **Broader implication**: this pattern (bypass an ambiguous fluent function by inlining its
   underlying extension access via `.ext(...)`) is likely applicable to *any* future
   `recorded()`/similar-fluent-function ambiguity between USQualityCore sibling profile types that
   share a runtime class — worth checking first before assuming something is a genuine unfixable
   engine limitation, per this and entries #19/#20's pattern of over-attributing bugs to "external, not
   fixable" before actually testing a workaround.
+
+### 22. CMS128: vendored CMD library's `medicationDispensePeriod()` returns null for every fixture (`convert Duration to days` engine gap), plus one `.onset.toInterval()` parity miss — KEPT, pending re-verification
+
+- **Files**: `input/cql/CMS128FHIRAntidepressantMgmt.cql` (only; no shared-library changes).
+- **Symptom**: 56 of 58 test cases failing (96.55%, the worst mismatch rate in the suite) in
+  `discrepancy_report-measure-fixes-20260822-0736.md`, nearly all at Initial Population /
+  Denominator level with Numerator/Exclusion cascades. The 2 passing cases are consistent with
+  no-dispense patients where empty→null→false is the correct outcome.
+- **Diagnosis method**: built a disposable scratch repro (`input/cql/CMS128DiagTest.cql` +
+  `input/tests/measure/CMS128DiagTest/925ef058-.../`, untracked) with 11 probe defines isolating
+  each stage of `"IPSD"`'s pipeline against one copied test case. Results pinned the failure point
+  exactly: retrieves/valueset/status filters all fine (Diag1–Diag3 = 2 dispenses each step), raw
+  `whenHandedOver`/`daysSupply` populated (Diag10/Diag11 = `[dateTime, dateTime]`/`[Quantity]`),
+  Intake Period correct (Diag9), but `medicationDispensePeriod()` returned `[null]` for both
+  dispenses (Diag4) — everything downstream (where-clause survivors, tuple lists, IPSD itself)
+  empty purely by cascade (Diag5–Diag8).
+- **Root cause**: the vendored `CumulativeMedicationDuration-2.0.0-ballot` library (cache copy at
+  `~/.cql-language-server/npm-library-cache/4.11.0-SNAPSHOT/29dd7bae49368534/`) computes days of
+  supply in BOTH dispense functions as `daysSupply: (convert D.daysSupply to days).value`
+  (`MedicationDispensePeriod`:443, fluent `medicationDispensePeriod`:497). This engine evaluates
+  that `convert` to null — **documented by the library's own authors**: the MedicationRequest-side
+  variants carry an inline TODO ("this isn't working as expected, convert results in null",
+  lines ~279/~330) and were patched to read `(R.dispenseRequest.expectedSupplyDuration).value`
+  directly instead. The dispense variants never got the same patch. CMS128's fixtures all carry
+  `daysSupply` + `whenHandedOver` but **no** `dosageInstruction` and no `quantity` (swept all 58
+  test-case folders programmatically: 0 dispenses missing daysSupply), so when `convert` yields
+  null there is nothing for the quantity/dose fallback branch to compute →
+  `totalDaysSupplied` = null → function returns null despite perfectly good data. With IPSD null,
+  `"Initial Population"`, `"Denominator Exclusions"` (via its `"IPSD" is not null` guard), and
+  both Numerators (via empty intersects of null periods) all fail uniformly.
+- **Why not fix in place / why safe here**: the cache file is auto-generated ("changes are not
+  persisted across cql-language-server upgrades"). Blast radius confirmed narrow:
+  `medicationDispensePeriod` is called only by CMS128 (3 sites); the other 12 measures including
+  CMD use only the already-patched request-side functions (which is why e.g. CMS136 passes).
+  Fixtures always supplying daysSupply makes the omitted fallback branch dead code for this suite.
+- **Fix part 1** — local workaround function in the measure file, replicating the vendored logic
+  minus the broken `convert` (daysSupply read mirrors upstream's own patched request-side shape):
+  `AntidepressantCoveragePeriod(Dispense MedicationDispense)` — unqualified parameter type
+  resolving against USQualityCore (the first `using`), exactly matching the retrieve alias type;
+  `totalDaysSupplied: D.daysSupply.value`; `startDate: Coalesce(date from whenHandedOver,
+  date from whenPrepared)`; same null-guard + `Interval[startDate, startDate +
+  Quantity(totalDaysSupplied - 1, 'day')]` return as the original. One deviation from a verbatim
+  port: bare `Quantity(...)` inside the vendored body is that library's own helper function, so the
+  local version calls it qualified as `CMD.Quantity(totalDaysSupplied - 1, 'day')` (public, CMD
+  already included) rather than duplicating it. Unique name → none of entry #20's ambiguity hazards
+  apply (no Choice-typed self-loop, no sibling-profile overload pair sharing a runtime class).
+  All 4 call sites updated (2 in `"IPSD"`, 1 per numerator define).
+- **Fix part 2** — while diffing against QICore ground truth
+  (`dqm-content-qicore-2025/input/cql/CMS128FHIRAntidepressantMgmt.cql` line 44): the fork's
+  `"Has IPSD and Major Depression Diagnosis"` used
+  `MajorDepression.onset.toInterval ( ) within 60 days of "IPSD"` where QICore uses
+  `MajorDepression.prevalenceInterval ( )` — the #10/#15/#16 anti-pattern on a chronic-diagnosis
+  check (a depression dx dated years before IPSD can never be "within 60 days" of it as a
+  zero-width onset interval, even though it's active/ongoing). This was masked while IPSD itself
+  was null but would have surfaced immediately after part 1 landed. Fixed with entry #20-final's
+  proven inline dispatch pattern (`if X is ConditionProblemsHealthConcerns then (X as ...).
+  prevalenceInterval ( ) else (X as ConditionEncounterDiagnosis).prevalenceInterval ( )`) —
+  structurally identical to the already-verified CMS90 site.
+- **Status**: **VERIFIED** (`discrepancy_report-measure-fixes-20260823-0730.md`) — CMS128 collapsed
+  from 56 mismatches to **fully passing**; no other measure moved. Scratch repro files deleted
+  (housekeeping this session).
+- **Broader implication**: `convert <Duration> to days` evaluating to null is a genuine
+  engine/translator gap (UCUM unit conversion), upstream-fileable alongside the library authors'
+  existing TODO — the TODO proves they hit it on one code path and the dispense paths are the same
+  bug left unfixed. If any future measure needs dispense-period logic or the quantity-based days
+  fallback (dispenses without daysSupply), extend this workaround rather than calling the vendored
+  dispense functions.
+
+### 23. Verification sweep of all pending entries against the 2026-08-23 report — everything confirmed; new baseline 94.65%
+
+- **Report**: `scripts/comparison/discrepancy_report-measure-fixes-20260823-0730.md`.
+  Suite-wide pass rate **94.65%** (fail count 1268), **39 measures fully passing**, zero regressions
+  attributable to any fix from entries #13/#15–#22. Statuses above updated from "pending
+  re-verification" to VERIFIED with per-measure evidence.
+- **Current failure buckets** (for prioritization):
+  - *Missing Results — 256 cases across 9 measures*: CMS145 (106) + CMS149 (33) = no CQL authored;
+    CMS1173 (62) + CMS156 (45) + CMS871 (3, +CMS645 2 + CMS646 1) = the `DateTimeType`
+    engine-error family (see #24); CMS135 (3) + CMS165 (1) = "Unable to extract codes from fhirType
+    Reference" (tabled, see External issues log).
+  - *Mismatched — 154 cases across 31 measures*, largest: CMS157 (19), CMS69 (18), CMS108 (14),
+    CMS816 (12), CMS190 (11), CMS72 (9), CMS996 (8).
+- **Housekeeping**: scratch repro files from #21/#22 deleted; stale statuses and priority list
+  refreshed.
+
+### 24. `Min()`/`DateTimeType` engine-gap workarounds — 2 measures fixed, 1 regression caught and reverted, scratch probes pending characterization
+
+- **Context**: fresh discrepancy report
+  (`discrepancy_report-measure-fixes-20260823-1455.md`, suite pass rate **95.66%**, fail count
+  1030) verifies everything below against the prior 0730 baseline (94.65%). The engine gap being
+  worked around is the long-standing External issue ("`Min()` over plain `DateTime` values throws
+  'not comparable'/'not implemented'"), but this session established it is broader than `Min()`
+  itself: raw `FHIR.dateTime` values and raw choice-typed fields (`X.effective`) fed directly into
+  temporal operators (`before`/`after`/`on or before`) or returned/sorted as DateTime values also
+  fail downstream, and the workaround is uniform — convert to `System.DateTime` first
+  (`FHIRHelpers.ToDateTime(...)`), or for choice types convert to an interval first
+  (`start of X.effective.toInterval()`).
+- **CMS1173FHIRDiagnosticDelayVTE — KEPT, VERIFIED (62 missing results → 0; measure now fully
+  passing).** `"Qualified VTE Encounters"` compared `AntiCoagulantOrdered.authoredOn` /
+  `IndexPCP.period` temporally against raw `VTEStudy.effective` (a `dateTime | Period` choice).
+  Changed all three comparisons to use `start of VTEStudy.effective.toInterval ( )`. This was the
+  single largest "Missing Results" bucket in the 0730 report (62 of its 65 test cases); all now
+  produce results and match expected populations.
+- **CMS156FHIRHighRiskMedsElderly — KEPT, VERIFIED (partial).** The two Index Prescription Start
+  Date defines returned raw `.authoredOn` (`FHIR.dateTime`) values that broke downstream temporal
+  arithmetic — 45 test cases were "Missing Results" at 0730. Wrapping both returns in
+  `FHIRHelpers.ToDateTime ( ... )` eliminated all 45. **3 residual mismatches remain** (test cases
+  `4aa75d19-...`, `c409fbc9-...`, `07f11229-...`, each failing `Numerator` in Groups 1+3), and they
+  line up exactly with the `.onset.toInterval ( ) overlaps Interval[start of "Measurement Period"
+  - 1 year, <IPS>]` checks at `CMS156FHIRHighRiskMedsElderly.cql:169` and `:179` — the sites fix
+  #16's repo-wide sweep flagged as plausible-but-unverified instances of the chronic-diagnosis
+  zero-width-onset anti-pattern (#10/#15 family). Now confirmable against concrete failing
+  fixtures; next fix candidate.
+- **CMS645FHIRBoneDensityPCADTherapy — REGRESSION CAUGHT AND REVERTED.** Attempted two
+  `ToDateTime` conversions in the ADT start-date defines: (a)
+  `Min({ FHIRHelpers.ToDateTime(ADTOrder.authoredOn), ... })` — same shape as CMS156's proven
+  change, likely fine on its own; (b) a nested-query rewrite inside `firstMedicationEvent`
+  (`First((dosageTiming.event DoseEvent return FHIRHelpers.ToDateTime(DoseEvent) sort ascending))`).
+  Result was **total library-load failure**: every one of the 51 test cases went to "Missing
+  Results" with `Library ... loaded, but had errors: Syntax error at firstEvents, Syntax error at
+  dosageTiming, null cannot be cast to non-null type org.hl7.elm.r1.Expression`. The syntax error
+  points at the (b) rewrite's nested aliased query, not the `Min()` change — but since neither
+  half could be compile-validated independently from this environment, **the whole file was
+  reverted to HEAD** (per user decision), restoring the 0730-verified state (2 missing + 2
+  documented IP-level mismatches). Re-attempt the `Min()` fix later behind a validated scratch
+  repro, per the #18–#20 lesson about unverified edits.
+- **MinSpike scratch probes — kept, pending one test run.** Untracked probe libraries
+  `input/cql/MinSpikeA/B/C1/C4/C5.cql` with fixtures under `input/tests/measure/MinSpike*/`
+  exercise literal and retrieved-value forms of `Min()`, `sort`, temporal-sugar operators, and day
+  precision, with and without `FHIRHelpers.ToDateTime` conversion. They have **never been run**
+  (no `input/tests/results/MinSpike*.txt`). Kept in place so the *next* full harness run
+  characterizes exactly which forms this engine supports — that matrix directly informs the
+  pending `Min()` fixes (CMS871's `hospitalDaysMax10`, CMS645 re-attempt, CMS646). Expect them to
+  appear as noise rows in the comparison reports until deleted; ignore `MinSpike*` entries when
+  computing deltas.
+- **Status**: VERIFIED via the 1455 report for CMS1173/CMS156/CMS645-revert. New working baseline:
+  **95.66%, 1030 failures, 34 measures with discrepancies**. Remaining buckets: Missing Results —
+  CMS145 (106) + CMS149 (33, both still no CQL authored), CMS135 (3) + CMS165 (1, tabled
+  Reference-extraction error), CMS871 (3) + CMS646 (1, `Min()`/DateTimeType family); Mismatched —
+  top counts CMS157 (19), CMS69 (18), CMS108 (14), CMS816 (12), CMS190 (11), CMS72 (9), CMS996
+  (8).
+
 
 ## Tried and reverted (did not resolve the issue)
 
@@ -1209,9 +1376,12 @@ quirk-avoidance concern applies, only "does this match the pre-migration source.
   at all (confirmed via `find` and `git log`), despite full Measure resources and test fixtures
   existing. This is a content-authoring gap (139 test cases), materially larger than anything else
   here — scope as its own follow-up, likely via `/madie`, `/cql`, `/qicore` skills.
-- The remaining ~45 measures with measure-specific mismatches, one at a time, top-down by fail
-  count from the latest discrepancy report (`discrepancy_report-measure-fixes-20260821-1128.md`).
-  Current order: `CMS72FHIRSTKAntithromboticDay2` (98) → `CMS104FHIRSTKDCAntithrombotic` (69) →
-  `CMS133FHIRCataracts2040BCVA90Days` (59) → `CMS128FHIRAntidepressantMgmt` (56) →
-  `CMS951FHIRKidneyHealthEval` (44) → `CMS157FHIRPainIntensityQuantified` (40) → ... CMS347's 4
-  lingering issues (see #10) are parked, not blocking — pick back up if convenient.
+- The remaining ~30 measures with measure-specific mismatches, one at a time, top-down by fail
+  count from the latest discrepancy report (`discrepancy_report-measure-fixes-20260823-1455.md`).
+  Current order: `CMS157FHIRPainIntensityQuantified` (19 mismatches) →
+  `CMS69FHIRPCSBMIScreenAndFollowUp` (18) → `CMS108FHIRVTEProphylaxis` (14) → `CMS816FHIRHHHypo`
+  (12) → `CMS190FHIRVTEProphylaxisICU` (11) → `CMS72FHIRSTKAntithromboticDay2` (9) →
+  `CMS996FHIRAptTxforSTEMI` (8) → `CMS104FHIRSTKDCAntithrombotic` (7). Before the CQL pass,
+  finish entry #14's fixture follow-up first: the 21 remaining `Claim.item` linkage gaps target
+  exactly the residual buckets of CMS108 (12), CMS190 (7), CMS104 (1), CMS1017 (1).
+  CMS347's parked issues (see #10) are down to 2 mismatches — pick back up if convenient.
