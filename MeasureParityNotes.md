@@ -11,42 +11,44 @@ model (see `USQualityCoreUpdateProcess.md`). After that migration, the measure t
 `scripts/comparison/discrepancy_report-main-2026-08-20.md` showed 61 of 74 measures failing (up
 from 44/73 in the January pre-connectathon baseline).
 
-**RESOLVED 2026-08-21 (confirmed with another dev): this is NOT an engine-parity comparison
-exercise.** The project is scoped purely around correctly converting QICore → USQualityCore — we
-are *not* comparing our results against MADiE. The framing below (the "category 1/2/3" bucketing,
-treating MADiE's TypeScript engine as a gold standard to match) was this document's original
-working theory and is now superseded — kept struck through/inline for history, but do not apply it
-to new work. It also resolves the "Open question" that used to live here: every mismatch found so
-far (#6 `doNotPerform`, #7/#11 wrong patient references, #10/#15 `.onset.toInterval()` vs
+**RESOLVED 2026-08-23 (user directive): the goal is 100% passing of all measures after
+converting to USQualityCore, on this repo's Java engine (Clinical Reasoning / cql Engine).**
+This is not an engine-vs-engine comparison exercise — we are finding gaps in the local Java
+engine implementation surfaced by the test suite. A failing test means either (a) a migration
+regression in the converted CQL or fixtures — fix the conversion — or (b) a genuine gap or
+limitation in the Java engine — apply and document the narrowest possible CQL workaround. The
+framing below (the "category 1/2/3" bucketing) was this document's original working theory and is
+now superseded — kept struck through/inline for history, but do not apply it to new work. It also
+resolves the "Open question" that used to live here: every mismatch found so far (#6
+`doNotPerform`, #7/#11 wrong patient references, #10/#15 `.onset.toInterval()` vs
 `.prevalenceInterval()`, #13 `doNotPerform` again, #14 missing `Claim.item` links, #16/#18) was a
-genuine migration regression, not an engine difference — confirmed by the dev conversation, not
-just inferred.
+genuine migration regression or an engine limitation with a known workaround.
 
 **What this means practically going forward:**
 
-- The correctness question for any mismatch is now: **does the USQualityCore-converted CQL
-  correctly reproduce the pre-migration QICore CQL's intended logic?** — not "does it match what
-  the Java engine vs. MADiE's engine each produce."
+- The correctness question for any mismatch is: **does the USQualityCore-converted CQL correctly
+  reproduce the pre-migration QICore logic when run on the Java engine?** If it does but still
+  fails, treat it as an engine gap.
+- **Any change that deviates from the original QICore implementation — converted CQL logic or
+  test fixtures — must be documented in the changelog below**, including the reason (migration
+  regression fix vs. engine-gap workaround).
 - `dqm-content-qicore-2025` (`https://github.com/cqframework/dqm-content-qicore-2025`, see the
   memory note saved 2026-08-21) is the actual ground truth to diff a measure's `define`s against
   when in doubt — not the test fixtures' expected `MeasureReport` values in isolation. If a fix
   looks right by CQL-authoring convention but the QICore original did something different on
   purpose, that's worth a second look before applying it.
 - The `input/tests/measure/*/MeasureReport-*.json` "expected" values and `cqfm-testCaseDescription`
-  extensions still describe real clinical intent and remain useful for understanding what a test
-  case is trying to exercise — just don't treat "the Java engine disagrees with the fixture" as
-  automatically meaningful the way the old category-2/3 framing did. The comparison scripts
-  (`scripts/comparison/compare_results.py` etc.) are still a reasonable coverage signal for "did
-  this fix change what I expected," just not evidence about engine correctness.
-- No more "flag category 3, don't touch it" — since there's no second engine's behavior to defer
-  to, a mismatch that looks like a genuine CQL bug should just be fixed (verified against the
-  QICore source when the fix is non-obvious), not parked pending a human call about MADiE.
+  extensions describe real clinical intent and remain useful for understanding what a test case is
+  trying to exercise. The comparison scripts (`scripts/comparison/compare_results.py` etc.) are
+  the coverage signal for "did this fix change what I expected."
+- No more "flag category 3, don't touch it" — a mismatch that looks like a genuine CQL bug should
+  just be fixed (verified against the QICore source when the fix is non-obvious), not parked.
 
 ## Verification loop
 
 Three scripts, run in order from the repo root after CQL/fixture changes and a fresh CQL-engine
 test run (`input/tests/results/*.txt` regenerated — this repo doesn't run that engine directly
-from a shell tool; it's driven by the VS Code CQL extension / MADiE test harness):
+from a shell tool; it's driven by the VS Code CQL extension test harness):
 
 ```sh
 python ./scripts/extract_population_expected.py   # only needed if MeasureReport expected results changed
@@ -86,7 +88,7 @@ Every change attempted in this effort, in chronological order, with the reasonin
 its outcome. Entries marked **KEPT** are in the working tree (uncommitted unless noted).
 Entries marked **REVERTED** were tried, didn't resolve the issue, and were removed — the CQL/repo
 state was confirmed clean via `git diff` after reverting. This section is meant to be detailed
-enough to share with teammates or MADiE without needing to re-derive the reasoning.
+enough to share with teammates without needing to re-derive the reasoning.
 
 ### 1. Stale `onc` → `astp` profile namespace in test fixtures — KEPT, verified
 
@@ -189,11 +191,6 @@ enough to share with teammates or MADiE without needing to re-derive the reasoni
   diff against the prior report that CMS347 was the *only* measure in the current dataset whose
   counts changed — no regressions elsewhere. This fix is generic (not CMS347-specific); watch for
   it helping other multi-stratum measures as Phase 2 continues.
-- **Discuss with MADiE**: this raises a real question worth asking their team — does MADiE's own
-  scoring/reporting layer correctly scope shared exception/exclusion/numerator expressions to each
-  group's own denominator for multi-stratum measures, or could they have a latent version of the
-  same class of bug in a different place in their pipeline? Worth confirming given they're the
-  reference implementation.
 
 ### 6. CMS347 CQL bugs: `doNotPerform` and an intent-code typo — KEPT, verified
 
@@ -782,8 +779,8 @@ more instances of the config.json fix (#9) or of each other.
 Continuing the direct-source-diff approach from #18, dispatched parallel diffs of `seena-fork/input/cql/*`
 against the cloned `dqm-content-qicore-2025` for all 13 shared libraries and 7 measures still showing
 discrepancies (CMS996, CMS816, CMS2, CMS108, CMS190, CMS159, CMS155). Findings below; each fix applied
-directly (not parked), given the corrected project framing (see "Why this work exists") — no MADiE
-quirk-avoidance concern applies, only "does this match the pre-migration source."
+directly (not parked), given the corrected project framing (see "Why this work exists") — the only
+bar is "does this match the pre-migration source."
 
 - **CMS190FHIRVTEProphylaxisICU — KEPT (partial), solves the fix #12 mystery.** QICore used
   `NoMedicationAdm.recorded` (a `MedicationAdministrationNotDone`) and `DeviceNotApplied.recorded` (a
@@ -1370,12 +1367,149 @@ quirk-avoidance concern applies, only "does this match the pre-migration source.
 - **CMS135/CMS165's `"Unable to extract codes from fhirType Reference"`** — see "Tried and
   reverted" above. Leaning external but not confirmed; needs a stack trace before filing anything.
 
+### 25. Unresolved `CumulativeMedicationDuration` include silently nulled every CMD call — vendored minimal CMD 6.0.000, CMS156 root cause fixed
+
+**Status: round 1 regressed and was corrected same session; round 2 fix applied 2026-08-23,
+awaiting harness verification.** Discovered while root-causing CMS156's three failing
+average-daily-dose cases (`4aa75d19`, `c409fbc9`, `07f11229` — Numerator 1 + Numerator 3, both
+E=1/A=0).
+
+- **Diagnosis chain**: A hop-by-hop probe library (`CMS156AvgDailyDoseProbe.cql`, verbatim copies of
+  CMS156's functions plus P1–P9 exposures) showed `medicationRequestPeriodInDays()` returns null
+  (P1) even though `dispenseRequest.expectedSupplyDuration` = 5 days should have satisfied its
+  leading `Coalesce`. Strength/mult/divide hops (P3–P7) all evaluate fine.
+- **Round 1 diagnosis (partially wrong)**: believed CMD never resolved in this repo AND that
+  2.0.0-ballot's unguarded `Quantity(value Decimal, unit String)` constructor threw on nulls
+  (6.0.000 guards it: `if value is not null then System.Quantity {…} else null`). Vendored a
+  *minimal* CMD 6.0.000 (`ToDaily` + `Quantity` only) and flipped CMS156's include to unqualified
+  `'6.0.000'`.
+- **Round 1 regression (caught by 2017 report, pass rate 96.47% → 93.51%)**: CMS156 went from 3
+  mismatches to **177 missing results** — `Could not resolve call to operator
+  medicationRequestPeriod with signature (FHIR.MedicationRequest)`. CMS156 also uses CMD's fluent
+  `medicationRequestPeriod()` (lines 269–271, antipsychotic different-day logic), which my grep for
+  qualified `CMD."…"` calls missed. This proved the original include WAS resolving all along
+  (translator-provided), so layer 1 of the diagnosis was wrong; the unresolved-include-silently-nulls
+  theory is retracted. All other measures unchanged (CMS645's 2 missing predate this work).
+- **Round 2 fix**: replaced the minimal vendor with a FULL copy of dqm-content-qicore-2025's
+  CumulativeMedicationDuration.cql 6.0.000 (all 18 functions), adapted only in model declarations
+  (QICore → USQualityCore/USCore/FHIR stack per CQMCommon convention; FHIRHelpers pinned to
+  engine-provided 4.0.1; `QICoreCommon."SNOMEDCT"` inlined as a SNOMEDCT code system declaration).
+- **Round 2b model adaptation**: full vendor surfaced a second, different failure class —
+  `Expression of type 'choice<FHIR.Duration,FHIR.Period,FHIR.Range>' cannot be cast as a value of
+  type 'Interval of System.DateTime'`. Upstream's functions write `timing.repeat.bounds as
+  Interval<DateTime>` (3 sites), which QICore modelinfo tolerates because its profiles narrow the
+  choice; our FHIR-based stack does not. Adapted all 3 sites to `as FHIR.Period` — the exact pattern
+  CMS156's own local `medicationRequestPeriodInDays()` already uses for the same expression. Both
+  deviations are recorded in the vendor file's header comment.
+- **Remaining open question**: the 2026-08-23 ~21:09 probe run (minimal-CMD era, translating clean,
+  guarded Quantity resolving locally) still showed P1=null — so either a second runtime thrower
+  exists inside the let-chain beyond `Quantity(null,null)` (suspects: `Count()` on the absent
+  `timing.repeat.timeOfDay` list — spec says Count(empty)=0 — or `ToDaily`'s else-branch
+  `Message(null, true, …, 'Warning', …)` firing on null period, since a case on a null comparand
+  falls through to else), *or* the minimal-era include silently failed to resolve and the guard was
+  never exercised. Not yet distinguishable. Probe extended with PA–PE micro-exposures (ToDaily
+  sanity/null args, Count of absent timeOfDay, Message warning, exact Coalesce-chain replica); the
+  21:09 round could not evaluate them (probe translation was transitively poisoned by the then-broken
+  CMD include). Next harness run settles it.
+- **Open question ANSWERED (2026-08-24 run)**: PA–PE eliminated Count/Message/ToDaily-as-suspects
+  (`PC`=0, `PD`=null, `PA`=1.0, `PB`=null, `PE`=0) but P1/P8/P9 stayed null. Fixture inspection
+  found the real thrower: both probe MedicationRequests carry **no `doseAndRate`** (and no timing
+  frequency/period), so `singleton from dosage.doseAndRate` in
+  `medicationRequestPeriodInDays`/`MedicationRequestPeriod` aborts at runtime — this engine throws
+  on `singleton` of an *empty* list where spec says null — killing the call **before** the
+  `Coalesce(daysSupply, …)` branch that would have short-circuited to the present
+  `expectedSupplyDuration` = 5 days. Upstream never hits this because upstream fixtures always
+  populate dosage. PE also exposed a latent upstream hazard: `Count(absent timeOfDay)` = 0 is
+  non-null, so the chain's `1.0` fallback can never fire; harmless here only while
+  `expectedSupplyDuration` exists.
+- **Fix applied (fixture-side, CQL untouched)**: added `doseAndRate[0].doseQuantity` = 0.25 mg and
+  `timing.repeat` frequency=1/period=1/periodUnit='d' to both probe MedicationRequests
+  (`d84056f4`, `f72dde40`). Next run should show P1=5, P8=0.25 mg/d, P9=true per the expected end
+  state below. Watch for the same sparse-dosage pattern in real CMS156 fixtures (`c409fbc9`,
+  `07f11229`) when CMS156 proper is re-run.
+- **Round 3 (2026-08-24, post-fixture-fix run)**: singleton abort gone; P1 computes via the
+  *division* branch (= 20 d) because `Coalesce(daysSupply, …)` still fell through —
+  `(convert expectedSupplyDuration to days).value` returns **null despite the fixture carrying
+  `{value: 5, code: 'd'}`**. Downstream values are arithmetically correct for 20 days (P8 ≈ 0.0625,
+  P9=false); sole remaining defect was the Duration→days conversion.
+- **Round 3 ANSWERED + fixed**: probes PF–PK split it cleanly — raw element resolves (`PF`),
+  `.value` accessible, **implicit** convert on FHIR.Duration = null (`PG`), **explicit**
+  `FHIRHelpers.ToQuantity(Duration)` = 5 'day' (`PI`), System-level convert = 5 'd' (`PJ`),
+  decimal bypass = exactly 0.0625 (`PK`). Engine gap: the implicit FHIR.Duration→Quantity
+  insertion inside `convert … to days` returns null at runtime while both the explicit conversion
+  and the quantifier are healthy.
+- **Rounds 4–6 (2026-08-24): final root cause + fix**. First attempt (route through explicit
+  ToQuantity) still null — rounds 4/5 isolated why: `ToQuantity` emits unit **'day'** (calendar
+  spelling), and this engine's `convert … to days` / `ConvertQuantity(…, 'd')` only accept UCUM
+  `'d'`: literal `5 'day'` → convert null (`PY`) while literal `5 'd'` works (`PJ`);
+  `ConvertQuantity` also null on 'day' inputs (`QB`/`QC`). Case-based arithmetic on the raw
+  FHIR.Duration fields verified exact (`QD`=5). **Fix**: vendored CMD gained a local
+  `ToDays(FHIR.Duration)` helper (s/min/h/d/wk/mo/a spellings, 30-day months, 365-day years,
+  Message-error on unknown) and all four period functions' `daysSupply` lets plus CMS156's local
+  copy and the probe copy now call it (`CMD."ToDays"(…)` outside CMD). Recorded as deviation #3
+  in the CMD header (supersedes the intermediate ToQuantity attempt). Expected probe run:
+  P1=5, P8=0.25 mg/d, P9=true.
+- **Rounds 7–8 (2026-08-24): second engine gap found + fixed**. With P1=5 green (`ToDays`
+  verified), P8/P9 still failed: probes QE–QH proved quantity division across mass/time
+  dimensions is broken on engine 4.9.0 — it UCUM-normalizes to base units (g/s) then rounds the
+  VALUE to 8 decimal places, so `1.25 'mg' / 5 'd'` ≈ 2.9e-9 g/s collapses to exactly zero
+  (`QF`=0E-8), and even clean synthetic literals compare false (`QH`). Every mg/day quotient
+  dies in the rounding gap → `averageDailyDose() > 0.125/6 'mg/d'` could never fire → Numerator
+  1 impossible for all patients. **Fix (deviation #4, CMS156 local function + probe copy)**:
+  `averageDailyDose` now constructs `System.Quantity { value: quantity.value * strength.value /
+  DaysSupplied, unit: 'mg/d' }` — pure decimal math (shape probe-verified exact by PK) with an
+  explicit unit string, so the downstream same-unit comparisons never trigger conversion.
+  Expected probe run: P8 = 0.25 'mg/d', P9 = true.
+- **Expected end state**: P1 DaysSupplied = 5, P8 AvgDose = 0.25 mg/d, P9 Compare = true →
+  **ACHIEVED in 2026-08-24 probe run** (P1=5, P8=0.25 'mg/d', P9=true). All three engine gaps now
+  worked around and run-verified: sparse-fixture singleton abort (fixture-side enrichment),
+  Duration→days conversion (`ToDays` helper), quantity-division rounding collapse (decimal-math
+  quantity construction). Remaining: run CMS156 proper (fixtures `c409fbc9`/`07f11229` may need
+  the same dose enrichment), confirm Numerator flips with no regressions, then delete the scratch
+  probe library + Measure resource + test dir per its header directive.
+  Numerator 1 goes true for `4aa75d19`/`c409fbc9`; `07f11229`'s prolonged-duration branch (Sum of
+  antiinfective days-supplied > 90) un-nulls via the same function. Whatever engine-gap workaround
+  proves necessary will be applied locally in CMS156 and documented here.
+- **Dead includes**: only CMS156 actually calls CMD functions (`medicationRequestPeriod`,
+  `Quantity`, `ToDaily`); 11 other libraries carry the include as dead weight (`CMS22`, `CMS347`,
+  `CMS153`, `CMS128`, `CMS138`, `CMS136`, `CMS2`, `Antibiotic`, `AdvancedIllnessandFrailty`,
+  `CMS1017`, `CMS137`). Their includes remain at qualified 2.0.0-ballot (unused, so inert);
+  cleanup candidate once this verifies.
+ - **MADiE reference scrub (same session, user directive)**: all MADiE mentions removed from
+   MeasureParityNotes.md and from the `.cql` header comments of `CQMCommon`,
+   `SupplementalDataElements`, `TJCOverall`, `VTE` (comment-only). Generated ELM `.xml` artifacts in
+   `input/cql/` still carry `madie.cms.gov` paths inside compiled output — left alone as generated
+   files, same as `temp/pages/`.
+- **Local translation pre-checks (2026-08-24, tooling investigation — tabled)**: attempted to
+  validate CMD/CMS156 edits locally with the pinned cql-to-elm CLI
+  (`vs-code-cql/_repo/clinical_quality_language/Src/java`, `:cql-to-elm-cli:run`) instead of
+  harness round-trips. Results:
+  - Works for plain-FHIR libraries: sandbox copies of `CumulativeMedicationDuration.cql` (usings
+    reduced to `FHIR '4.0.1'`) translate clean, so the `as FHIR.Period` bounds adaptations are
+    type-valid. Technique reusable for any self-contained System/FHIR-only library.
+  - Does NOT work for USQualityCore-model libraries: the CLI's directory-backed
+    `DefaultModelInfoProvider` resolves sibling `uscore-modelinfo.xml` / `fhir-modelinfo.xml`
+    fine but returns null for our `usqualitycore-modelinfo.xml` (versionless request hits the
+    exact-filename fast path at `DefaultModelInfoProvider.kt:43-49`; file present; root cause not
+    reached — suspected kotlinx-io 0.8.0 API churn on the CLI classpath). Separately, the CLI's
+    `--model <file>` option is broken in this fork (`ClassCastException`: the registered lambda is
+    not a `ModelInfoProvider`) and its provider does no identifier matching anyway, so it would
+    cross-contaminate FHIR requests. The harness remains the arbiter for measure-level
+    translation; don't burn more time on the local path unless the translator fork gets updated.
+- **Incident (2026-08-24, fixed same day)**: the local-sandbox work leaked into the repo — a
+  broad sweep stripped `version '0.1.0-cibuild'` / `version '6.1.0-derived'` from the
+  USQualityCore/USCore using declarations of 91 tracked libraries, and the vendored
+  `CumulativeMedicationDuration.cql` briefly carried only `using FHIR version '4.0.1'` (the
+  FHIR-only reduction used for the local CLI check). Restored all using declarations to HEAD's
+  exact form (verified: zero drift vs HEAD across tracked files); CMD now declares the full
+  three-model stack matching its header comment and every sibling library.
+
 ## Not yet started
 
 - **CMS145FHIRCADBBlockerTPMIorLVSD / CMS149FHIRDementiaCognitiveAssess** — no CQL source exists
   at all (confirmed via `find` and `git log`), despite full Measure resources and test fixtures
   existing. This is a content-authoring gap (139 test cases), materially larger than anything else
-  here — scope as its own follow-up, likely via `/madie`, `/cql`, `/qicore` skills.
+  here — scope as its own follow-up, likely via the `/cql` and `/qicore` skills.
 - The remaining ~30 measures with measure-specific mismatches, one at a time, top-down by fail
   count from the latest discrepancy report (`discrepancy_report-measure-fixes-20260823-1455.md`).
   Current order: `CMS157FHIRPainIntensityQuantified` (19 mismatches) →
