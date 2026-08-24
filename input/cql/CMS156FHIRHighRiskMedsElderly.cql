@@ -7,9 +7,9 @@ using USQualityCore version '0.1.0-cibuild'
 using USCore version '6.1.0-derived'
 using FHIR version '4.0.1'
 
-include hl7.fhir.uv.cql.FHIRHelpers version '4.0.1' called FHIRHelpers
+include FHIRHelpers version '4.0.1' called FHIRHelpers
 include hl7.fhir.uv.cql.FHIRCommon version '2.0.0' called FHIRCommon
-include hl7.fhir.us.cql.CumulativeMedicationDuration version '2.0.0-ballot' called CMD
+include CumulativeMedicationDuration version '6.0.000' called CMD
 include hl7.fhir.us.cql.USCoreCommon version '2.0.0-ballot' called USCoreCommon
 include hl7.fhir.us.cql.USCoreElements version '2.0.0-ballot' called USCoreElements
 
@@ -305,7 +305,7 @@ define fluent function medicationRequestPeriodInDays(Request MedicationRequest):
     ),
     dosesPerDay: Coalesce((CMD."ToDaily"(frequency, period)), Count(timing.repeat.timeOfDay), 1.0),
     boundsPeriod: timing.repeat.bounds as FHIR.Period,
-    daysSupply: ( convert R.dispenseRequest.expectedSupplyDuration to days ).value,
+    daysSupply: CMD."ToDays"(R.dispenseRequest.expectedSupplyDuration),
     quantity: R.dispenseRequest.quantity,
     refills: Coalesce(R.dispenseRequest.numberOfRepeatsAllowed, 0),
     startDate: Coalesce(date from start of boundsPeriod, date from R.authoredOn, date from start of R.dispenseRequest.validityPeriod),
@@ -321,5 +321,5 @@ define fluent function averageDailyDose(MedicationRequest MedicationRequest):
           or ( MedicationStrength.unit = 'mg/mL'
               and Order.dispenseRequest.quantity.unit = 'mL'
           )
-      ) then ( ( Order.dispenseRequest.quantity * MedicationStrength ) / System.Quantity { value: DaysSupplied, unit: 'd' } )
+      ) then System.Quantity { value: Order.dispenseRequest.quantity.value * MedicationStrength.value / DaysSupplied, unit: 'mg/d' }
       else null
