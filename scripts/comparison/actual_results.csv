@@ -11456,6 +11456,7 @@ CMS1157FHIRHIVRetention,f2044a96-a0a7-4d28-8a38-ec5458468acf,Group_1:Numerator,0
 CMS1157FHIRHIVRetention,fbc7c974-0ed5-4441-a147-4c69ec98bf14,Group_1:Initial Population,1
 CMS1157FHIRHIVRetention,fbc7c974-0ed5-4441-a147-4c69ec98bf14,Group_1:Denominator,1
 CMS1157FHIRHIVRetention,fbc7c974-0ed5-4441-a147-4c69ec98bf14,Group_1:Numerator,0
+CMS156AvgDailyDoseProbe,4aa75d19-ac8b-49b0-a686-429fbc033d77,Group_1:,1
 CMS771FHIRUrinarySymptomScoreBPH,051c5977-9f2c-4e8b-8e02-ac3ec0c718d6,Group_1:Initial Population,1
 CMS771FHIRUrinarySymptomScoreBPH,051c5977-9f2c-4e8b-8e02-ac3ec0c718d6,Group_1:Denominator,1
 CMS771FHIRUrinarySymptomScoreBPH,051c5977-9f2c-4e8b-8e02-ac3ec0c718d6,Group_1:Denominator Exclusion,0
@@ -18855,7 +18856,7 @@ CMS156FHIRHighRiskMedsElderly,05aa403d-44c1-4c71-acb9-7808568b6a4f,Group_3:Numer
 CMS156FHIRHighRiskMedsElderly,07f11229-6e8f-42bf-9905-3d319460fb33,Group_1:Initial Population,1
 CMS156FHIRHighRiskMedsElderly,07f11229-6e8f-42bf-9905-3d319460fb33,Group_1:Denominator,1
 CMS156FHIRHighRiskMedsElderly,07f11229-6e8f-42bf-9905-3d319460fb33,Group_1:Denominator Exclusion,0
-CMS156FHIRHighRiskMedsElderly,07f11229-6e8f-42bf-9905-3d319460fb33,Group_1:Numerator,0
+CMS156FHIRHighRiskMedsElderly,07f11229-6e8f-42bf-9905-3d319460fb33,Group_1:Numerator,1
 CMS156FHIRHighRiskMedsElderly,07f11229-6e8f-42bf-9905-3d319460fb33,Group_2:Initial Population,1
 CMS156FHIRHighRiskMedsElderly,07f11229-6e8f-42bf-9905-3d319460fb33,Group_2:Denominator,1
 CMS156FHIRHighRiskMedsElderly,07f11229-6e8f-42bf-9905-3d319460fb33,Group_2:Denominator Exclusion,0
@@ -18863,7 +18864,7 @@ CMS156FHIRHighRiskMedsElderly,07f11229-6e8f-42bf-9905-3d319460fb33,Group_2:Numer
 CMS156FHIRHighRiskMedsElderly,07f11229-6e8f-42bf-9905-3d319460fb33,Group_3:Initial Population,1
 CMS156FHIRHighRiskMedsElderly,07f11229-6e8f-42bf-9905-3d319460fb33,Group_3:Denominator,1
 CMS156FHIRHighRiskMedsElderly,07f11229-6e8f-42bf-9905-3d319460fb33,Group_3:Denominator Exclusion,0
-CMS156FHIRHighRiskMedsElderly,07f11229-6e8f-42bf-9905-3d319460fb33,Group_3:Numerator,0
+CMS156FHIRHighRiskMedsElderly,07f11229-6e8f-42bf-9905-3d319460fb33,Group_3:Numerator,1
 CMS156FHIRHighRiskMedsElderly,0e31d00f-8b4e-4800-a7f7-ab8b824bf689,Group_1:Initial Population,1
 CMS156FHIRHighRiskMedsElderly,0e31d00f-8b4e-4800-a7f7-ab8b824bf689,Group_1:Denominator,1
 CMS156FHIRHighRiskMedsElderly,0e31d00f-8b4e-4800-a7f7-ab8b824bf689,Group_1:Denominator Exclusion,0
@@ -19035,7 +19036,7 @@ CMS156FHIRHighRiskMedsElderly,47f69fc0-fac8-4f88-876b-cf415ec0e214,Group_3:Numer
 CMS156FHIRHighRiskMedsElderly,4aa75d19-ac8b-49b0-a686-429fbc033d77,Group_1:Initial Population,1
 CMS156FHIRHighRiskMedsElderly,4aa75d19-ac8b-49b0-a686-429fbc033d77,Group_1:Denominator,1
 CMS156FHIRHighRiskMedsElderly,4aa75d19-ac8b-49b0-a686-429fbc033d77,Group_1:Denominator Exclusion,0
-CMS156FHIRHighRiskMedsElderly,4aa75d19-ac8b-49b0-a686-429fbc033d77,Group_1:Numerator,0
+CMS156FHIRHighRiskMedsElderly,4aa75d19-ac8b-49b0-a686-429fbc033d77,Group_1:Numerator,1
 CMS156FHIRHighRiskMedsElderly,4aa75d19-ac8b-49b0-a686-429fbc033d77,Group_2:Initial Population,1
 CMS156FHIRHighRiskMedsElderly,4aa75d19-ac8b-49b0-a686-429fbc033d77,Group_2:Denominator,1
 CMS156FHIRHighRiskMedsElderly,4aa75d19-ac8b-49b0-a686-429fbc033d77,Group_2:Denominator Exclusion,0
@@ -19043,7 +19044,7 @@ CMS156FHIRHighRiskMedsElderly,4aa75d19-ac8b-49b0-a686-429fbc033d77,Group_2:Numer
 CMS156FHIRHighRiskMedsElderly,4aa75d19-ac8b-49b0-a686-429fbc033d77,Group_3:Initial Population,1
 CMS156FHIRHighRiskMedsElderly,4aa75d19-ac8b-49b0-a686-429fbc033d77,Group_3:Denominator,1
 CMS156FHIRHighRiskMedsElderly,4aa75d19-ac8b-49b0-a686-429fbc033d77,Group_3:Denominator Exclusion,0
-CMS156FHIRHighRiskMedsElderly,4aa75d19-ac8b-49b0-a686-429fbc033d77,Group_3:Numerator,0
+CMS156FHIRHighRiskMedsElderly,4aa75d19-ac8b-49b0-a686-429fbc033d77,Group_3:Numerator,1
 CMS156FHIRHighRiskMedsElderly,52f08670-4df5-4538-b009-eb96e3247618,Group_1:Initial Population,1
 CMS156FHIRHighRiskMedsElderly,52f08670-4df5-4538-b009-eb96e3247618,Group_1:Denominator,1
 CMS156FHIRHighRiskMedsElderly,52f08670-4df5-4538-b009-eb96e3247618,Group_1:Denominator Exclusion,0
@@ -19383,7 +19384,7 @@ CMS156FHIRHighRiskMedsElderly,c0af145d-bf0c-4b3d-8f65-d446c9f93b15,Group_3:Numer
 CMS156FHIRHighRiskMedsElderly,c409fbc9-a31f-4d53-9aa7-9e443e87812a,Group_1:Initial Population,1
 CMS156FHIRHighRiskMedsElderly,c409fbc9-a31f-4d53-9aa7-9e443e87812a,Group_1:Denominator,1
 CMS156FHIRHighRiskMedsElderly,c409fbc9-a31f-4d53-9aa7-9e443e87812a,Group_1:Denominator Exclusion,0
-CMS156FHIRHighRiskMedsElderly,c409fbc9-a31f-4d53-9aa7-9e443e87812a,Group_1:Numerator,0
+CMS156FHIRHighRiskMedsElderly,c409fbc9-a31f-4d53-9aa7-9e443e87812a,Group_1:Numerator,1
 CMS156FHIRHighRiskMedsElderly,c409fbc9-a31f-4d53-9aa7-9e443e87812a,Group_2:Initial Population,1
 CMS156FHIRHighRiskMedsElderly,c409fbc9-a31f-4d53-9aa7-9e443e87812a,Group_2:Denominator,1
 CMS156FHIRHighRiskMedsElderly,c409fbc9-a31f-4d53-9aa7-9e443e87812a,Group_2:Denominator Exclusion,0
@@ -19391,7 +19392,7 @@ CMS156FHIRHighRiskMedsElderly,c409fbc9-a31f-4d53-9aa7-9e443e87812a,Group_2:Numer
 CMS156FHIRHighRiskMedsElderly,c409fbc9-a31f-4d53-9aa7-9e443e87812a,Group_3:Initial Population,1
 CMS156FHIRHighRiskMedsElderly,c409fbc9-a31f-4d53-9aa7-9e443e87812a,Group_3:Denominator,1
 CMS156FHIRHighRiskMedsElderly,c409fbc9-a31f-4d53-9aa7-9e443e87812a,Group_3:Denominator Exclusion,0
-CMS156FHIRHighRiskMedsElderly,c409fbc9-a31f-4d53-9aa7-9e443e87812a,Group_3:Numerator,0
+CMS156FHIRHighRiskMedsElderly,c409fbc9-a31f-4d53-9aa7-9e443e87812a,Group_3:Numerator,1
 CMS156FHIRHighRiskMedsElderly,c5c6788b-16f3-4c11-badf-5739989be2f6,Group_1:Initial Population,1
 CMS156FHIRHighRiskMedsElderly,c5c6788b-16f3-4c11-badf-5739989be2f6,Group_1:Denominator,1
 CMS156FHIRHighRiskMedsElderly,c5c6788b-16f3-4c11-badf-5739989be2f6,Group_1:Denominator Exclusion,0
