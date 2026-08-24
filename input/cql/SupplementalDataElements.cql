@@ -2,7 +2,7 @@
 @description: Supplemental data elements for use in digital quality measure specifications in CMS programs
 
 NOTE: This library is not published in this IG, it is included here for convenience. The source of truth for
-this library will be the MADiE environment once it fully supports use of QICore STU6-derived.
+this library is dqm-content-qicore-2025.
 */
 library SupplementalDataElements version '6.1.000'
 
@@ -10,7 +10,7 @@ using USQualityCore version '0.1.0-cibuild'
 using USCore version '6.1.0-derived'
 using FHIR version '4.0.1'
 
-include hl7.fhir.uv.cql.FHIRHelpers version '4.0.1' called FHIRHelpers
+include FHIRHelpers version '4.0.1' called FHIRHelpers
 include hl7.fhir.uv.cql.FHIRCommon version '2.0.0' called FHIRCommon
 include hl7.fhir.us.cql.USCoreCommon version '2.0.0-ballot' called USCommon
 

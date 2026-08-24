@@ -7,7 +7,7 @@ using USQualityCore version '0.1.0-cibuild'
 using USCore version '6.1.0-derived'
 using FHIR version '4.0.1'
 
-include hl7.fhir.uv.cql.FHIRHelpers version '4.0.1' called FHIRHelpers
+include FHIRHelpers version '4.0.1' called FHIRHelpers
 include hl7.fhir.uv.cql.FHIRCommon version '2.0.0' called FHIRCommon
 include hl7.fhir.us.cql.CumulativeMedicationDuration version '2.0.0-ballot' called CMD
 include hl7.fhir.us.cql.USCoreCommon version '2.0.0-ballot' called USCoreCommon
