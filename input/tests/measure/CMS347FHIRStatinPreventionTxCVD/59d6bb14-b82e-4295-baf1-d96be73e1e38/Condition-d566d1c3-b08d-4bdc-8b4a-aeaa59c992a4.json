@@ -2,7 +2,7 @@
   "resourceType": "Condition",
   "id": "d566d1c3-b08d-4bdc-8b4a-aeaa59c992a4",
   "meta": {
-    "profile": [ "http://fhir.org/guides/onc/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns" ]
+    "profile": [ "http://fhir.org/guides/astp/us-quality-core/StructureDefinition/us-quality-core-condition-problems-health-concerns" ]
   },
   "clinicalStatus": {
     "coding": [ {
